@@ -1,0 +1,169 @@
+C:/Users/PADA/Desktop/HW4/F74044096/SRC/HDU.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/HDU.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module HDU
+
+Top level modules:
+	HDU
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/ID_EX.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/ID_EX.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ID_EX
+
+Top level modules:
+	ID_EX
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/EX_M.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/EX_M.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module EX_M
+
+Top level modules:
+	EX_M
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/Mux4to1.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/Mux4to1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Mux4to1
+
+Top level modules:
+	Mux4to1
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/ALU.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/ALU.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/IF_ID.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/IF_ID.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module IF_ID
+
+Top level modules:
+	IF_ID
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/FU.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/FU.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module FU
+
+Top level modules:
+	FU
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_valid.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_valid.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Cache_valid
+
+Top level modules:
+	Cache_valid
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/Regfile.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/Regfile.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Regfile
+
+Top level modules:
+	Regfile
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/IM.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/IM.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module IM
+
+Top level modules:
+	IM
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_tag.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_tag.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Cache_tag
+
+Top level modules:
+	Cache_tag
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/Sign_extend.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/Sign_extend.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Sign_extend
+
+Top level modules:
+	Sign_extend
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/testfixture1.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/testfixture1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module testfixture1
+
+Top level modules:
+	testfixture1
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/DM.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/DM.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module DM
+
+Top level modules:
+	DM
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/ADD.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/ADD.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ADD
+
+Top level modules:
+	ADD
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/core.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/core.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module core
+
+Top level modules:
+	core
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/top.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/top.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/PC.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/PC.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/Controller.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/Controller.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Controller
+
+Top level modules:
+	Controller
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Cache
+
+Top level modules:
+	Cache
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_data.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_data.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Cache_data
+
+Top level modules:
+	Cache_data
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/M_WB.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/M_WB.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module M_WB
+
+Top level modules:
+	M_WB
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/Jump_Ctrl.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/Jump_Ctrl.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Jump_Ctrl
+
+Top level modules:
+	Jump_Ctrl
+
+} {} {}} C:/Users/PADA/Desktop/HW4/F74044096/SRC/Mux2to1.v {1 {vlog -work work -stats=none C:/Users/PADA/Desktop/HW4/F74044096/SRC/Mux2to1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Mux2to1
+
+Top level modules:
+	Mux2to1
+
+} {} {}}

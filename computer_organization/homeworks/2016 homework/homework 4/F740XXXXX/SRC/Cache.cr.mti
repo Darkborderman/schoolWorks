@@ -1,0 +1,240 @@
+D:/HW4/IM.v {1 {vlog -work work -stats=none D:/HW4/IM.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module IM
+
+Top level modules:
+	IM
+
+} {} {}} D:/HW4/Cache_tag.v {1 {vlog -work work -stats=none D:/HW4/Cache_tag.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Cache_tag
+
+Top level modules:
+	Cache_tag
+
+} {} {}} D:/HW4/testfixture1.v {1 {vlog -work work -stats=none D:/HW4/testfixture1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module IM
+-- Compiling module DM
+-- Compiling module PC
+-- Compiling module ADD
+-- Compiling module IF_ID
+-- Compiling module HDU
+-- Compiling module Controller
+-- Compiling module Registers
+-- Compiling module sign_extend
+-- Compiling module Mux2to1
+-- Compiling module ID_EX
+-- Compiling module Mux4to1
+-- Compiling module Jump_Ctrl
+-- Compiling module FU
+-- Compiling module ALU
+-- Compiling module EX_M
+-- Compiling module M_WB
+-- Compiling module core
+-- Compiling module Cache_Control
+-- Compiling module Cache_valid
+-- Compiling module Cache_tag
+-- Compiling module Cache_data
+-- Compiling module Cache
+-- Compiling module top
+-- Compiling module testfixture1
+
+Top level modules:
+	testfixture1
+
+} {} {}} D:/HW4/sign_extend.v {1 {vlog -work work -stats=none D:/HW4/sign_extend.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module sign_extend
+
+Top level modules:
+	sign_extend
+
+} {} {}} D:/HW4/Registers.v {1 {vlog -work work -stats=none D:/HW4/Registers.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Registers
+
+Top level modules:
+	Registers
+
+} {} {}} D:/HW4/ADD.v {1 {vlog -work work -stats=none D:/HW4/ADD.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ADD
+
+Top level modules:
+	ADD
+
+} {} {}} D:/HW4/core.v {1 {vlog -work work -stats=none D:/HW4/core.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module PC
+-- Compiling module ADD
+-- Compiling module IF_ID
+-- Compiling module HDU
+-- Compiling module Controller
+-- Compiling module Registers
+-- Compiling module sign_extend
+-- Compiling module Mux2to1
+-- Compiling module ID_EX
+-- Compiling module Mux4to1
+-- Compiling module Jump_Ctrl
+-- Compiling module FU
+-- Compiling module ALU
+-- Compiling module EX_M
+-- Compiling module M_WB
+-- Compiling module core
+
+Top level modules:
+	core
+
+} {} {}} D:/HW4/DM.v {1 {vlog -work work -stats=none D:/HW4/DM.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module DM
+
+Top level modules:
+	DM
+
+} {} {}} D:/HW4/PC.v {1 {vlog -work work -stats=none D:/HW4/PC.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} D:/HW4/top.v {1 {vlog -work work -stats=none D:/HW4/top.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module PC
+-- Compiling module ADD
+-- Compiling module IF_ID
+-- Compiling module HDU
+-- Compiling module Controller
+-- Compiling module Registers
+-- Compiling module sign_extend
+-- Compiling module Mux2to1
+-- Compiling module ID_EX
+-- Compiling module Mux4to1
+-- Compiling module Jump_Ctrl
+-- Compiling module FU
+-- Compiling module ALU
+-- Compiling module EX_M
+-- Compiling module M_WB
+-- Compiling module core
+-- Compiling module Cache_Control
+-- Compiling module Cache_valid
+-- Compiling module Cache_tag
+-- Compiling module Cache_data
+-- Compiling module Cache
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} D:/HW4/Cache.v {1 {vlog -work work -stats=none D:/HW4/Cache.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Cache_Control
+-- Compiling module Cache_valid
+-- Compiling module Cache_tag
+-- Compiling module Cache_data
+-- Compiling module Cache
+
+Top level modules:
+	Cache
+
+} {} {}} D:/HW4/Controller.v {1 {vlog -work work -stats=none D:/HW4/Controller.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Controller
+
+Top level modules:
+	Controller
+
+} {} {}} D:/HW4/M_WB.v {1 {vlog -work work -stats=none D:/HW4/M_WB.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module M_WB
+
+Top level modules:
+	M_WB
+
+} {} {}} D:/HW4/Cache_data.v {1 {vlog -work work -stats=none D:/HW4/Cache_data.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Cache_data
+
+Top level modules:
+	Cache_data
+
+} {} {}} D:/HW4/Mux2to1.v {1 {vlog -work work -stats=none D:/HW4/Mux2to1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Mux2to1
+
+Top level modules:
+	Mux2to1
+
+} {} {}} D:/HW4/Jump_Ctrl.v {1 {vlog -work work -stats=none D:/HW4/Jump_Ctrl.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Jump_Ctrl
+
+Top level modules:
+	Jump_Ctrl
+
+} {} {}} D:/HW4/ID_EX.v {1 {vlog -work work -stats=none D:/HW4/ID_EX.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ID_EX
+
+Top level modules:
+	ID_EX
+
+} {} {}} D:/HW4/HDU.v {1 {vlog -work work -stats=none D:/HW4/HDU.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module HDU
+
+Top level modules:
+	HDU
+
+} {} {}} D:/HW4/EX_M.v {1 {vlog -work work -stats=none D:/HW4/EX_M.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module EX_M
+
+Top level modules:
+	EX_M
+
+} {} {}} D:/HW4/Mux4to1.v {1 {vlog -work work -stats=none D:/HW4/Mux4to1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Mux4to1
+
+Top level modules:
+	Mux4to1
+
+} {} {}} D:/HW4/ALU.v {1 {vlog -work work -stats=none D:/HW4/ALU.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} D:/HW4/IF_ID.v {1 {vlog -work work -stats=none D:/HW4/IF_ID.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module IF_ID
+
+Top level modules:
+	IF_ID
+
+} {} {}} D:/HW4/FU.v {1 {vlog -work work -stats=none D:/HW4/FU.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module FU
+
+Top level modules:
+	FU
+
+} {} {}} D:/HW4/Cache_valid.v {1 {vlog -work work -stats=none D:/HW4/Cache_valid.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Cache_valid
+
+Top level modules:
+	Cache_valid
+
+} {} {}} D:/HW4/Cache_Control.v {1 {vlog -work work -stats=none D:/HW4/Cache_Control.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Cache_Control
+
+Top level modules:
+	Cache_Control
+
+} {} {}}

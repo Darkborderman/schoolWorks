@@ -1,0 +1,34 @@
+clear all;
+clc;
+%5.41
+x=binopdf(10,18,0.7)+binopdf(11,18,0.7)+binopdf(13,18,0.7);
+y=hygepdf(10,17000,18,11900)+hygepdf(11,17000,18,11900)+hygepdf(12,17000,18,11900)+hygepdf(13,17000,18,11900);
+fprintf('5.41\n');
+fprintf('binomial %.16f\n',x);
+fprintf('hypergeomeric %.16f\n',y);
+figure(1);
+hold on;
+title('5.41');
+xlabel('N');
+ylabel('probability');
+x=0:18;
+y=binopdf(x,18,0.7);
+y2=hygepdf(x,17000,18,11900);
+plot(x,y,'O',x,y2,'X');
+legend('binomial','hypergeomeric');
+%5.87
+x=binopdf(0,200,0.03);
+y=poisspdf(0,6);
+fprintf('5.87\n');
+fprintf('binomial %.16f\n',x);
+fprintf('poisson %.16f\n',y);
+figure(2);
+hold on;
+title('5.87');
+xlabel('N');
+ylabel('probability distributions');
+x=0:200;
+y=binopdf(x,200,0.03);
+y2=poisspdf(x,6);
+plot(x,y,'O',x,y2,'X');
+legend('binomial','probability');

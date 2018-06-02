@@ -1,0 +1,9 @@
+c:\users\pada\documents\visual studio 2015\Projects\Practice_list\Practice_list\bin\Debug\Practice_list.exe.config
+c:\users\pada\documents\visual studio 2015\Projects\Practice_list\Practice_list\bin\Debug\Practice_list.exe
+c:\users\pada\documents\visual studio 2015\Projects\Practice_list\Practice_list\bin\Debug\Practice_list.pdb
+c:\users\pada\documents\visual studio 2015\Projects\Practice_list\Practice_list\obj\Debug\Practice_list.Form1.resources
+c:\users\pada\documents\visual studio 2015\Projects\Practice_list\Practice_list\obj\Debug\Practice_list.Properties.Resources.resources
+c:\users\pada\documents\visual studio 2015\Projects\Practice_list\Practice_list\obj\Debug\Practice_list.csproj.GenerateResource.Cache
+c:\users\pada\documents\visual studio 2015\Projects\Practice_list\Practice_list\obj\Debug\Practice_list.exe
+c:\users\pada\documents\visual studio 2015\Projects\Practice_list\Practice_list\obj\Debug\Practice_list.pdb
+c:\users\pada\documents\visual studio 2015\Projects\Practice_list\Practice_list\obj\Debug\Practice_list.csprojResolveAssemblyReference.cache

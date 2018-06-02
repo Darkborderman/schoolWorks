@@ -1,0 +1,9 @@
+c:\users\pada\documents\visual studio 2015\Projects\Practice_tabpage\Practice_tabpage\bin\Debug\Practice_tabpage.exe.config
+c:\users\pada\documents\visual studio 2015\Projects\Practice_tabpage\Practice_tabpage\bin\Debug\Practice_tabpage.exe
+c:\users\pada\documents\visual studio 2015\Projects\Practice_tabpage\Practice_tabpage\bin\Debug\Practice_tabpage.pdb
+c:\users\pada\documents\visual studio 2015\Projects\Practice_tabpage\Practice_tabpage\obj\Debug\Practice_tabpage.csprojResolveAssemblyReference.cache
+c:\users\pada\documents\visual studio 2015\Projects\Practice_tabpage\Practice_tabpage\obj\Debug\Practice_tabpage.Form1.resources
+c:\users\pada\documents\visual studio 2015\Projects\Practice_tabpage\Practice_tabpage\obj\Debug\Practice_tabpage.Properties.Resources.resources
+c:\users\pada\documents\visual studio 2015\Projects\Practice_tabpage\Practice_tabpage\obj\Debug\Practice_tabpage.csproj.GenerateResource.Cache
+c:\users\pada\documents\visual studio 2015\Projects\Practice_tabpage\Practice_tabpage\obj\Debug\Practice_tabpage.exe
+c:\users\pada\documents\visual studio 2015\Projects\Practice_tabpage\Practice_tabpage\obj\Debug\Practice_tabpage.pdb

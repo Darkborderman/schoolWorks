@@ -1,0 +1,9 @@
+c:\users\pada\documents\visual studio 2015\Projects\Practice_Keyboard\Practice_Keyboard\bin\Debug\Practice_Keyboard.exe.config
+c:\users\pada\documents\visual studio 2015\Projects\Practice_Keyboard\Practice_Keyboard\bin\Debug\Practice_Keyboard.exe
+c:\users\pada\documents\visual studio 2015\Projects\Practice_Keyboard\Practice_Keyboard\bin\Debug\Practice_Keyboard.pdb
+c:\users\pada\documents\visual studio 2015\Projects\Practice_Keyboard\Practice_Keyboard\obj\Debug\Practice_Keyboard.csprojResolveAssemblyReference.cache
+c:\users\pada\documents\visual studio 2015\Projects\Practice_Keyboard\Practice_Keyboard\obj\Debug\Practice_Keyboard.Form1.resources
+c:\users\pada\documents\visual studio 2015\Projects\Practice_Keyboard\Practice_Keyboard\obj\Debug\Practice_Keyboard.Properties.Resources.resources
+c:\users\pada\documents\visual studio 2015\Projects\Practice_Keyboard\Practice_Keyboard\obj\Debug\Practice_Keyboard.csproj.GenerateResource.Cache
+c:\users\pada\documents\visual studio 2015\Projects\Practice_Keyboard\Practice_Keyboard\obj\Debug\Practice_Keyboard.exe
+c:\users\pada\documents\visual studio 2015\Projects\Practice_Keyboard\Practice_Keyboard\obj\Debug\Practice_Keyboard.pdb

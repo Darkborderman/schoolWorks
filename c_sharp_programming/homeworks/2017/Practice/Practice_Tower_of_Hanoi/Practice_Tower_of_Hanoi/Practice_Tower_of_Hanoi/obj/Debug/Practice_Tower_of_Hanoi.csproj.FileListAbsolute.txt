@@ -1,0 +1,6 @@
+c:\users\pada\documents\visual studio 2015\Projects\Practice_Tower_of_Hanoi\Practice_Tower_of_Hanoi\bin\Debug\Practice_Tower_of_Hanoi.exe.config
+c:\users\pada\documents\visual studio 2015\Projects\Practice_Tower_of_Hanoi\Practice_Tower_of_Hanoi\obj\Debug\Practice_Tower_of_Hanoi.csprojResolveAssemblyReference.cache
+c:\users\pada\documents\visual studio 2015\Projects\Practice_Tower_of_Hanoi\Practice_Tower_of_Hanoi\bin\Debug\Practice_Tower_of_Hanoi.exe
+c:\users\pada\documents\visual studio 2015\Projects\Practice_Tower_of_Hanoi\Practice_Tower_of_Hanoi\bin\Debug\Practice_Tower_of_Hanoi.pdb
+c:\users\pada\documents\visual studio 2015\Projects\Practice_Tower_of_Hanoi\Practice_Tower_of_Hanoi\obj\Debug\Practice_Tower_of_Hanoi.exe
+c:\users\pada\documents\visual studio 2015\Projects\Practice_Tower_of_Hanoi\Practice_Tower_of_Hanoi\obj\Debug\Practice_Tower_of_Hanoi.pdb

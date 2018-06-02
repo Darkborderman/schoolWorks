@@ -1,0 +1,557 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/PADA/Desktop/HW4/F740XXXXX/SRC
+vADD
+Z0 !s110 1498203659
+!i10b 1
+!s100 lASh4ZT9;L@YQ[[QzleBZ3
+I3Qmnd0:a0Mf_>A<9KKQk12
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/PADA/Desktop/HW4/F74044096/SRC
+w1496976721
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/ADD.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/ADD.v
+L0 3
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1498203659.000000
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/ADD.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/ADD.v|
+!s101 -O0
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@a@d@d
+vALU
+Z6 !s110 1498203654
+!i10b 1
+!s100 ^Je3h;U`YC_mDQ8X>G1Q^1
+I[234cQg?UQadQzfdSn?<i2
+R1
+R2
+w1496974489
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/ALU.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/ALU.v
+L0 3
+R3
+r1
+!s85 0
+31
+Z7 !s108 1498203653.000000
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/ALU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/ALU.v|
+!s101 -O0
+!i113 1
+R5
+n@a@l@u
+vCache
+R6
+!i10b 1
+!s100 ]V0cmh]<P1Hb9DkG?e<RQ0
+IVg6h4aTiR>7Vo8d04gfA70
+R1
+R2
+w1497759746
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache.v
+L0 3
+R3
+r1
+!s85 0
+31
+Z8 !s108 1498203654.000000
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache.v|
+!s101 -O0
+!i113 1
+R5
+n@cache
+vCache_Control
+R6
+!i10b 1
+!s100 ?Q8]jRZ^:o;0^0[O7RAf:2
+IG71[U8V:2>;odAEZak=7Y1
+R1
+R2
+w1498203648
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_Control.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_Control.v
+L0 3
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_Control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_Control.v|
+!s101 -O0
+!i113 1
+R5
+n@cache_@control
+vCache_data
+R6
+!i10b 1
+!s100 ]Q[ZP>__z@ZW6z[CHl>0=3
+ISN4PlcHhLYeD@J5I?gWJ^2
+R1
+R2
+Z9 w1484583812
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_data.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_data.v
+L0 3
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_data.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_data.v|
+!s101 -O0
+!i113 1
+R5
+n@cache_data
+vCache_tag
+Z10 !s110 1498203655
+!i10b 1
+!s100 =kI]f1L:A=P4[G15]k1hi3
+IPE9gm=hOGEod^G7`TjeO[3
+R1
+R2
+R9
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_tag.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_tag.v
+L0 3
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_tag.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_tag.v|
+!s101 -O0
+!i113 1
+R5
+n@cache_tag
+vCache_valid
+R10
+!i10b 1
+!s100 AeYZ?I45mOPAVoN?j88K20
+I42iZ5ngO8YXl]3;D]1=4_1
+R1
+R2
+R9
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_valid.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_valid.v
+L0 3
+R3
+r1
+!s85 0
+31
+Z11 !s108 1498203655.000000
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_valid.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/Cache_valid.v|
+!s101 -O0
+!i113 1
+R5
+n@cache_valid
+vController
+Z12 !s110 1498203656
+!i10b 1
+!s100 B35IG2TH7f3OYACm][Q8Q3
+I5BeognRlX3C7Tz>`o?^_X3
+R1
+R2
+w1497160582
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/Controller.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/Controller.v
+L0 3
+R3
+r1
+!s85 0
+31
+R11
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/Controller.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/Controller.v|
+!s101 -O0
+!i113 1
+R5
+n@controller
+vcore
+R12
+!i10b 1
+!s100 l3j]LX4D?l3LP5PZ`NGA>3
+IkdfInEBGPmHfJ52dA^@5N0
+R1
+R2
+w1497716241
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/core.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/core.v
+L0 3
+R3
+r1
+!s85 0
+31
+Z13 !s108 1498203656.000000
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/core.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/core.v|
+!s101 -O0
+!i113 1
+R5
+vDM
+R12
+!i10b 1
+!s100 fTWND^WG7Iaa[A<8H_=Mg3
+I7nLchB1U3h?ZI@X5]KbFg2
+R1
+R2
+R9
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/DM.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/DM.v
+L0 3
+R3
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/DM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/DM.v|
+!s101 -O0
+!i113 1
+R5
+n@d@m
+vEX_M
+Z14 !s110 1498203657
+!i10b 1
+!s100 hVmVh95CBlc[1Z6cgeQzY1
+IZ=^cPO2Vd3c4Gaz6Ff1Vo1
+R1
+R2
+w1497161753
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/EX_M.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/EX_M.v
+L0 3
+R3
+r1
+!s85 0
+31
+R13
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/EX_M.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/EX_M.v|
+!s101 -O0
+!i113 1
+R5
+n@e@x_@m
+vFU
+R14
+!i10b 1
+!s100 UWZooZaFnH2P1RCf<_?692
+I4G2<iVYcPSaOBe[eVRhEH3
+R1
+R2
+w1497715581
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/FU.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/FU.v
+L0 3
+R3
+r1
+!s85 0
+31
+Z15 !s108 1498203657.000000
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/FU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/FU.v|
+!s101 -O0
+!i113 1
+R5
+n@f@u
+vHDU
+R14
+!i10b 1
+!s100 ZjU7J18f3M4G6]nU;X::E3
+Ib_mFm6eeHUgf2ijCDj6cm3
+R1
+R2
+w1498202030
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/HDU.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/HDU.v
+L0 3
+R3
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/HDU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/HDU.v|
+!s101 -O0
+!i113 1
+R5
+n@h@d@u
+vID_EX
+R14
+!i10b 1
+!s100 nmZQ`lkPfe?e?f7IM_IB03
+IQS;mUTWQbR:YCz3Y>fTRO1
+R1
+R2
+w1498201852
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/ID_EX.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/ID_EX.v
+L0 3
+R3
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/ID_EX.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/ID_EX.v|
+!s101 -O0
+!i113 1
+R5
+n@i@d_@e@x
+vIF_ID
+Z16 !s110 1498203658
+!i10b 1
+!s100 IjF<cMzMDcOZ:FId2Nn4T3
+IJBIBS5;U7N4=>K]GaFol11
+R1
+R2
+w1498201848
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/IF_ID.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/IF_ID.v
+L0 3
+R3
+r1
+!s85 0
+31
+R15
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/IF_ID.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/IF_ID.v|
+!s101 -O0
+!i113 1
+R5
+n@i@f_@i@d
+vIM
+R16
+!i10b 1
+!s100 S8nS0Q78U`JeD^T6YDcTf2
+IJR[=N9kDNQK9XAW[TSl1J2
+R1
+R2
+R9
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/IM.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/IM.v
+L0 3
+R3
+r1
+!s85 0
+31
+Z17 !s108 1498203658.000000
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/IM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/IM.v|
+!s101 -O0
+!i113 1
+R5
+n@i@m
+vJump_Ctrl
+R16
+!i10b 1
+!s100 3eLNEZ0Sm]0kZe@Ca2Y4H1
+IgZdJVe23]R<g`YmUYBkZD1
+R1
+R2
+w1496976263
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/Jump_Ctrl.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/Jump_Ctrl.v
+L0 3
+R3
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/Jump_Ctrl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/Jump_Ctrl.v|
+!s101 -O0
+!i113 1
+R5
+n@jump_@ctrl
+vM_WB
+R16
+!i10b 1
+!s100 Z[bJamA8?gFI<_HW:46NP1
+In5F9Edg@22@H5hNhHO8:V3
+R1
+R2
+w1497162156
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/M_WB.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/M_WB.v
+L0 3
+R3
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/M_WB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/M_WB.v|
+!s101 -O0
+!i113 1
+R5
+n@m_@w@b
+vMux2to1
+Z18 !s110 1498203660
+!i10b 1
+!s100 oNdRz>2iHKaV;[=CLM@bn0
+IkIKncnhjczo:=nZAN;TT^1
+R1
+R2
+w1496976737
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/Mux2to1.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/Mux2to1.v
+L0 3
+R3
+r1
+!s85 0
+31
+Z19 !s108 1498203660.000000
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/Mux2to1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/Mux2to1.v|
+!s101 -O0
+!i113 1
+R5
+n@mux2to1
+vMux4to1
+R18
+!i10b 1
+!s100 NU=@EFjWK>d7<6;ihz]^12
+I3V6T3zVlS3ZOGI>IJ]0kC1
+R1
+R2
+w1496976761
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/Mux4to1.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/Mux4to1.v
+L0 3
+R3
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/Mux4to1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/Mux4to1.v|
+!s101 -O0
+!i113 1
+R5
+n@mux4to1
+vPC
+R0
+!i10b 1
+!s100 ECknB1>8bWcSMgdBmYI250
+ITX=ilJOUmZ4KgZE_c58=22
+R1
+R2
+w1496976587
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/PC.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/PC.v
+L0 3
+R3
+r1
+!s85 0
+31
+R17
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/PC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/PC.v|
+!s101 -O0
+!i113 1
+R5
+n@p@c
+vRegfile
+R0
+!i10b 1
+!s100 bdg1T2KdhzD;]iT_KX7o42
+I>>2_ZC4dN:mZO5WM85abO2
+R1
+R2
+w1496976691
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/Regfile.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/Regfile.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/Regfile.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/Regfile.v|
+!s101 -O0
+!i113 1
+R5
+n@regfile
+vSign_extend
+R18
+!i10b 1
+!s100 We1S6RARW0dzlZQm[Tf8l1
+Ia;]]Y9>cNDO:?V[>c0GhF1
+R1
+R2
+w1496976783
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/Sign_extend.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/Sign_extend.v
+L0 3
+R3
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/Sign_extend.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/Sign_extend.v|
+!s101 -O0
+!i113 1
+R5
+n@sign_extend
+vtestfixture1
+R0
+!i10b 1
+!s100 [OVkT_cB^VO5]FDR]jDiH1
+IK=Q3h6hE0naz?R<lUXFM=3
+R1
+R2
+w1497169921
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/testfixture1.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/testfixture1.v
+L0 6
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/testfixture1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/testfixture1.v|
+!s101 -O0
+!i113 1
+R5
+vtop
+!s110 1498203653
+!i10b 1
+!s100 ZJhj;;k4@7D^XdGU==mbB1
+I@93e7o?n19W[JZTI[Z1Y[0
+R1
+R2
+w1487257844
+8C:/Users/PADA/Desktop/HW4/F74044096/SRC/top.v
+FC:/Users/PADA/Desktop/HW4/F74044096/SRC/top.v
+L0 3
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/PADA/Desktop/HW4/F74044096/SRC/top.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/PADA/Desktop/HW4/F74044096/SRC/top.v|
+!s101 -O0
+!i113 1
+R5

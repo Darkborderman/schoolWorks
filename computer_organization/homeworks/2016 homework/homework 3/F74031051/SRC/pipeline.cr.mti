@@ -1,0 +1,333 @@
+D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/testfixture1.v {1 {vlog -work work -stats=none {D:\HW3\CO_2016_HW3_v5\CO_2016_HW3_v5\F740XXXXX\SRC\testfixture1.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module IM
+-- Compiling module DM
+-- Compiling module PC
+-- Compiling module ADD
+-- Compiling module IF_ID
+-- Compiling module HDU
+-- Compiling module Controller
+-- Compiling module Registers
+-- Compiling module sign_extend
+-- Compiling module Mux2to1
+-- Compiling module ID_EX
+-- Compiling module Mux4to1
+-- Compiling module Jump_Ctrl
+-- Compiling module FU
+-- Compiling module ALU
+-- Compiling module EX_M
+-- Compiling module M_WB
+-- Compiling module top
+-- Compiling module testfixture1
+
+Top level modules:
+	testfixture1
+
+} {} {}} D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/sign_extend.v {1 {vlog -work work -stats=none D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/sign_extend.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module sign_extend
+
+Top level modules:
+	sign_extend
+
+} {} {}} D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/Registers.v {1 {vlog -work work -stats=none D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/Registers.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Registers
+
+Top level modules:
+	Registers
+
+} {} {}} D:/HW3/sign_extend.v {1 {vlog -work work -stats=none D:/HW3/sign_extend.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module sign_extend
+
+Top level modules:
+	sign_extend
+
+} {} {}} D:/HW3/Registers.v {1 {vlog -work work -stats=none D:/HW3/Registers.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Registers
+
+Top level modules:
+	Registers
+
+} {} {}} D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/DM.v {1 {vlog -work work -stats=none D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/DM.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module DM
+
+Top level modules:
+	DM
+
+} {} {}} D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/ADD.v {1 {vlog -work work -stats=none D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/ADD.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ADD
+
+Top level modules:
+	ADD
+
+} {} {}} D:/HW3/EX_M.v {1 {vlog -work work -stats=none D:/HW3/EX_M.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module EX_M
+
+Top level modules:
+	EX_M
+
+} {} {}} D:/HW3/ADD.v {1 {vlog -work work -stats=none D:/HW3/ADD.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ADD
+
+Top level modules:
+	ADD
+
+} {} {}} D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/PC.v {1 {vlog -work work -stats=none D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/PC.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/top.v {1 {vlog -work work -stats=none {D:\HW3\CO_2016_HW3_v5\CO_2016_HW3_v5\F740XXXXX\SRC\top.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module PC
+-- Compiling module ADD
+-- Compiling module IF_ID
+-- Compiling module HDU
+-- Compiling module Controller
+-- Compiling module Registers
+-- Compiling module sign_extend
+-- Compiling module Mux2to1
+-- Compiling module ID_EX
+-- Compiling module Mux4to1
+-- Compiling module Jump_Ctrl
+-- Compiling module FU
+-- Compiling module ALU
+-- Compiling module EX_M
+-- Compiling module M_WB
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/Controller.v {1 {vlog -work work -stats=none D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/Controller.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Controller
+
+Top level modules:
+	Controller
+
+} {} {}} D:/HW3/top.v {1 {vlog -work work -stats=none D:/HW3/top.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module PC
+-- Compiling module ADD
+-- Compiling module IF_ID
+-- Compiling module HDU
+-- Compiling module Controller
+-- Compiling module Registers
+-- Compiling module sign_extend
+-- Compiling module Mux2to1
+-- Compiling module ID_EX
+-- Compiling module Mux4to1
+-- Compiling module Jump_Ctrl
+-- Compiling module FU
+-- Compiling module ALU
+-- Compiling module EX_M
+-- Compiling module M_WB
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} D:/HW3/FU.v {1 {vlog -work work -stats=none D:/HW3/FU.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module FU
+
+Top level modules:
+	FU
+
+} {} {}} D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/M_WB.v {1 {vlog -work work -stats=none D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/M_WB.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module M_WB
+
+Top level modules:
+	M_WB
+
+} {} {}} D:/HW3/IM.v {1 {vlog -work work -stats=none D:/HW3/IM.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module IM
+
+Top level modules:
+	IM
+
+} {} {}} D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/Jump_Ctrl.v {1 {vlog -work work -stats=none D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/Jump_Ctrl.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Jump_Ctrl
+
+Top level modules:
+	Jump_Ctrl
+
+} {} {}} D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/Mux2to1.v {1 {vlog -work work -stats=none D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/Mux2to1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Mux2to1
+
+Top level modules:
+	Mux2to1
+
+} {} {}} D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/EX_M.v {1 {vlog -work work -stats=none D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/EX_M.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module EX_M
+
+Top level modules:
+	EX_M
+
+} {} {}} D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/ID_EX.v {1 {vlog -work work -stats=none D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/ID_EX.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ID_EX
+
+Top level modules:
+	ID_EX
+
+} {} {}} D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/HDU.v {1 {vlog -work work -stats=none D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/HDU.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module HDU
+
+Top level modules:
+	HDU
+
+} {} {}} D:/HW3/Jump_Ctrl.v {1 {vlog -work work -stats=none D:/HW3/Jump_Ctrl.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Jump_Ctrl
+
+Top level modules:
+	Jump_Ctrl
+
+} {} {}} D:/HW3/Mux2to1.v {1 {vlog -work work -stats=none D:/HW3/Mux2to1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Mux2to1
+
+Top level modules:
+	Mux2to1
+
+} {} {}} D:/HW3/testfixture1.v {1 {vlog -work work -stats=none D:/HW3/testfixture1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module IM
+-- Compiling module DM
+-- Compiling module PC
+-- Compiling module ADD
+-- Compiling module IF_ID
+-- Compiling module HDU
+-- Compiling module Controller
+-- Compiling module Registers
+-- Compiling module sign_extend
+-- Compiling module Mux2to1
+-- Compiling module ID_EX
+-- Compiling module Mux4to1
+-- Compiling module Jump_Ctrl
+-- Compiling module FU
+-- Compiling module ALU
+-- Compiling module EX_M
+-- Compiling module M_WB
+-- Compiling module top
+-- Compiling module testfixture1
+
+Top level modules:
+	testfixture1
+
+} {} {}} D:/HW3/HDU.v {1 {vlog -work work -stats=none D:/HW3/HDU.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module HDU
+
+Top level modules:
+	HDU
+
+} {} {}} D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/ALU.v {1 {vlog -work work -stats=none D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/ALU.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/Mux4to1.v {1 {vlog -work work -stats=none D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/Mux4to1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Mux4to1
+
+Top level modules:
+	Mux4to1
+
+} {} {}} D:/HW3/DM.v {1 {vlog -work work -stats=none D:/HW3/DM.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module DM
+
+Top level modules:
+	DM
+
+} {} {}} D:/HW3/ID_EX.v {1 {vlog -work work -stats=none D:/HW3/ID_EX.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ID_EX
+
+Top level modules:
+	ID_EX
+
+} {} {}} D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/FU.v {1 {vlog -work work -stats=none {D:\HW3\CO_2016_HW3_v5\CO_2016_HW3_v5\F740XXXXX\SRC\FU.v}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module FU
+
+Top level modules:
+	FU
+
+} {} {}} D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/IF_ID.v {1 {vlog -work work -stats=none D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/IF_ID.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module IF_ID
+
+Top level modules:
+	IF_ID
+
+} {} {}} D:/HW3/ALU.v {1 {vlog -work work -stats=none D:/HW3/ALU.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}} D:/HW3/Mux4to1.v {1 {vlog -work work -stats=none D:/HW3/Mux4to1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Mux4to1
+
+Top level modules:
+	Mux4to1
+
+} {} {}} D:/HW3/IF_ID.v {1 {vlog -work work -stats=none D:/HW3/IF_ID.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module IF_ID
+
+Top level modules:
+	IF_ID
+
+} {} {}} D:/HW3/PC.v {1 {vlog -work work -stats=none D:/HW3/PC.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module PC
+
+Top level modules:
+	PC
+
+} {} {}} D:/HW3/Controller.v {1 {vlog -work work -stats=none D:/HW3/Controller.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Controller
+
+Top level modules:
+	Controller
+
+} {} {}} D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/IM.v {1 {vlog -work work -stats=none D:/HW3/CO_2016_HW3_v5/CO_2016_HW3_v5/F740XXXXX/SRC/IM.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module IM
+
+Top level modules:
+	IM
+
+} {} {}} D:/HW3/M_WB.v {1 {vlog -work work -stats=none D:/HW3/M_WB.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module M_WB
+
+Top level modules:
+	M_WB
+
+} {} {}}

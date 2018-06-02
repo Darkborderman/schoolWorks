@@ -1,0 +1,293 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/USER/Desktop/CPU
+vADD
+Z1 !s110 1461230160
+!i10b 1
+!s100 Gz;CC6M6cCzO1]e79VBeK2
+I2giS^_VRM7WY@CY3<1[MI3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1458373027
+8ADD.v
+FADD.v
+L0 3
+Z4 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z5 !s108 1461230160.000000
+Z6 !s107 Jump_Ctrl.v|ALU.v|sign_extend.v|Mux4to1.v|Mux2to1.v|Registers.v|Controller.v|ADD.v|PC.v|top.v|DM.v|IM.v|C:/Users/USER/Desktop/CPU/cpu_tb.v|
+Z7 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/USER/Desktop/CPU/cpu_tb.v|
+!s101 -O0
+!i113 1
+Z8 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@a@d@d
+vALU
+R1
+!i10b 1
+!s100 K@R2b9KDf>OHm^<oXXAdT2
+I`zk:D:VbXV8Z0bQ5aEL[a2
+R2
+R0
+w1461228107
+8ALU.v
+FALU.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!s101 -O0
+!i113 1
+R8
+n@a@l@u
+vController
+R1
+!i10b 1
+!s100 ]9b454n@XKY^RK?CL]mFN0
+Iehe>;0ehY^0686dAFjHYb0
+R2
+R0
+w1461227443
+8Controller.v
+FController.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!s101 -O0
+!i113 1
+R8
+n@controller
+vcpu_tb
+R1
+!i10b 1
+!s100 lEQEfUGf]2ngFCGNNO^]E0
+Ii_47BakH=f3>=m:4LY1;=2
+R2
+R0
+w1459315774
+8C:/Users/USER/Desktop/CPU/cpu_tb.v
+FC:/Users/USER/Desktop/CPU/cpu_tb.v
+L0 8
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!s101 -O0
+!i113 1
+R8
+vDM
+R1
+!i10b 1
+!s100 f<VRU;@6bZ2BA]NR4HCTS3
+Ij^n3bOM><PL0Xz?mJ55FV1
+R2
+R0
+R3
+8C:/Users/USER/Desktop/CPU/DM.v
+FC:/Users/USER/Desktop/CPU/DM.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/USER/Desktop/CPU/DM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/USER/Desktop/CPU/DM.v|
+!s101 -O0
+!i113 1
+R8
+n@d@m
+vIM
+R1
+!i10b 1
+!s100 7Q25d3o8mk4<eQ3Cj@GJ_1
+IEGiVD;nIgId[`Q2UKGf=G3
+R2
+R0
+R3
+8C:/Users/USER/Desktop/CPU/IM.v
+FC:/Users/USER/Desktop/CPU/IM.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/USER/Desktop/CPU/IM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/USER/Desktop/CPU/IM.v|
+!s101 -O0
+!i113 1
+R8
+n@i@m
+vJump_Ctrl
+R1
+!i10b 1
+!s100 d<LOi;WA9NW4QV0mMAdjd1
+I9]XPBg:BhHaH]_?IoH`gA2
+R2
+R0
+R3
+8C:/Users/USER/Desktop/CPU/Jump_Ctrl.v
+FC:/Users/USER/Desktop/CPU/Jump_Ctrl.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/USER/Desktop/CPU/Jump_Ctrl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/USER/Desktop/CPU/Jump_Ctrl.v|
+!s101 -O0
+!i113 1
+R8
+n@jump_@ctrl
+vMux2to1
+R1
+!i10b 1
+!s100 L2ZFgGbDgX8_K?Dn5oGU61
+IU^RobC06Z=S==h6=70=cl0
+R2
+R0
+w1461229382
+8C:/Users/USER/Desktop/CPU/Mux2to1.v
+FC:/Users/USER/Desktop/CPU/Mux2to1.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/USER/Desktop/CPU/Mux2to1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/USER/Desktop/CPU/Mux2to1.v|
+!s101 -O0
+!i113 1
+R8
+n@mux2to1
+vMux4to1
+R1
+!i10b 1
+!s100 WZ=j:AU?<1=16<MDPE`bD1
+IkjZ5hJC:Knk8@_zWFe2mS3
+R2
+R0
+w1461229031
+8C:/Users/USER/Desktop/CPU/Mux4to1.v
+FC:/Users/USER/Desktop/CPU/Mux4to1.v
+L0 3
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/USER/Desktop/CPU/Mux4to1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/USER/Desktop/CPU/Mux4to1.v|
+!s101 -O0
+!i113 1
+R8
+n@mux4to1
+vPC
+Z9 !s110 1461230161
+!i10b 1
+!s100 NNflHL?TMAlSDTdi>gYz13
+IKBe[TK0X2zEIkH?S58NUE2
+R2
+R0
+R3
+8C:/Users/USER/Desktop/CPU/PC.v
+FC:/Users/USER/Desktop/CPU/PC.v
+L0 3
+R4
+r1
+!s85 0
+31
+Z10 !s108 1461230161.000000
+!s107 C:/Users/USER/Desktop/CPU/PC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/USER/Desktop/CPU/PC.v|
+!s101 -O0
+!i113 1
+R8
+n@p@c
+vRegisters
+R9
+!i10b 1
+!s100 cUB5]aKg3mo6;g^2WjmmA2
+Io88eLl0iGO7G2Ol?<B[fG2
+R2
+R0
+R3
+8C:/Users/USER/Desktop/CPU/Registers.v
+FC:/Users/USER/Desktop/CPU/Registers.v
+L0 3
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/USER/Desktop/CPU/Registers.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/USER/Desktop/CPU/Registers.v|
+!s101 -O0
+!i113 1
+R8
+n@registers
+vsign_extend
+R9
+!i10b 1
+!s100 eKN9L43FID[i[NWjN?:bW2
+I6XYS9X=EAf_GZ3>blL8NA3
+R2
+R0
+w1461228830
+8C:/Users/USER/Desktop/CPU/sign_extend.v
+FC:/Users/USER/Desktop/CPU/sign_extend.v
+L0 3
+R4
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/USER/Desktop/CPU/sign_extend.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/USER/Desktop/CPU/sign_extend.v|
+!s101 -O0
+!i113 1
+R8
+vtop
+R1
+!i10b 1
+!s100 dOCH8MMN=YSBz;lh1f4_60
+I?X6<;N9;Cab;S`WGK6F242
+R2
+R0
+R3
+8top.v
+Ftop.v
+L0 12
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!s101 -O0
+!i113 1
+R8

@@ -1,0 +1,9 @@
+c:\users\pada\documents\visual studio 2015\Projects\Practice_NTtoUS\Practice_NTtoUS\bin\Debug\Practice_NTtoUS.exe.config
+c:\users\pada\documents\visual studio 2015\Projects\Practice_NTtoUS\Practice_NTtoUS\bin\Debug\Practice_NTtoUS.exe
+c:\users\pada\documents\visual studio 2015\Projects\Practice_NTtoUS\Practice_NTtoUS\bin\Debug\Practice_NTtoUS.pdb
+c:\users\pada\documents\visual studio 2015\Projects\Practice_NTtoUS\Practice_NTtoUS\obj\Debug\Practice_NTtoUS.csprojResolveAssemblyReference.cache
+c:\users\pada\documents\visual studio 2015\Projects\Practice_NTtoUS\Practice_NTtoUS\obj\Debug\Practice_NTtoUS.Form1.resources
+c:\users\pada\documents\visual studio 2015\Projects\Practice_NTtoUS\Practice_NTtoUS\obj\Debug\Practice_NTtoUS.Properties.Resources.resources
+c:\users\pada\documents\visual studio 2015\Projects\Practice_NTtoUS\Practice_NTtoUS\obj\Debug\Practice_NTtoUS.csproj.GenerateResource.Cache
+c:\users\pada\documents\visual studio 2015\Projects\Practice_NTtoUS\Practice_NTtoUS\obj\Debug\Practice_NTtoUS.exe
+c:\users\pada\documents\visual studio 2015\Projects\Practice_NTtoUS\Practice_NTtoUS\obj\Debug\Practice_NTtoUS.pdb

@@ -1,0 +1,24 @@
+C:\cs\ch08\puzzle\bin\Debug\puzzle.exe.config
+C:\cs\ch08\puzzle\bin\Debug\puzzle.exe
+C:\cs\ch08\puzzle\bin\Debug\puzzle.pdb
+C:\cs\ch08\puzzle\obj\Debug\puzzle.csprojResolveAssemblyReference.cache
+C:\cs\ch08\puzzle\obj\Debug\puzzle.Form1.resources
+C:\cs\ch08\puzzle\obj\Debug\puzzle.Properties.Resources.resources
+C:\cs\ch08\puzzle\obj\Debug\puzzle.csproj.GenerateResource.Cache
+C:\cs\ch08\puzzle\obj\Debug\puzzle.exe
+C:\cs\ch08\puzzle\obj\Debug\puzzle.pdb
+D:\00000- 松崗 松崗  Visual C# 2013 學習經典 排版(一校搞)\四校稿 - C#2013 學習經典完稿\松崗- C# 2013學習經典範例程式\ch08\puzzle\bin\Debug\puzzle.exe.config
+D:\00000- 松崗 松崗  Visual C# 2013 學習經典 排版(一校搞)\四校稿 - C#2013 學習經典完稿\松崗- C# 2013學習經典範例程式\ch08\puzzle\obj\Debug\puzzle.exe
+D:\00000- 松崗 松崗  Visual C# 2013 學習經典 排版(一校搞)\四校稿 - C#2013 學習經典完稿\松崗- C# 2013學習經典範例程式\ch08\puzzle\obj\Debug\puzzle.pdb
+D:\ncku_school\開課課程\104_下學期\上課簡報\1050428\ch07_2\puzzle\bin\Debug\puzzle.exe.config
+D:\ncku_school\開課課程\104_下學期\上課簡報\1050428\ch07_2\puzzle\obj\Debug\puzzle.exe
+D:\ncku_school\開課課程\104_下學期\上課簡報\1050428\ch07_2\puzzle\obj\Debug\puzzle.pdb
+C:\Users\PADA\Desktop\1060406_stu_doc\1060406_stu_doc\ch07_2\puzzle\bin\Debug\puzzle.exe.config
+C:\Users\PADA\Desktop\1060406_stu_doc\1060406_stu_doc\ch07_2\puzzle\obj\Debug\puzzle.exe
+C:\Users\PADA\Desktop\1060406_stu_doc\1060406_stu_doc\ch07_2\puzzle\obj\Debug\puzzle.pdb
+C:\Users\PADA\Desktop\1060406_stu_doc\1060406_stu_doc\ch07_2\puzzle\bin\Debug\puzzle.exe
+C:\Users\PADA\Desktop\1060406_stu_doc\1060406_stu_doc\ch07_2\puzzle\bin\Debug\puzzle.pdb
+C:\Users\PADA\Desktop\1060406_stu_doc\1060406_stu_doc\ch07_2\puzzle\obj\Debug\puzzle.csprojResolveAssemblyReference.cache
+C:\Users\PADA\Desktop\1060406_stu_doc\1060406_stu_doc\ch07_2\puzzle\obj\Debug\puzzle.Form1.resources
+C:\Users\PADA\Desktop\1060406_stu_doc\1060406_stu_doc\ch07_2\puzzle\obj\Debug\puzzle.Properties.Resources.resources
+C:\Users\PADA\Desktop\1060406_stu_doc\1060406_stu_doc\ch07_2\puzzle\obj\Debug\puzzle.csproj.GenerateResource.Cache

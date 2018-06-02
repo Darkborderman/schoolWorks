@@ -1,0 +1,2 @@
+Manifest-Version: 1.0
+Main-Class: Hw2.Quadratic_Equation
