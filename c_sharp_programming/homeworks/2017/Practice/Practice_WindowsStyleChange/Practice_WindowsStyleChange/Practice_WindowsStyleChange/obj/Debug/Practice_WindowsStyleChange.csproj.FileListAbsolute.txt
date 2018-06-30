@@ -1,9 +1,0 @@
-c:\users\pada\documents\visual studio 2015\Projects\Practice_WindowsStyleChange\Practice_WindowsStyleChange\bin\Debug\Practice_WindowsStyleChange.exe.config
-c:\users\pada\documents\visual studio 2015\Projects\Practice_WindowsStyleChange\Practice_WindowsStyleChange\bin\Debug\Practice_WindowsStyleChange.exe
-c:\users\pada\documents\visual studio 2015\Projects\Practice_WindowsStyleChange\Practice_WindowsStyleChange\bin\Debug\Practice_WindowsStyleChange.pdb
-c:\users\pada\documents\visual studio 2015\Projects\Practice_WindowsStyleChange\Practice_WindowsStyleChange\obj\Debug\Practice_WindowsStyleChange.csprojResolveAssemblyReference.cache
-c:\users\pada\documents\visual studio 2015\Projects\Practice_WindowsStyleChange\Practice_WindowsStyleChange\obj\Debug\Practice_WindowsStyleChange.Form1.resources
-c:\users\pada\documents\visual studio 2015\Projects\Practice_WindowsStyleChange\Practice_WindowsStyleChange\obj\Debug\Practice_WindowsStyleChange.Properties.Resources.resources
-c:\users\pada\documents\visual studio 2015\Projects\Practice_WindowsStyleChange\Practice_WindowsStyleChange\obj\Debug\Practice_WindowsStyleChange.csproj.GenerateResource.Cache
-c:\users\pada\documents\visual studio 2015\Projects\Practice_WindowsStyleChange\Practice_WindowsStyleChange\obj\Debug\Practice_WindowsStyleChange.exe
-c:\users\pada\documents\visual studio 2015\Projects\Practice_WindowsStyleChange\Practice_WindowsStyleChange\obj\Debug\Practice_WindowsStyleChange.pdb

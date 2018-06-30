@@ -1,9 +1,0 @@
-c:\users\pada\documents\visual studio 2015\Projects\Practice_Style_Change\Practice_Style_Change\bin\Debug\Practice_Style_Change.exe.config
-c:\users\pada\documents\visual studio 2015\Projects\Practice_Style_Change\Practice_Style_Change\bin\Debug\Practice_Style_Change.exe
-c:\users\pada\documents\visual studio 2015\Projects\Practice_Style_Change\Practice_Style_Change\bin\Debug\Practice_Style_Change.pdb
-c:\users\pada\documents\visual studio 2015\Projects\Practice_Style_Change\Practice_Style_Change\obj\Debug\Practice_Style_Change.csprojResolveAssemblyReference.cache
-c:\users\pada\documents\visual studio 2015\Projects\Practice_Style_Change\Practice_Style_Change\obj\Debug\Practice_Style_Change.Properties.Resources.resources
-c:\users\pada\documents\visual studio 2015\Projects\Practice_Style_Change\Practice_Style_Change\obj\Debug\Practice_Style_Change.csproj.GenerateResource.Cache
-c:\users\pada\documents\visual studio 2015\Projects\Practice_Style_Change\Practice_Style_Change\obj\Debug\Practice_Style_Change.exe
-c:\users\pada\documents\visual studio 2015\Projects\Practice_Style_Change\Practice_Style_Change\obj\Debug\Practice_Style_Change.pdb
-c:\users\pada\documents\visual studio 2015\Projects\Practice_Style_Change\Practice_Style_Change\obj\Debug\Practice_Style_Change.Form1.resources

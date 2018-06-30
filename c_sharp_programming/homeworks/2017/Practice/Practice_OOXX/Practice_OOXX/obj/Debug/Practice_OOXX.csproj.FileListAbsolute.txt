@@ -1,9 +1,0 @@
-c:\users\pada\documents\visual studio 2015\Projects\Practice_OOXX\Practice_OOXX\bin\Debug\Practice_OOXX.exe.config
-c:\users\pada\documents\visual studio 2015\Projects\Practice_OOXX\Practice_OOXX\bin\Debug\Practice_OOXX.exe
-c:\users\pada\documents\visual studio 2015\Projects\Practice_OOXX\Practice_OOXX\bin\Debug\Practice_OOXX.pdb
-c:\users\pada\documents\visual studio 2015\Projects\Practice_OOXX\Practice_OOXX\obj\Debug\Practice_OOXX.csprojResolveAssemblyReference.cache
-c:\users\pada\documents\visual studio 2015\Projects\Practice_OOXX\Practice_OOXX\obj\Debug\Practice_OOXX.Form1.resources
-c:\users\pada\documents\visual studio 2015\Projects\Practice_OOXX\Practice_OOXX\obj\Debug\Practice_OOXX.Properties.Resources.resources
-c:\users\pada\documents\visual studio 2015\Projects\Practice_OOXX\Practice_OOXX\obj\Debug\Practice_OOXX.csproj.GenerateResource.Cache
-c:\users\pada\documents\visual studio 2015\Projects\Practice_OOXX\Practice_OOXX\obj\Debug\Practice_OOXX.exe
-c:\users\pada\documents\visual studio 2015\Projects\Practice_OOXX\Practice_OOXX\obj\Debug\Practice_OOXX.pdb
