@@ -1,0 +1,154 @@
+MPLINK 5.09, LINKER
+Linker Map File - Created Mon Nov 19 21:07:18 2018
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000002
+                   .cinit    romdata   0x000002    program   0x000002
+                   .org_1       code   0x000008    program   0x000370
+.config_300001_BUILD/DEFAULT/PRODUCTION/NEWASMT    romdata   0x300001    program   0x000001
+.config_300002_BUILD/DEFAULT/PRODUCTION/NEWASMT    romdata   0x300002    program   0x000001
+.config_300003_BUILD/DEFAULT/PRODUCTION/NEWASMT    romdata   0x300003    program   0x000001
+.config_300005_BUILD/DEFAULT/PRODUCTION/NEWASMT    romdata   0x300005    program   0x000001
+.config_300006_BUILD/DEFAULT/PRODUCTION/NEWASMT    romdata   0x300006    program   0x000001
+.config_300008_BUILD/DEFAULT/PRODUCTION/NEWASMT    romdata   0x300008    program   0x000001
+.config_300009_BUILD/DEFAULT/PRODUCTION/NEWASMT    romdata   0x300009    program   0x000001
+.config_30000A_BUILD/DEFAULT/PRODUCTION/NEWASMT    romdata   0x30000a    program   0x000001
+.config_30000B_BUILD/DEFAULT/PRODUCTION/NEWASMT    romdata   0x30000b    program   0x000001
+.config_30000C_BUILD/DEFAULT/PRODUCTION/NEWASMT    romdata   0x30000c    program   0x000001
+.config_30000D_BUILD/DEFAULT/PRODUCTION/NEWASMT    romdata   0x30000d    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000003      
+                            0x000008    0x000377      
+                            0x300001    0x300003      
+                            0x300005    0x300006      
+                            0x300008    0x30000d      
+            895 out of 33048 program addresses used, program memory utilization is 2%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     Init   0x00000a    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 Transfer   0x000010    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _10LOOP1   0x0001b4    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _10LOOP2   0x0001b0    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _11LOOP1   0x0001d0    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _11LOOP2   0x0001cc    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _12LOOP1   0x0001ec    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _12LOOP2   0x0001e8    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _13LOOP1   0x000212    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _13LOOP2   0x00020e    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _14LOOP1   0x00022e    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _14LOOP2   0x00022a    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _15LOOP1   0x000250    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _15LOOP2   0x00024c    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _16LOOP1   0x00026c    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _16LOOP2   0x000268    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _17LOOP1   0x000288    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _17LOOP2   0x000284    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _18LOOP1   0x0002a4    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _18LOOP2   0x0002a0    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _19LOOP1   0x0002c2    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _19LOOP2   0x0002be    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _1LOOP1   0x0000aa    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _1LOOP2   0x0000a6    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _20LOOP1   0x0002de    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _20LOOP2   0x0002da    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _21LOOP1   0x000300    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _21LOOP2   0x0002fc    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _22LOOP1   0x00031c    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _22LOOP2   0x000318    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _23LOOP1   0x000338    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _23LOOP2   0x000334    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _24LOOP1   0x000354    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _24LOOP2   0x000350    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _2LOOP1   0x0000c6    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _2LOOP2   0x0000c2    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _3LOOP1   0x0000e8    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _3LOOP2   0x0000e4    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _4LOOP1   0x000104    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _4LOOP2   0x000100    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _5LOOP1   0x000120    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _5LOOP2   0x00011c    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _6LOOP1   0x00013c    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _6LOOP2   0x000138    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _7LOOP1   0x00015a    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _7LOOP2   0x000156    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _8LOOP1   0x000176    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _8LOOP2   0x000172    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _9LOOP1   0x000198    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _9LOOP2   0x000194    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                      isr   0x00036a    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 mainLoop   0x000010    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  q_blink   0x000098    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  r_blink   0x000202    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     Init   0x00000a    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 Transfer   0x000010    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 mainLoop   0x000010    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  q_blink   0x000098    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _1LOOP2   0x0000a6    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _1LOOP1   0x0000aa    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _2LOOP2   0x0000c2    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _2LOOP1   0x0000c6    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _3LOOP2   0x0000e4    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _3LOOP1   0x0000e8    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _4LOOP2   0x000100    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _4LOOP1   0x000104    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _5LOOP2   0x00011c    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _5LOOP1   0x000120    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _6LOOP2   0x000138    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _6LOOP1   0x00013c    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _7LOOP2   0x000156    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _7LOOP1   0x00015a    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _8LOOP2   0x000172    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _8LOOP1   0x000176    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _9LOOP2   0x000194    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  _9LOOP1   0x000198    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _10LOOP2   0x0001b0    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _10LOOP1   0x0001b4    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _11LOOP2   0x0001cc    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _11LOOP1   0x0001d0    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _12LOOP2   0x0001e8    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _12LOOP1   0x0001ec    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                  r_blink   0x000202    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _13LOOP2   0x00020e    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _13LOOP1   0x000212    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _14LOOP2   0x00022a    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _14LOOP1   0x00022e    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _15LOOP2   0x00024c    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _15LOOP1   0x000250    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _16LOOP2   0x000268    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _16LOOP1   0x00026c    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _17LOOP2   0x000284    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _17LOOP1   0x000288    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _18LOOP2   0x0002a0    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _18LOOP1   0x0002a4    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _19LOOP2   0x0002be    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _19LOOP1   0x0002c2    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _20LOOP2   0x0002da    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _20LOOP1   0x0002de    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _21LOOP2   0x0002fc    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _21LOOP1   0x000300    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _22LOOP2   0x000318    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _22LOOP1   0x00031c    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _23LOOP2   0x000334    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _23LOOP1   0x000338    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _24LOOP2   0x000350    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                 _24LOOP1   0x000354    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+                      isr   0x00036a    program     static C:\Users\Divik\MPLABXProjects\MIDTERM!.X\newAsmTemplate.asm
+
+

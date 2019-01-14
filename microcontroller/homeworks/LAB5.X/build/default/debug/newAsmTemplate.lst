@@ -1,0 +1,161 @@
+
+
+Microchip Technology PIC18 Macro Assembler V2.00 build -1524193055 
+                                                                                                           Mon Oct 29 19:37:22 2018
+
+
+     1                           	processor	18F4520
+     2                           	opt	pw 132
+     3                           	psect	mytext,local,reloc=2,class=CODE,delta=1
+     4  0000                     stk_offset	set	0
+     5  0000                     auto_size	set	0
+     6                           
+     7                           ; stack_auto defines a symbol /name/_offset which equates to the
+     8                           ; stack offset of the auto object in question
+     9  0000                     
+    10                           ; stack_param defines a symbol /name/_offset which equates to the
+    11                           ; stack offset of the parameter object in question
+    12  0000                     
+    13                           ; alloc_stack adjusts the SP to allocate space for auto objects
+    14                           ; it also links in to the btemp symbol so that can be used
+    15  0000                     
+    16                           ; restore_stack adjusts the SP to remove all auto and parameter
+    17                           ; objects from the stack prior to returning from a function
+    18  0000                     
+    19                           	psect	mytext
+    20  007EDA                     _mult:
+    21                           	opt stack 0
+    22  007EDA  6AF3               	clrf	prodl,c
+    23  007EDC  6AF4               	clrf	prodh,c
+    24  007EDE  6AF3               	clrf	prodl,c
+    25  007EE0  6A94               	clrf	3988,c
+    26  007EE2  C003 FF93          	movff	3,3987
+    27  007EE6  C001 FF92          	movff	1,3986
+    28                           
+    29 ;;mult
+    30  007EEA  CF94 FFE8          	movff	3988,wreg
+    31  007EEE  B093               	btfsc	3987,0,c
+    32  007EF0  26F4               	addwf	prodh,f,c
+    33  007EF2  CF92 FFE8          	movff	3986,wreg
+    34  007EF6  B093               	btfsc	3987,0,c
+    35  007EF8  26F3               	addwf	prodl,f,c
+    36  007EFA  4694               	rlncf	3988,f,c
+    37  007EFC  BEE8               	btfsc	wreg,7,c
+    38  007EFE  2A94               	incf	3988,f,c
+    39  007F00  46E8               	rlncf	wreg,f,c
+    40  007F02  90E8               	bcf	wreg,0,c
+    41  007F04  B8D8               	btfsc	status,4,c
+    42  007F06  2AF4               	incf	prodh,f,c
+    43  007F08  CFE8 FF92          	movff	wreg,3986
+    44  007F0C  CF94 FFE8          	movff	3988,wreg
+    45  007F10  B293               	btfsc	3987,1,c
+    46  007F12  26F4               	addwf	prodh,f,c
+    47  007F14  CF92 FFE8          	movff	3986,wreg
+    48  007F18  4694               	rlncf	3988,f,c
+    49  007F1A  B293               	btfsc	3987,1,c
+    50  007F1C  26F3               	addwf	prodl,f,c
+    51  007F1E  BEE8               	btfsc	wreg,7,c
+    52  007F20  2A94               	incf	3988,f,c
+    53  007F22  46E8               	rlncf	wreg,f,c
+    54  007F24  90E8               	bcf	wreg,0,c
+    55  007F26  B8D8               	btfsc	status,4,c
+    56  007F28  2AF4               	incf	prodh,f,c
+    57  007F2A  CFE8 FF92          	movff	wreg,3986
+    58  007F2E  CF94 FFE8          	movff	3988,wreg
+    59  007F32  B493               	btfsc	3987,2,c
+    60  007F34  26F4               	addwf	prodh,f,c
+    61  007F36  CF92 FFE8          	movff	3986,wreg
+    62  007F3A  4694               	rlncf	3988,f,c
+    63  007F3C  B493               	btfsc	3987,2,c
+    64  007F3E  26F3               	addwf	prodl,f,c
+    65  007F40  BEE8               	btfsc	wreg,7,c
+    66  007F42  2A94               	incf	3988,f,c
+    67  007F44  46E8               	rlncf	wreg,f,c
+    68  007F46  90E8               	bcf	wreg,0,c
+    69  007F48  B8D8               	btfsc	status,4,c
+    70  007F4A  2AF4               	incf	prodh,f,c
+    71  007F4C  CFE8 FF92          	movff	wreg,3986
+    72  007F50  CF94 FFE8          	movff	3988,wreg
+    73  007F54  B693               	btfsc	3987,3,c
+    74  007F56  26F4               	addwf	prodh,f,c
+    75  007F58  CF92 FFE8          	movff	3986,wreg
+    76  007F5C  4694               	rlncf	3988,f,c
+    77  007F5E  B693               	btfsc	3987,3,c
+    78  007F60  26F3               	addwf	prodl,f,c
+    79  007F62  BEE8               	btfsc	wreg,7,c
+    80  007F64  2A94               	incf	3988,f,c
+    81  007F66  46E8               	rlncf	wreg,f,c
+    82  007F68  90E8               	bcf	wreg,0,c
+    83  007F6A  B8D8               	btfsc	status,4,c
+    84  007F6C  2AF4               	incf	prodh,f,c
+    85  007F6E  CFE8 FF92          	movff	wreg,3986
+    86  007F72  CF94 FFE8          	movff	3988,wreg
+    87  007F76  B893               	btfsc	3987,4,c
+    88  007F78  26F4               	addwf	prodh,f,c
+    89  007F7A  CF92 FFE8          	movff	3986,wreg
+    90  007F7E  4694               	rlncf	3988,f,c
+    91  007F80  B893               	btfsc	3987,4,c
+    92  007F82  26F3               	addwf	prodl,f,c
+    93  007F84  BEE8               	btfsc	wreg,7,c
+    94  007F86  2A94               	incf	3988,f,c
+    95  007F88  46E8               	rlncf	wreg,f,c
+    96  007F8A  90E8               	bcf	wreg,0,c
+    97  007F8C  B8D8               	btfsc	status,4,c
+    98  007F8E  2AF4               	incf	prodh,f,c
+    99  007F90  CFE8 FF92          	movff	wreg,3986
+   100  007F94  CF94 FFE8          	movff	3988,wreg
+   101  007F98  BA93               	btfsc	3987,5,c
+   102  007F9A  26F4               	addwf	prodh,f,c
+   103  007F9C  CF92 FFE8          	movff	3986,wreg
+   104  007FA0  4694               	rlncf	3988,f,c
+   105  007FA2  BA93               	btfsc	3987,5,c
+   106  007FA4  26F3               	addwf	prodl,f,c
+   107  007FA6  BEE8               	btfsc	wreg,7,c
+   108  007FA8  2A94               	incf	3988,f,c
+   109  007FAA  46E8               	rlncf	wreg,f,c
+   110  007FAC  90E8               	bcf	wreg,0,c
+   111  007FAE  B8D8               	btfsc	status,4,c
+   112  007FB0  2AF4               	incf	prodh,f,c
+   113  007FB2  CFE8 FF92          	movff	wreg,3986
+   114  007FB6  CF94 FFE8          	movff	3988,wreg
+   115  007FBA  BC93               	btfsc	3987,6,c
+   116  007FBC  26F4               	addwf	prodh,f,c
+   117  007FBE  CF92 FFE8          	movff	3986,wreg
+   118  007FC2  4694               	rlncf	3988,f,c
+   119  007FC4  BC93               	btfsc	3987,6,c
+   120  007FC6  26F3               	addwf	prodl,f,c
+   121  007FC8  BEE8               	btfsc	wreg,7,c
+   122  007FCA  2A94               	incf	3988,f,c
+   123  007FCC  46E8               	rlncf	wreg,f,c
+   124  007FCE  90E8               	bcf	wreg,0,c
+   125  007FD0  B8D8               	btfsc	status,4,c
+   126  007FD2  2AF4               	incf	prodh,f,c
+   127  007FD4  CFE8 FF92          	movff	wreg,3986
+   128  007FD8  CF94 FFE8          	movff	3988,wreg
+   129  007FDC  BE93               	btfsc	3987,7,c
+   130  007FDE  26F4               	addwf	prodh,f,c
+   131  007FE0  CF92 FFE8          	movff	3986,wreg
+   132  007FE4  4694               	rlncf	3988,f,c
+   133  007FE6  BE93               	btfsc	3987,7,c
+   134  007FE8  26F3               	addwf	prodl,f,c
+   135  007FEA  BEE8               	btfsc	wreg,7,c
+   136  007FEC  2A94               	incf	3988,f,c
+   137  007FEE  46E8               	rlncf	wreg,f,c
+   138  007FF0  90E8               	bcf	wreg,0,c
+   139  007FF2  B8D8               	btfsc	status,4,c
+   140  007FF4  2AF4               	incf	prodh,f,c
+   141  007FF6  CFF4 F002          	movff	prodh,2
+   142  007FFA  CFF3 F001          	movff	prodl,1
+   143  007FFE  0012               	return	
+   144                           prodh	equ	0xFF4
+   145                           prodl	equ	0xFF3
+   146                           wreg	equ	0xFE8
+   147                           status	equ	0xFD8
+
+
+Microchip Technology PIC18 Macro Assembler V2.00 build -1524193055 
+Symbol Table                                                                                               Mon Oct 29 19:37:22 2018
+
+                        PROD 000FF3                          WREG 000FE8                         PRODH 000FF4  
+                       PRODL 000FF3                         TRISA 000F92                         TRISB 000F93  
+                       TRISC 000F94                         _mult 7EDA                        STATUS 000FD8  

@@ -1,0 +1,1762 @@
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE  1
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+Warning[205]: Found directive in column 1. (LIST)
+                      00001 LIST p=18f4520
+                      00002 #include<p18f4520.inc>
+                      00001         LIST
+                      00002 
+                      00003 ;==========================================================================
+                      00004 ; Build date : Jul 23 2018
+                      00005 ;  MPASM PIC18F4520 processor include
+                      00006 ; 
+                      00007 ;  (c) Copyright 1999-2018 Microchip Technology, All rights reserved
+                      00008 ;==========================================================================
+                      00009 
+                      01489         LIST
+                      00003 
+                      00004 ; CONFIG1H
+                      00005   CONFIG  OSC = INTIO67         ; Oscillator Selection bits (Internal oscillator block, port function on
+                             RA6 and RA7)
+                      00006   CONFIG  FCMEN = OFF           ; Fail-Safe Clock Monitor Enable bit (Fail-Safe Clock Monitor disabled)
+                      00007   CONFIG  IESO = OFF            ; Internal/External Oscillator Switchover bit (Oscillator Switchover mod
+                            e disabled)
+                      00008 
+                      00009 ; CONFIG2L
+                      00010   CONFIG  PWRT = OFF            ; Power-up Timer Enable bit (PWRT disabled)
+                      00011   CONFIG  BOREN = SBORDIS       ; Brown-out Reset Enable bits (Brown-out Reset enabled in hardware only 
+                            (SBOREN is disabled))
+                      00012   CONFIG  BORV = 3              ; Brown Out Reset Voltage bits (Minimum setting)
+                      00013 
+                      00014 ; CONFIG2H
+                      00015   CONFIG  WDT = OFF             ; Watchdog Timer Enable bit (WDT disabled (control is placed on the SWDT
+                            EN bit))
+                      00016   CONFIG  WDTPS = 32768         ; Watchdog Timer Postscale Select bits (1:32768)
+                      00017 
+                      00018 ; CONFIG3H
+                      00019   CONFIG  CCP2MX = PORTC        ; CCP2 MUX bit (CCP2 input/output is multiplexed with RC1)
+                      00020   CONFIG  PBADEN = OFF          ; PORTB A/D Enable bit (PORTB<4:0> pins are configured as digital I/O on
+                             Reset)
+                      00021   CONFIG  LPT1OSC = OFF         ; Low-Power Timer1 Oscillator Enable bit (Timer1 configured for higher p
+                            ower operation)
+                      00022   CONFIG  MCLRE = ON            ; MCLR Pin Enable bit (MCLR pin enabled; RE3 input pin disabled)
+                      00023 
+                      00024 ; CONFIG4L
+                      00025   CONFIG  STVREN = ON           ; Stack Full/Underflow Reset Enable bit (Stack full/underflow will cause
+                             Reset)
+                      00026   CONFIG  LVP = OFF             ; Single-Supply ICSP Enable bit (Single-Supply ICSP disabled)
+                      00027   CONFIG  XINST = OFF           ; Extended Instruction Set Enable bit (Instruction set extension and Ind
+                            exed Addressing mode disabled (Legacy mode))
+                      00028 
+                      00029 ; CONFIG5L
+                      00030   CONFIG  CP0 = OFF             ; Code Protection bit (Block 0 (000800-001FFFh) not code-protected)
+                      00031   CONFIG  CP1 = OFF             ; Code Protection bit (Block 1 (002000-003FFFh) not code-protected)
+                      00032   CONFIG  CP2 = OFF             ; Code Protection bit (Block 2 (004000-005FFFh) not code-protected)
+                      00033   CONFIG  CP3 = OFF             ; Code Protection bit (Block 3 (006000-007FFFh) not code-protected)
+                      00034 
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE  2
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00035 ; CONFIG5H
+                      00036   CONFIG  CPB = OFF             ; Boot Block Code Protection bit (Boot block (000000-0007FFh) not code-p
+                            rotected)
+                      00037   CONFIG  CPD = OFF             ; Data EEPROM Code Protection bit (Data EEPROM not code-protected)
+                      00038 
+                      00039 ; CONFIG6L
+                      00040   CONFIG  WRT0 = OFF            ; Write Protection bit (Block 0 (000800-001FFFh) not write-protected)
+                      00041   CONFIG  WRT1 = OFF            ; Write Protection bit (Block 1 (002000-003FFFh) not write-protected)
+                      00042   CONFIG  WRT2 = OFF            ; Write Protection bit (Block 2 (004000-005FFFh) not write-protected)
+                      00043   CONFIG  WRT3 = OFF            ; Write Protection bit (Block 3 (006000-007FFFh) not write-protected)
+                      00044 
+                      00045 ; CONFIG6H
+                      00046   CONFIG  WRTC = OFF            ; Configuration Register Write Protection bit (Configuration registers (
+                            300000-3000FFh) not write-protected)
+                      00047   CONFIG  WRTB = OFF            ; Boot Block Write Protection bit (Boot block (000000-0007FFh) not write
+                            -protected)
+                      00048   CONFIG  WRTD = OFF            ; Data EEPROM Write Protection bit (Data EEPROM not write-protected)
+                      00049 
+                      00050 ; CONFIG7L
+                      00051   CONFIG  EBTR0 = OFF           ; Table Read Protection bit (Block 0 (000800-001FFFh) not protected from
+                             table reads executed in other blocks)
+                      00052   CONFIG  EBTR1 = OFF           ; Table Read Protection bit (Block 1 (002000-003FFFh) not protected from
+                             table reads executed in other blocks)
+                      00053   CONFIG  EBTR2 = OFF           ; Table Read Protection bit (Block 2 (004000-005FFFh) not protected from
+                             table reads executed in other blocks)
+                      00054   CONFIG  EBTR3 = OFF           ; Table Read Protection bit (Block 3 (006000-007FFFh) not protected from
+                             table reads executed in other blocks)
+                      00055 
+                      00056 ; CONFIG7H
+                      00057   CONFIG  EBTRB = OFF           ; Boot Block Table Read Protection bit (Boot block (000000-0007FFh) not 
+                            protected from table reads executed in other blocks)
+                      00058 
+                      00059 
+                      00060 ; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                      00061 ; Setting file register address.
+  00000100            00062 COUNT EQU 0X100     
+  00000110            00063 DIVISORH EQU 0X110   
+  00000111            00064 DIVISORL EQU 0X111
+  00000120            00065 REMAINDERH EQU 0X120
+  00000121            00066 REMAINDERL EQU 0X121
+  00000130            00067 QUOTIENT EQU 0x0130 ; 
+                      00068 
+                      00069 #define Button1Flag 0X160, 0 ; You can use it or not.
+                      00070 #define Button2Flag 0X170, 0 ; You can use it or not.
+                      00071 ; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+                      00072 ; Teacher assistent will provide input data.
+  0000000F            00073 Input1H EQU 0x0F 
+  0000007C            00074 Input1L EQU 0x7C 
+  0000006F            00075 Input2  EQU 0x6F ; 0xF7C/0x6F = 0x23 ... 0x4F
+                      00076 ; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+                      00077   
+                      00078   
+Warning[205]: Found directive in column 1. (ORG)
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE  3
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00079 ORG 0X00  
+Warning[203]: Found opcode in column 1. (bra)
+000000 D???           00080 bra Init
+Warning[205]: Found directive in column 1. (ORG)
+                      00081 ORG 0X08 ; setting interrupt service routine 
+Warning[203]: Found opcode in column 1. (bra)
+000008 D???           00082 bra isr 
+                      00083         
+                      00084 rrcf4time macro origf, destf ; rotate your orginal register to destination for 4 times
+                      00085                              ; Clear your destination first.
+Warning[205]: Found directive in column 1. (endm)
+                      00086 endm
+                      00087 
+                      00088 ;Delay d'200' d'180' delay 1sec
+                      00089 ;calculate:
+                      00090 ;decfsz ==true cost 2 cycle(skip bra as nop)
+                      00091 ;decfsz ==false cost 1 cycle
+                      00092 ;bra cost 2 cycle
+                      00093 ;2+(2+7*199+9)*179+(2+7*199+8)=252721
+                      00094 ;2 is inst. after local LOOP2
+                      00095 ;(2+7*199+9)
+                      00096 ;2 to assign value
+                      00097 ;7*199 loop
+                      00098 ;9 is 200th loop
+                      00099 ;(2+7*199+8) is 180th loop
+                      00100  
+                      00101 ;it can also abbrivated as
+                      00102 ;2+(2+7*200+2)*180-1=252721
+                      00103 ;Note that 252721 is inst. cycle
+                      00104 ;our clock is 4M machine cycle=1M inst. cycle
+                      00105 
+                      00106 
+  00000014            00107 L1 EQU 0x14
+  00000015            00108 L2 EQU 0x15
+                      00109 Delay MACRO num1,num2
+                      00110     local LOOP1
+                      00111     local LOOP2
+                      00112     movlw num2
+                      00113     movwf L2
+                      00114     LOOP2:
+                      00115         movlw num1
+                      00116         movwf L1
+                      00117         LOOP1:
+                      00118             NOP
+                      00119             NOP
+                      00120             NOP
+                      00121             NOP
+                      00122             DECFSZ L1,1
+                      00123             GOTO LOOP1
+                      00124     DECFSZ L2,1
+                      00125     GOTO LOOP2
+Warning[205]: Found directive in column 1. (ENDM)
+                      00126 ENDM
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE  4
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+                      00127 
+                      00128         
+00000A 8CD3           00129 Init:   bsf OSCCON, IRCF2 ; Internal Oscillator Frequency is set 4Mhz
+00000C 8AD3           00130         bsf OSCCON, IRCF1 ; Don't remove 3 lines !!!
+00000E 98D3           00131         bcf OSCCON, IRCF0 
+                      00132 
+                      00133         
+                      00134 Divide MACRO dividedH,dividedL,divisor  ; divde 
+                      00135     clrf LATA ;use as counter
+                      00136     local countQuo
+                      00137     local countRemain
+                      00138     clrf WREG
+                      00139     movlw dividedL
+                      00140     countQuo:
+                      00141     subwf divisor
+                      00142     incf LATA
+                      00143     btfsc STATUS,4
+                      00144     decf dividedH
+                      00145     btfsc STATUS,4
+                      00146     goto countRemain
+                      00147     
+                      00148     goto countQuo
+                      00149     
+                      00150     countRemain:
+                      00151     decf LATA
+                      00152         
+                      00153     nop
+                      00154     nop
+                      00155     
+Warning[205]: Found directive in column 1. (endm)
+                      00156 endm
+                      00157     
+                      00158     ; You can write macro of divide, or not.
+                      00159         ; Input1 is Dividend, Input2 is Division. 
+                      00160         ; For example, 0xFFC / 0x11h =  0xFF0...0xC.
+                      00161         ; 0xFFC: Dividend (0xF: DividendH, 0xFC: DividendL). 
+                      00162         ; 0X11: Division.  0XFF0: Quotient. 0xc: Remainder
+                      00163         ; You must push result values to QUOTIENT(0X130), REMAINDERL(0x121) before you shift values.
+000010                00164 Transfer:  
+                      00165         ; rotate register       
+                      00166         ; transfer values to specified file registers.
+                      00167         ; you can design a better method you think.
+                      00168         
+                      00169         
+000010                00170 mainLoop: 
+000010 6A92           00171     clrf TRISA
+000012 6AE8           00172     clrf WREG
+000014 6A95           00173     clrf TRISD
+000016 6A83           00174     clrf PORTD
+000018 6A8C           00175     clrf LATD
+                      00176     
+00001A 88F2           00177     bsf INTCON, INT0IE
+00001C 92F2           00178     bcf INTCON, INT0IF
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE  5
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+00001E 8EF2           00179     bsf INTCON, GIE
+000020 9CF1           00180     bcf INTCON2,INTEDG0
+000022 86F2           00181     bsf INTCON, INT1IE
+000024 90F2           00182     bcf INTCON, INT1IF
+000026 9AF1           00183     bcf INTCON2,INTEDG1
+                      00184     
+                      00185     ;move value for quo
+000028 EE01 F033      00186     LFSR FSR0,133H
+00002C EE11 F034      00187     LFSR FSR1,134H
+                      00188     
+000030 0E84           00189     movlw 0x84
+000032 6A92           00190     clrf TRISA
+000034 2692           00191     addwf TRISA
+                      00192     
+000036 6AE8           00193     clrf WREG
+000038 B092           00194     btfsc TRISA,0
+00003A 80E8           00195     bsf WREG,0
+00003C B292           00196     btfsc TRISA,1
+00003E 82E8           00197     bsf WREG,1
+000040 B492           00198     btfsc TRISA,2
+000042 84E8           00199     bsf WREG,2
+000044 B692           00200     btfsc TRISA,3
+000046 86E8           00201     bsf WREG,3
+                      00202     
+000048 6EEF           00203     movwf INDF0
+                      00204     ;movff WREG,0x133
+00004A 6AE8           00205     clrf WREG
+00004C B892           00206     btfsc TRISA,4
+00004E 80E8           00207     bsf WREG,0
+000050 BA92           00208     btfsc TRISA,5
+000052 82E8           00209     bsf WREG,1
+000054 BC92           00210     btfsc TRISA,6
+000056 84E8           00211     bsf WREG,2
+000058 BE92           00212     btfsc TRISA,7
+00005A 86E8           00213     bsf WREG,3
+                      00214    
+00005C 6EE7           00215     movwf INDF1
+                      00216     ;movff WREG,0x134
+                      00217     
+                      00218     ;move value for remain
+00005E EE01 F023      00219     LFSR FSR0,123H
+000062 EE11 F024      00220     LFSR FSR1,124H
+                      00221 
+000066 0E84           00222     movlw 0x84
+000068 6A92           00223     clrf TRISA
+00006A 2692           00224     addwf TRISA
+                      00225     
+00006C 6AE8           00226     clrf WREG
+00006E B092           00227     btfsc TRISA,0
+000070 80E8           00228     bsf WREG,0
+000072 B292           00229     btfsc TRISA,1
+000074 82E8           00230     bsf WREG,1
+000076 B492           00231     btfsc TRISA,2
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE  6
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+000078 84E8           00232     bsf WREG,2
+00007A B692           00233     btfsc TRISA,3
+00007C 86E8           00234     bsf WREG,3
+                      00235     
+00007E 6EEF           00236     movwf INDF0
+                      00237     ;movff WREG,0x123
+                      00238     
+000080 6AE8           00239     clrf WREG
+000082 B892           00240     btfsc TRISA,4
+000084 80E8           00241     bsf WREG,0
+000086 BA92           00242     btfsc TRISA,5
+000088 82E8           00243     bsf WREG,1
+00008A BC92           00244     btfsc TRISA,6
+00008C 84E8           00245     bsf WREG,2
+00008E BE92           00246     btfsc TRISA,7
+000090 86E8           00247     bsf WREG,3
+                      00248    
+000092 6EE7           00249     movwf INDF1
+                      00250     ;movff WREG,0x124
+000094 688C           00251     setf LATD
+                      00252     
+000096 D???           00253     bra mainLoop
+                      00254     
+000098                00255 q_blink:        
+                      00256     ; Designing Quotient_blink for Subroutine
+                      00257     ; controll by INT0
+000098 EE01 F033      00258     LFSR FSR0,133H
+00009C EE11 F034      00259     LFSR FSR1,134H
+                      00260     
+0000A0 6A8C           00261     clrf LATD
+                      00262     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+0000A2 0EB4               M     movlw d'180'
+0000A4 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+0000A6                    M     LOOP2:
+0000A6 0EC8               M         movlw d'200'
+0000A8 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+0000AA                    M         LOOP1:
+0000AA 0000               M             NOP
+0000AC 0000               M             NOP
+0000AE 0000               M             NOP
+0000B0 0000               M             NOP
+0000B2 2E14               M             DECFSZ L1,1
+0000B4 EF?? F???          M             GOTO LOOP1
+0000B8 2E15               M     DECFSZ L2,1
+0000BA EF?? F???          M     GOTO LOOP2
+                      00263     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+0000BE 0EB4               M     movlw d'180'
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE  7
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0000C0 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+0000C2                    M     LOOP2:
+0000C2 0EC8               M         movlw d'200'
+0000C4 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+0000C6                    M         LOOP1:
+0000C6 0000               M             NOP
+0000C8 0000               M             NOP
+0000CA 0000               M             NOP
+0000CC 0000               M             NOP
+0000CE 2E14               M             DECFSZ L1,1
+0000D0 EF?? F???          M             GOTO LOOP1
+0000D4 2E15               M     DECFSZ L2,1
+0000D6 EF?? F???          M     GOTO LOOP2
+                      00264     
+0000DA 50EF           00265     movf INDF0,0
+0000DC 6A8C           00266     clrf LATD
+0000DE 268C           00267     addwf LATD
+                      00268     ;movff 0x133,LATD
+                      00269     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+0000E0 0EB4               M     movlw d'180'
+0000E2 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+0000E4                    M     LOOP2:
+0000E4 0EC8               M         movlw d'200'
+0000E6 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+0000E8                    M         LOOP1:
+0000E8 0000               M             NOP
+0000EA 0000               M             NOP
+0000EC 0000               M             NOP
+0000EE 0000               M             NOP
+0000F0 2E14               M             DECFSZ L1,1
+0000F2 EF?? F???          M             GOTO LOOP1
+0000F6 2E15               M     DECFSZ L2,1
+0000F8 EF?? F???          M     GOTO LOOP2
+                      00270     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+0000FC 0EB4               M     movlw d'180'
+0000FE 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+000100                    M     LOOP2:
+000100 0EC8               M         movlw d'200'
+000102 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+000104                    M         LOOP1:
+000104 0000               M             NOP
+000106 0000               M             NOP
+000108 0000               M             NOP
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE  8
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+00010A 0000               M             NOP
+00010C 2E14               M             DECFSZ L1,1
+00010E EF?? F???          M             GOTO LOOP1
+000112 2E15               M     DECFSZ L2,1
+000114 EF?? F???          M     GOTO LOOP2
+                      00271     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+000118 0EB4               M     movlw d'180'
+00011A 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+00011C                    M     LOOP2:
+00011C 0EC8               M         movlw d'200'
+00011E 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+000120                    M         LOOP1:
+000120 0000               M             NOP
+000122 0000               M             NOP
+000124 0000               M             NOP
+000126 0000               M             NOP
+000128 2E14               M             DECFSZ L1,1
+00012A EF?? F???          M             GOTO LOOP1
+00012E 2E15               M     DECFSZ L2,1
+000130 EF?? F???          M     GOTO LOOP2
+                      00272     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+000134 0EB4               M     movlw d'180'
+000136 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+000138                    M     LOOP2:
+000138 0EC8               M         movlw d'200'
+00013A 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+00013C                    M         LOOP1:
+00013C 0000               M             NOP
+00013E 0000               M             NOP
+000140 0000               M             NOP
+000142 0000               M             NOP
+000144 2E14               M             DECFSZ L1,1
+000146 EF?? F???          M             GOTO LOOP1
+00014A 2E15               M     DECFSZ L2,1
+00014C EF?? F???          M     GOTO LOOP2
+                      00273     
+000150 6A8C           00274     clrf LATD
+                      00275     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+000152 0EB4               M     movlw d'180'
+000154 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+000156                    M     LOOP2:
+000156 0EC8               M         movlw d'200'
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE  9
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+000158 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+00015A                    M         LOOP1:
+00015A 0000               M             NOP
+00015C 0000               M             NOP
+00015E 0000               M             NOP
+000160 0000               M             NOP
+000162 2E14               M             DECFSZ L1,1
+000164 EF?? F???          M             GOTO LOOP1
+000168 2E15               M     DECFSZ L2,1
+00016A EF?? F???          M     GOTO LOOP2
+                      00276     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+00016E 0EB4               M     movlw d'180'
+000170 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+000172                    M     LOOP2:
+000172 0EC8               M         movlw d'200'
+000174 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+000176                    M         LOOP1:
+000176 0000               M             NOP
+000178 0000               M             NOP
+00017A 0000               M             NOP
+00017C 0000               M             NOP
+00017E 2E14               M             DECFSZ L1,1
+000180 EF?? F???          M             GOTO LOOP1
+000184 2E15               M     DECFSZ L2,1
+000186 EF?? F???          M     GOTO LOOP2
+                      00277     
+00018A 50E7           00278     movf INDF1,0
+00018C 6A8C           00279     clrf LATD
+00018E 268C           00280     addwf LATD
+                      00281     ;movff 0x134,LATD
+                      00282     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+000190 0EB4               M     movlw d'180'
+000192 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+000194                    M     LOOP2:
+000194 0EC8               M         movlw d'200'
+000196 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+000198                    M         LOOP1:
+000198 0000               M             NOP
+00019A 0000               M             NOP
+00019C 0000               M             NOP
+00019E 0000               M             NOP
+0001A0 2E14               M             DECFSZ L1,1
+0001A2 EF?? F???          M             GOTO LOOP1
+0001A6 2E15               M     DECFSZ L2,1
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE 10
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0001A8 EF?? F???          M     GOTO LOOP2
+                      00283     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+0001AC 0EB4               M     movlw d'180'
+0001AE 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+0001B0                    M     LOOP2:
+0001B0 0EC8               M         movlw d'200'
+0001B2 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+0001B4                    M         LOOP1:
+0001B4 0000               M             NOP
+0001B6 0000               M             NOP
+0001B8 0000               M             NOP
+0001BA 0000               M             NOP
+0001BC 2E14               M             DECFSZ L1,1
+0001BE EF?? F???          M             GOTO LOOP1
+0001C2 2E15               M     DECFSZ L2,1
+0001C4 EF?? F???          M     GOTO LOOP2
+                      00284     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+0001C8 0EB4               M     movlw d'180'
+0001CA 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+0001CC                    M     LOOP2:
+0001CC 0EC8               M         movlw d'200'
+0001CE 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+0001D0                    M         LOOP1:
+0001D0 0000               M             NOP
+0001D2 0000               M             NOP
+0001D4 0000               M             NOP
+0001D6 0000               M             NOP
+0001D8 2E14               M             DECFSZ L1,1
+0001DA EF?? F???          M             GOTO LOOP1
+0001DE 2E15               M     DECFSZ L2,1
+0001E0 EF?? F???          M     GOTO LOOP2
+                      00285     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+0001E4 0EB4               M     movlw d'180'
+0001E6 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+0001E8                    M     LOOP2:
+0001E8 0EC8               M         movlw d'200'
+0001EA 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+0001EC                    M         LOOP1:
+0001EC 0000               M             NOP
+0001EE 0000               M             NOP
+0001F0 0000               M             NOP
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE 11
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0001F2 0000               M             NOP
+0001F4 2E14               M             DECFSZ L1,1
+0001F6 EF?? F???          M             GOTO LOOP1
+0001FA 2E15               M     DECFSZ L2,1
+0001FC EF?? F???          M     GOTO LOOP2
+                      00286     
+000200 0012           00287     return 
+000202                00288 r_blink:        
+                      00289     ; Designing Remainder_blink for Subroutine
+                      00290     ; controll by INT1
+000202 EE01 F023      00291     LFSR FSR0,123H
+000206 EE11 F024      00292     LFSR FSR1,124H
+                      00293     
+                      00294     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+00020A 0EB4               M     movlw d'180'
+00020C 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+00020E                    M     LOOP2:
+00020E 0EC8               M         movlw d'200'
+000210 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+000212                    M         LOOP1:
+000212 0000               M             NOP
+000214 0000               M             NOP
+000216 0000               M             NOP
+000218 0000               M             NOP
+00021A 2E14               M             DECFSZ L1,1
+00021C EF?? F???          M             GOTO LOOP1
+000220 2E15               M     DECFSZ L2,1
+000222 EF?? F???          M     GOTO LOOP2
+                      00295     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+000226 0EB4               M     movlw d'180'
+000228 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+00022A                    M     LOOP2:
+00022A 0EC8               M         movlw d'200'
+00022C 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+00022E                    M         LOOP1:
+00022E 0000               M             NOP
+000230 0000               M             NOP
+000232 0000               M             NOP
+000234 0000               M             NOP
+000236 2E14               M             DECFSZ L1,1
+000238 EF?? F???          M             GOTO LOOP1
+00023C 2E15               M     DECFSZ L2,1
+00023E EF?? F???          M     GOTO LOOP2
+                      00296     
+000242 50EF           00297     movf INDF0,0
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE 12
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+000244 6A8C           00298     clrf LATD
+000246 268C           00299     addwf LATD
+                      00300     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+000248 0EB4               M     movlw d'180'
+00024A 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+00024C                    M     LOOP2:
+00024C 0EC8               M         movlw d'200'
+00024E 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+000250                    M         LOOP1:
+000250 0000               M             NOP
+000252 0000               M             NOP
+000254 0000               M             NOP
+000256 0000               M             NOP
+000258 2E14               M             DECFSZ L1,1
+00025A EF?? F???          M             GOTO LOOP1
+00025E 2E15               M     DECFSZ L2,1
+000260 EF?? F???          M     GOTO LOOP2
+                      00301     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+000264 0EB4               M     movlw d'180'
+000266 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+000268                    M     LOOP2:
+000268 0EC8               M         movlw d'200'
+00026A 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+00026C                    M         LOOP1:
+00026C 0000               M             NOP
+00026E 0000               M             NOP
+000270 0000               M             NOP
+000272 0000               M             NOP
+000274 2E14               M             DECFSZ L1,1
+000276 EF?? F???          M             GOTO LOOP1
+00027A 2E15               M     DECFSZ L2,1
+00027C EF?? F???          M     GOTO LOOP2
+                      00302     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+000280 0EB4               M     movlw d'180'
+000282 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+000284                    M     LOOP2:
+000284 0EC8               M         movlw d'200'
+000286 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+000288                    M         LOOP1:
+000288 0000               M             NOP
+00028A 0000               M             NOP
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE 13
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+00028C 0000               M             NOP
+00028E 0000               M             NOP
+000290 2E14               M             DECFSZ L1,1
+000292 EF?? F???          M             GOTO LOOP1
+000296 2E15               M     DECFSZ L2,1
+000298 EF?? F???          M     GOTO LOOP2
+                      00303     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+00029C 0EB4               M     movlw d'180'
+00029E 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+0002A0                    M     LOOP2:
+0002A0 0EC8               M         movlw d'200'
+0002A2 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+0002A4                    M         LOOP1:
+0002A4 0000               M             NOP
+0002A6 0000               M             NOP
+0002A8 0000               M             NOP
+0002AA 0000               M             NOP
+0002AC 2E14               M             DECFSZ L1,1
+0002AE EF?? F???          M             GOTO LOOP1
+0002B2 2E15               M     DECFSZ L2,1
+0002B4 EF?? F???          M     GOTO LOOP2
+                      00304     
+0002B8 6A8C           00305     clrf LATD
+                      00306     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+0002BA 0EB4               M     movlw d'180'
+0002BC 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+0002BE                    M     LOOP2:
+0002BE 0EC8               M         movlw d'200'
+0002C0 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+0002C2                    M         LOOP1:
+0002C2 0000               M             NOP
+0002C4 0000               M             NOP
+0002C6 0000               M             NOP
+0002C8 0000               M             NOP
+0002CA 2E14               M             DECFSZ L1,1
+0002CC EF?? F???          M             GOTO LOOP1
+0002D0 2E15               M     DECFSZ L2,1
+0002D2 EF?? F???          M     GOTO LOOP2
+                      00307     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+0002D6 0EB4               M     movlw d'180'
+0002D8 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+0002DA                    M     LOOP2:
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE 14
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+0002DA 0EC8               M         movlw d'200'
+0002DC 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+0002DE                    M         LOOP1:
+0002DE 0000               M             NOP
+0002E0 0000               M             NOP
+0002E2 0000               M             NOP
+0002E4 0000               M             NOP
+0002E6 2E14               M             DECFSZ L1,1
+0002E8 EF?? F???          M             GOTO LOOP1
+0002EC 2E15               M     DECFSZ L2,1
+0002EE EF?? F???          M     GOTO LOOP2
+                      00308     
+0002F2 50E7           00309     movf INDF1,0
+0002F4 6A8C           00310     clrf LATD
+0002F6 268C           00311     addwf LATD
+                      00312     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+0002F8 0EB4               M     movlw d'180'
+0002FA 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+0002FC                    M     LOOP2:
+0002FC 0EC8               M         movlw d'200'
+0002FE 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+000300                    M         LOOP1:
+000300 0000               M             NOP
+000302 0000               M             NOP
+000304 0000               M             NOP
+000306 0000               M             NOP
+000308 2E14               M             DECFSZ L1,1
+00030A EF?? F???          M             GOTO LOOP1
+00030E 2E15               M     DECFSZ L2,1
+000310 EF?? F???          M     GOTO LOOP2
+                      00313     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+000314 0EB4               M     movlw d'180'
+000316 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+000318                    M     LOOP2:
+000318 0EC8               M         movlw d'200'
+00031A 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+00031C                    M         LOOP1:
+00031C 0000               M             NOP
+00031E 0000               M             NOP
+000320 0000               M             NOP
+000322 0000               M             NOP
+000324 2E14               M             DECFSZ L1,1
+000326 EF?? F???          M             GOTO LOOP1
+00032A 2E15               M     DECFSZ L2,1
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE 15
+
+
+LOC  OBJECT CODE     LINE SOURCE TEXT
+  VALUE
+
+00032C EF?? F???          M     GOTO LOOP2
+                      00314     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+000330 0EB4               M     movlw d'180'
+000332 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+000334                    M     LOOP2:
+000334 0EC8               M         movlw d'200'
+000336 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+000338                    M         LOOP1:
+000338 0000               M             NOP
+00033A 0000               M             NOP
+00033C 0000               M             NOP
+00033E 0000               M             NOP
+000340 2E14               M             DECFSZ L1,1
+000342 EF?? F???          M             GOTO LOOP1
+000346 2E15               M     DECFSZ L2,1
+000348 EF?? F???          M     GOTO LOOP2
+                      00315     Delay d'200',d'180'
+  0000                    M     local LOOP1
+  0000                    M     local LOOP2
+00034C 0EB4               M     movlw d'180'
+00034E 6E15               M     movwf L2
+Warning[207]: Found label after column 1. (LOOP2)
+000350                    M     LOOP2:
+000350 0EC8               M         movlw d'200'
+000352 6E14               M         movwf L1
+Warning[207]: Found label after column 1. (LOOP1)
+000354                    M         LOOP1:
+000354 0000               M             NOP
+000356 0000               M             NOP
+000358 0000               M             NOP
+00035A 0000               M             NOP
+00035C 2E14               M             DECFSZ L1,1
+00035E EF?? F???          M             GOTO LOOP1
+000362 2E15               M     DECFSZ L2,1
+000364 EF?? F???          M     GOTO LOOP2
+                      00316     
+000368 0012           00317     return      
+00036A                00318 isr:
+00036A B2F2           00319     btfsc INTCON,INT0IF
+00036C D???           00320     rcall q_blink
+00036E 92F2           00321     bcf INTCON,INT0IF
+000370 B0F2           00322     btfsc INTCON,INT1IF
+000372 D???           00323     rcall r_blink
+000374 90F2           00324     bcf INTCON,INT1IF
+                      00325 
+000376 0010           00326     retfie
+Warning[205]: Found directive in column 1. (END)
+                      00327 END
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE 16
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+A                                 00000000
+ABDEN                             00000000
+ABDOVF                            00000007
+ACCESS                            00000000
+ACKDT                             00000005
+ACKEN                             00000004
+ACKSTAT                           00000006
+ACQT0                             00000003
+ACQT1                             00000004
+ACQT2                             00000005
+ADCON0                            00000FC2
+ADCON1                            00000FC1
+ADCON2                            00000FC0
+ADCS0                             00000000
+ADCS1                             00000001
+ADCS2                             00000002
+ADDEN                             00000003
+ADEN                              00000003
+ADFM                              00000007
+ADIE                              00000006
+ADIF                              00000006
+ADIP                              00000006
+ADMSK1                            00000001
+ADMSK2                            00000002
+ADMSK3                            00000003
+ADMSK4                            00000004
+ADMSK5                            00000005
+ADON                              00000000
+ADRES                             00000FC3
+ADRESH                            00000FC4
+ADRESL                            00000FC3
+AN0                               00000000
+AN1                               00000001
+AN10                              00000001
+AN11                              00000004
+AN12                              00000000
+AN2                               00000002
+AN3                               00000003
+AN4                               00000005
+AN5                               00000000
+AN6                               00000001
+AN7                               00000002
+AN8                               00000002
+AN9                               00000003
+BANKED                            00000001
+BAUDCON                           00000FB8
+BAUDCTL                           00000FB8
+BCLIE                             00000003
+BCLIF                             00000003
+BCLIP                             00000003
+BF                                00000000
+BGST                              00000005
+BOR                               00000000
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE 17
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+BRG16                             00000003
+BRGH                              00000002
+BSR                               00000FE0
+Button1Flag                       0X160, 0
+Button2Flag                       0X170, 0
+C                                 00000000
+C1INV                             00000004
+C1OUT_CMCON                       00000006
+C1OUT_PORTA                       00000004
+C2INV                             00000005
+C2OUT_CMCON                       00000007
+C2OUT_PORTA                       00000005
+CCP1                              00000002
+CCP1CON                           00000FBD
+CCP1IE                            00000002
+CCP1IF                            00000002
+CCP1IP                            00000002
+CCP1M0                            00000000
+CCP1M1                            00000001
+CCP1M2                            00000002
+CCP1M3                            00000003
+CCP1X                             00000005
+CCP1Y                             00000004
+CCP2CON                           00000FBA
+CCP2IE                            00000000
+CCP2IF                            00000000
+CCP2IP                            00000000
+CCP2M0                            00000000
+CCP2M1                            00000001
+CCP2M2                            00000002
+CCP2M3                            00000003
+CCP2X                             00000005
+CCP2Y                             00000004
+CCP2_PORTB                        00000003
+CCP2_PORTC                        00000001
+CCPR1                             00000FBE
+CCPR1H                            00000FBF
+CCPR1L                            00000FBE
+CCPR2                             00000FBB
+CCPR2H                            00000FBC
+CCPR2L                            00000FBB
+CFGS                              00000006
+CHS0                              00000002
+CHS1                              00000003
+CHS2                              00000004
+CHS3                              00000005
+CIS                               00000003
+CK                                00000006
+CKE                               00000006
+CKP                               00000004
+CLKI                              00000007
+CLKO                              00000006
+CM0                               00000000
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE 18
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+CM1                               00000001
+CM2                               00000002
+CMCON                             00000FB4
+CMIE                              00000006
+CMIF                              00000006
+CMIP                              00000006
+COUNT                             00000100
+CREN                              00000004
+CS                                00000002
+CSRC                              00000007
+CVR0                              00000000
+CVR1                              00000001
+CVR2                              00000002
+CVR3                              00000003
+CVRCON                            00000FB5
+CVREF                             00000002
+CVREN                             00000007
+CVROE                             00000006
+CVRR                              00000005
+CVRSS                             00000004
+D                                 00000005
+DC                                00000001
+DC1B0                             00000004
+DC1B1                             00000005
+DC2B0                             00000004
+DC2B1                             00000005
+DDRA                              TRISA
+DDRB                              TRISB
+DDRC                              TRISC
+DDRD                              TRISD
+DDRE                              TRISE
+DIVISORH                          00000110
+DIVISORL                          00000111
+DONE                              00000001
+D_A                               00000005
+D_NOT_A                           00000005
+Delay                             
+Divide                            
+ECCP1AS                           00000FB6
+ECCP1DEL                          00000FB7
+ECCPAS                            00000FB6
+ECCPAS0                           00000004
+ECCPAS1                           00000005
+ECCPAS2                           00000006
+ECCPASE                           00000007
+EEADR                             00000FA9
+EECON1                            00000FA6
+EECON2                            00000FA7
+EEDATA                            00000FA8
+EEIE                              00000004
+EEIF                              00000004
+EEIP                              00000004
+EEPGD                             00000007
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE 19
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+FAST                              00000001
+FERR                              00000002
+FLT0                              00000000
+FLTS                              00000002
+FREE                              00000004
+FSR0                              00000000
+FSR0H                             00000FEA
+FSR0L                             00000FE9
+FSR1                              00000001
+FSR1H                             00000FE2
+FSR1L                             00000FE1
+FSR2                              00000002
+FSR2H                             00000FDA
+FSR2L                             00000FD9
+GCEN                              00000007
+GIE                               00000007
+GIEH                              00000007
+GIEL                              00000006
+GIE_GIEH                          00000007
+GO                                00000001
+GO_DONE                           00000001
+GO_NOT_DONE                       00000001
+HLVDCON                           00000FD2
+HLVDEN                            00000004
+HLVDIE                            00000002
+HLVDIF                            00000002
+HLVDIN                            00000005
+HLVDIP                            00000002
+HLVDL0                            00000000
+HLVDL1                            00000001
+HLVDL2                            00000002
+HLVDL3                            00000003
+IBF                               00000007
+IBOV                              00000005
+IDLEN                             00000007
+INDF0                             00000FEF
+INDF1                             00000FE7
+INDF2                             00000FDF
+INT0                              00000000
+INT0E                             00000004
+INT0F                             00000001
+INT0IE                            00000004
+INT0IF                            00000001
+INT1                              00000001
+INT1E                             00000003
+INT1F                             00000000
+INT1IE                            00000003
+INT1IF                            00000000
+INT1IP                            00000006
+INT1P                             00000006
+INT2                              00000002
+INT2E                             00000004
+INT2F                             00000001
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE 20
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+INT2IE                            00000004
+INT2IF                            00000001
+INT2IP                            00000007
+INT2P                             00000007
+INTCON                            00000FF2
+INTCON2                           00000FF1
+INTCON3                           00000FF0
+INTEDG0                           00000006
+INTEDG1                           00000005
+INTEDG2                           00000004
+INTSRC                            00000007
+IOFS                              00000002
+IPEN                              00000007
+IPR1                              00000F9F
+IPR2                              00000FA2
+IRCF0                             00000004
+IRCF1                             00000005
+IRCF2                             00000006
+IRVST                             00000005
+IVRST                             00000005
+Init                              0000000A
+Input1H                           0000000F
+Input1L                           0000007C
+Input2                            0000006F
+KBI0                              00000004
+KBI1                              00000005
+KBI2                              00000006
+KBI3                              00000007
+L1                                00000014
+L2                                00000015
+LATA                              00000F89
+LATA0                             00000000
+LATA1                             00000001
+LATA2                             00000002
+LATA3                             00000003
+LATA4                             00000004
+LATA5                             00000005
+LATA6                             00000006
+LATA7                             00000007
+LATB                              00000F8A
+LATB0                             00000000
+LATB1                             00000001
+LATB2                             00000002
+LATB3                             00000003
+LATB4                             00000004
+LATB5                             00000005
+LATB6                             00000006
+LATB7                             00000007
+LATC                              00000F8B
+LATC0                             00000000
+LATC1                             00000001
+LATC2                             00000002
+LATC3                             00000003
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE 21
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+LATC4                             00000004
+LATC5                             00000005
+LATC6                             00000006
+LATC7                             00000007
+LATD                              00000F8C
+LATD0                             00000000
+LATD1                             00000001
+LATD2                             00000002
+LATD3                             00000003
+LATD4                             00000004
+LATD5                             00000005
+LATD6                             00000006
+LATD7                             00000007
+LATE                              00000F8D
+LATE0                             00000000
+LATE1                             00000001
+LATE2                             00000002
+LVDCON                            00000FD2
+LVDEN                             00000004
+LVDIE                             00000002
+LVDIF                             00000002
+LVDIN                             00000005
+LVDIP                             00000002
+LVDL0                             00000000
+LVDL1                             00000001
+LVDL2                             00000002
+LVDL3                             00000003
+LVV0                              00000000
+LVV1                              00000001
+LVV2                              00000002
+LVV3                              00000003
+MCLR                              00000003
+N                                 00000004
+NOT_A                             00000005
+NOT_ADDRESS                       00000005
+NOT_BOR                           00000000
+NOT_CS                            00000002
+NOT_DONE                          00000001
+NOT_MCLR                          00000003
+NOT_PD                            00000002
+NOT_POR                           00000001
+NOT_RBPU                          00000007
+NOT_RD                            00000000
+NOT_RI                            00000004
+NOT_SS                            00000005
+NOT_T1SYNC                        00000002
+NOT_T3SYNC                        00000002
+NOT_TO                            00000003
+NOT_W                             00000002
+NOT_WR                            00000001
+NOT_WRITE                         00000002
+OBF                               00000006
+OERR                              00000001
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE 22
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+OSC1                              00000007
+OSC2                              00000006
+OSCCON                            00000FD3
+OSCFIE                            00000007
+OSCFIF                            00000007
+OSCFIP                            00000007
+OSCTUNE                           00000F9B
+OSTS                              00000003
+OV                                00000003
+P                                 00000004
+P1A                               00000002
+P1B                               00000005
+P1C                               00000006
+P1D                               00000007
+P1M0                              00000006
+P1M1                              00000007
+PC                                00000FF9
+PCFG0                             00000000
+PCFG1                             00000001
+PCFG2                             00000002
+PCFG3                             00000003
+PCL                               00000FF9
+PCLATH                            00000FFA
+PCLATU                            00000FFB
+PD                                00000002
+PDC0                              00000000
+PDC1                              00000001
+PDC2                              00000002
+PDC3                              00000003
+PDC4                              00000004
+PDC5                              00000005
+PDC6                              00000006
+PEIE                              00000006
+PEIE_GIEL                         00000006
+PEN                               00000002
+PGC                               00000006
+PGD                               00000007
+PGM                               00000005
+PIE1                              00000F9D
+PIE2                              00000FA0
+PIR1                              00000F9E
+PIR2                              00000FA1
+PLLEN                             00000006
+PLUSW0                            00000FEB
+PLUSW1                            00000FE3
+PLUSW2                            00000FDB
+POR                               00000001
+PORTA                             00000F80
+PORTB                             00000F81
+PORTC                             00000F82
+PORTD                             00000F83
+PORTE                             00000F84
+POSTDEC0                          00000FED
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE 23
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+POSTDEC1                          00000FE5
+POSTDEC2                          00000FDD
+POSTINC0                          00000FEE
+POSTINC1                          00000FE6
+POSTINC2                          00000FDE
+PR2                               00000FCB
+PREINC0                           00000FEC
+PREINC1                           00000FE4
+PREINC2                           00000FDC
+PROD                              00000FF3
+PRODH                             00000FF4
+PRODL                             00000FF3
+PRSEN                             00000007
+PSA                               00000003
+PSP0                              00000000
+PSP1                              00000001
+PSP2                              00000002
+PSP3                              00000003
+PSP4                              00000004
+PSP5                              00000005
+PSP6                              00000006
+PSP7                              00000007
+PSPIE                             00000007
+PSPIF                             00000007
+PSPIP                             00000007
+PSPMODE                           00000004
+PSSAC0                            00000002
+PSSAC1                            00000003
+PSSBD0                            00000000
+PSSBD1                            00000001
+PWM1CON                           00000FB7
+QUOTIENT                          00000130
+R                                 00000002
+RA0                               00000000
+RA1                               00000001
+RA2                               00000002
+RA3                               00000003
+RA4                               00000004
+RA5                               00000005
+RA6                               00000006
+RA7                               00000007
+RB0                               00000000
+RB1                               00000001
+RB2                               00000002
+RB3                               00000003
+RB4                               00000004
+RB5                               00000005
+RB6                               00000006
+RB7                               00000007
+RBIE                              00000003
+RBIF                              00000000
+RBIP                              00000000
+RBPU                              00000007
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE 24
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+RC0                               00000000
+RC1                               00000001
+RC2                               00000002
+RC3                               00000003
+RC4                               00000004
+RC5                               00000005
+RC6                               00000006
+RC7                               00000007
+RCEN                              00000003
+RCIDL                             00000006
+RCIE                              00000005
+RCIF                              00000005
+RCIP                              00000005
+RCMT                              00000006
+RCON                              00000FD0
+RCREG                             00000FAE
+RCSTA                             00000FAB
+RD                                00000000
+RD0                               00000000
+RD1                               00000001
+RD16                              00000007
+RD2                               00000002
+RD3                               00000003
+RD4                               00000004
+RD5                               00000005
+RD6                               00000006
+RD7                               00000007
+RE0                               00000000
+RE1                               00000001
+RE2                               00000002
+RE3                               00000003
+REMAINDERH                        00000120
+REMAINDERL                        00000121
+RI                                00000004
+RSEN                              00000001
+RX                                00000007
+RX9                               00000006
+RX9D                              00000000
+RXDTP                             00000005
+R_NOT_W                           00000002
+R_W                               00000002
+S                                 00000003
+SBOREN                            00000006
+SCK                               00000003
+SCKP                              00000004
+SCL                               00000003
+SCS0                              00000000
+SCS1                              00000001
+SDA                               00000004
+SDI                               00000004
+SDO                               00000005
+SEN                               00000000
+SENDB                             00000003
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE 25
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+SMP                               00000007
+SP0                               00000000
+SP1                               00000001
+SP2                               00000002
+SP3                               00000003
+SP4                               00000004
+SPBRG                             00000FAF
+SPBRGH                            00000FB0
+SPEN                              00000007
+SREN                              00000005
+SS                                00000005
+SSPADD                            00000FC8
+SSPBUF                            00000FC9
+SSPCON1                           00000FC6
+SSPCON2                           00000FC5
+SSPEN                             00000005
+SSPIE                             00000003
+SSPIF                             00000003
+SSPIP                             00000003
+SSPM0                             00000000
+SSPM1                             00000001
+SSPM2                             00000002
+SSPM3                             00000003
+SSPOV                             00000006
+SSPSTAT                           00000FC7
+STATUS                            00000FD8
+STKFUL                            00000007
+STKOVF                            00000007
+STKPTR                            00000FFC
+STKUNF                            00000006
+SWDTE                             00000000
+SWDTEN                            00000000
+SYNC                              00000004
+T016BIT                           00000006
+T08BIT                            00000006
+T0CKI                             00000004
+T0CON                             00000FD5
+T0CS                              00000005
+T0IE                              00000005
+T0IF                              00000002
+T0PS0                             00000000
+T0PS1                             00000001
+T0PS2                             00000002
+T0PS3                             00000003
+T0SE                              00000004
+T13CKI                            00000000
+T1CKI                             00000000
+T1CKPS0                           00000004
+T1CKPS1                           00000005
+T1CON                             00000FCD
+T1OSCEN                           00000003
+T1OSI                             00000001
+T1OSO                             00000000
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE 26
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+T1RUN                             00000006
+T1SYNC                            00000002
+T2CKPS0                           00000000
+T2CKPS1                           00000001
+T2CON                             00000FCA
+T2OUTPS0                          00000003
+T2OUTPS1                          00000004
+T2OUTPS2                          00000005
+T2OUTPS3                          00000006
+T3CCP1                            00000003
+T3CCP2                            00000006
+T3CKPS0                           00000004
+T3CKPS1                           00000005
+T3CON                             00000FB1
+T3SYNC                            00000002
+TABLAT                            00000FF5
+TBLPTR                            00000FF6
+TBLPTRH                           00000FF7
+TBLPTRL                           00000FF6
+TBLPTRU                           00000FF8
+TMR0                              00000FD6
+TMR0H                             00000FD7
+TMR0IE                            00000005
+TMR0IF                            00000002
+TMR0IP                            00000002
+TMR0L                             00000FD6
+TMR0ON                            00000007
+TMR1                              00000FCE
+TMR1CS                            00000001
+TMR1H                             00000FCF
+TMR1IE                            00000000
+TMR1IF                            00000000
+TMR1IP                            00000000
+TMR1L                             00000FCE
+TMR1ON                            00000000
+TMR2                              00000FCC
+TMR2IE                            00000001
+TMR2IF                            00000001
+TMR2IP                            00000001
+TMR2ON                            00000002
+TMR3                              00000FB2
+TMR3CS                            00000001
+TMR3H                             00000FB3
+TMR3IE                            00000001
+TMR3IF                            00000001
+TMR3IP                            00000001
+TMR3L                             00000FB2
+TMR3ON                            00000000
+TO                                00000003
+TOS                               00000FFD
+TOSH                              00000FFE
+TOSL                              00000FFD
+TOSU                              00000FFF
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE 27
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+TOUTPS0                           00000003
+TOUTPS1                           00000004
+TOUTPS2                           00000005
+TOUTPS3                           00000006
+TRISA                             00000F92
+TRISA0                            00000000
+TRISA1                            00000001
+TRISA2                            00000002
+TRISA3                            00000003
+TRISA4                            00000004
+TRISA5                            00000005
+TRISA6                            00000006
+TRISA7                            00000007
+TRISB                             00000F93
+TRISB0                            00000000
+TRISB1                            00000001
+TRISB2                            00000002
+TRISB3                            00000003
+TRISB4                            00000004
+TRISB5                            00000005
+TRISB6                            00000006
+TRISB7                            00000007
+TRISC                             00000F94
+TRISC0                            00000000
+TRISC1                            00000001
+TRISC2                            00000002
+TRISC3                            00000003
+TRISC4                            00000004
+TRISC5                            00000005
+TRISC6                            00000006
+TRISC7                            00000007
+TRISD                             00000F95
+TRISD0                            00000000
+TRISD1                            00000001
+TRISD2                            00000002
+TRISD3                            00000003
+TRISD4                            00000004
+TRISD5                            00000005
+TRISD6                            00000006
+TRISD7                            00000007
+TRISE                             00000F96
+TRISE0                            00000000
+TRISE1                            00000001
+TRISE2                            00000002
+TRMT                              00000001
+TUN0                              00000000
+TUN1                              00000001
+TUN2                              00000002
+TUN3                              00000003
+TUN4                              00000004
+TX                                00000006
+TX9                               00000006
+TX9D                              00000000
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE 28
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+TXCKP                             00000004
+TXEN                              00000005
+TXIE                              00000004
+TXIF                              00000004
+TXIP                              00000004
+TXREG                             00000FAD
+TXSTA                             00000FAC
+Transfer                          00000010
+UA                                00000001
+VCFG0                             00000004
+VCFG1                             00000005
+VDIRMAG                           00000007
+VPP                               00000003
+VREFN                             00000002
+VREFP                             00000003
+W                                 00000000
+WCOL                              00000007
+WDTCON                            00000FD1
+WR                                00000001
+WREG                              00000FE8
+WREN                              00000002
+WRERR                             00000003
+WUE                               00000001
+Z                                 00000002
+_BOREN_NOSLP_2L                   000000FD
+_BOREN_OFF_2L                     000000F9
+_BOREN_ON_2L                      000000FB
+_BOREN_SBORDIS_2L                 000000FF
+_BORV_0_2L                        000000E7
+_BORV_1_2L                        000000EF
+_BORV_2_2L                        000000F7
+_BORV_3_2L                        000000FF
+_CCP2MX_PORTBE_3H                 000000FE
+_CCP2MX_PORTC_3H                  000000FF
+_CONFIG1H                         00300001
+_CONFIG2H                         00300003
+_CONFIG2L                         00300002
+_CONFIG3H                         00300005
+_CONFIG4L                         00300006
+_CONFIG5H                         00300009
+_CONFIG5L                         00300008
+_CONFIG6H                         0030000B
+_CONFIG6L                         0030000A
+_CONFIG7H                         0030000D
+_CONFIG7L                         0030000C
+_CP0_OFF_5L                       000000FF
+_CP0_ON_5L                        000000FE
+_CP1_OFF_5L                       000000FF
+_CP1_ON_5L                        000000FD
+_CP2_OFF_5L                       000000FF
+_CP2_ON_5L                        000000FB
+_CP3_OFF_5L                       000000FF
+_CP3_ON_5L                        000000F7
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE 29
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+_CPB_OFF_5H                       000000FF
+_CPB_ON_5H                        000000BF
+_CPD_OFF_5H                       000000FF
+_CPD_ON_5H                        0000007F
+_DEBUG_OFF_4L                     000000FF
+_DEBUG_ON_4L                      0000007F
+_DEVID1                           003FFFFE
+_DEVID2                           003FFFFF
+_EBTR0_OFF_7L                     000000FF
+_EBTR0_ON_7L                      000000FE
+_EBTR1_OFF_7L                     000000FF
+_EBTR1_ON_7L                      000000FD
+_EBTR2_OFF_7L                     000000FF
+_EBTR2_ON_7L                      000000FB
+_EBTR3_OFF_7L                     000000FF
+_EBTR3_ON_7L                      000000F7
+_EBTRB_OFF_7H                     000000FF
+_EBTRB_ON_7H                      000000BF
+_FCMEN_OFF_1H                     000000BF
+_FCMEN_ON_1H                      000000FF
+_IDLOC0                           00200000
+_IDLOC1                           00200001
+_IDLOC2                           00200002
+_IDLOC3                           00200003
+_IDLOC4                           00200004
+_IDLOC5                           00200005
+_IDLOC6                           00200006
+_IDLOC7                           00200007
+_IESO_OFF_1H                      0000007F
+_IESO_ON_1H                       000000FF
+_LPT1OSC_OFF_3H                   000000FB
+_LPT1OSC_ON_3H                    000000FF
+_LVP_OFF_4L                       000000FB
+_LVP_ON_4L                        000000FF
+_MCLRE_OFF_3H                     0000007F
+_MCLRE_ON_3H                      000000FF
+_OSC_ECIO6_1H                     000000F5
+_OSC_EC_1H                        000000F4
+_OSC_HSPLL_1H                     000000F6
+_OSC_HS_1H                        000000F2
+_OSC_INTIO67_1H                   000000F8
+_OSC_INTIO7_1H                    000000F9
+_OSC_LP_1H                        000000F0
+_OSC_RCIO6_1H                     000000F7
+_OSC_RC_1H                        000000F3
+_OSC_XT_1H                        000000F1
+_PBADEN_OFF_3H                    000000FD
+_PBADEN_ON_3H                     000000FF
+_PWRT_OFF_2L                      000000FF
+_PWRT_ON_2L                       000000FE
+_STVREN_OFF_4L                    000000FE
+_STVREN_ON_4L                     000000FF
+_WDTPS_1024_2H                    000000F5
+MPASM 5.81                NEWASMTEMPLATE.ASM   11-19-2018  21:07:20         PAGE 30
+
+
+SYMBOL TABLE
+  LABEL                             VALUE 
+
+_WDTPS_128_2H                     000000EF
+_WDTPS_16384_2H                   000000FD
+_WDTPS_16_2H                      000000E9
+_WDTPS_1_2H                       000000E1
+_WDTPS_2048_2H                    000000F7
+_WDTPS_256_2H                     000000F1
+_WDTPS_2_2H                       000000E3
+_WDTPS_32768_2H                   000000FF
+_WDTPS_32_2H                      000000EB
+_WDTPS_4096_2H                    000000F9
+_WDTPS_4_2H                       000000E5
+_WDTPS_512_2H                     000000F3
+_WDTPS_64_2H                      000000ED
+_WDTPS_8192_2H                    000000FB
+_WDTPS_8_2H                       000000E7
+_WDT_OFF_2H                       000000FE
+_WDT_ON_2H                        000000FF
+_WRT0_OFF_6L                      000000FF
+_WRT0_ON_6L                       000000FE
+_WRT1_OFF_6L                      000000FF
+_WRT1_ON_6L                       000000FD
+_WRT2_OFF_6L                      000000FF
+_WRT2_ON_6L                       000000FB
+_WRT3_OFF_6L                      000000FF
+_WRT3_ON_6L                       000000F7
+_WRTB_OFF_6H                      000000FF
+_WRTB_ON_6H                       000000BF
+_WRTC_OFF_6H                      000000FF
+_WRTC_ON_6H                       000000DF
+_WRTD_OFF_6H                      000000FF
+_WRTD_ON_6H                       0000007F
+_XINST_OFF_4L                     000000BF
+_XINST_ON_4L                      000000FF
+__18F4520                         00000001
+__DEBUG                           
+isr                               0000036A
+mainLoop                          00000010
+q_blink                           00000098
+r_blink                           00000202
+rrcf4time                         
+
+Errors   :     0
+Warnings :    57 reported,     0 suppressed
+Messages :     0 reported,     0 suppressed
+
+

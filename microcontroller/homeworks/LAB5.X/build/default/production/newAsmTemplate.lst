@@ -1,0 +1,39 @@
+
+
+Microchip Technology PIC18 Macro Assembler V2.00 build -1524193055 
+                                                                                                           Mon Oct 29 16:33:24 2018
+
+
+     1                           	processor	18F4520
+     2                           	opt	pw 132
+     3                           	psect	mytext,local,reloc=2,class=CODE,delta=1
+     4  0000                     stk_offset	set	0
+     5  0000                     auto_size	set	0
+     6                           
+     7                           ; stack_auto defines a symbol /name/_offset which equates to the
+     8                           ; stack offset of the auto object in question
+     9  0000                     
+    10                           ; stack_param defines a symbol /name/_offset which equates to the
+    11                           ; stack offset of the parameter object in question
+    12  0000                     
+    13                           ; alloc_stack adjusts the SP to allocate space for auto objects
+    14                           ; it also links in to the btemp symbol so that can be used
+    15  0000                     
+    16                           ; restore_stack adjusts the SP to remove all auto and parameter
+    17                           ; objects from the stack prior to returning from a function
+    18  0000                     
+    19                           	psect	mytext
+    20  007FCE                     _add:
+    21                           	opt stack 0
+    22  007FCE  C001 FF8C          	movff	1,3980
+    23  007FD2  C003 FF8B          	movff	3,3979
+    24  007FD6  508C               	movf	3980,w,c
+    25  007FD8  2503               	addwf	3,w,b
+    26  007FDA  0012               	return	
+
+
+Microchip Technology PIC18 Macro Assembler V2.00 build -1524193055 
+Symbol Table                                                                                               Mon Oct 29 16:33:24 2018
+
+                        LATC 000F8B                          LATD 000F8C                          WREG 000FE8  
+                        _add 7FCE  

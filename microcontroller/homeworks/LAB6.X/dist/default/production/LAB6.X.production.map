@@ -1,0 +1,56 @@
+MPLINK 5.09, LINKER
+Linker Map File - Created Mon Nov 05 18:57:21 2018
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x00007e
+                   .cinit    romdata   0x00007e    program   0x000002
+.config_300001_BUILD/DEFAULT/PRODUCTION/NEWASMT    romdata   0x300001    program   0x000001
+.config_300003_BUILD/DEFAULT/PRODUCTION/NEWASMT    romdata   0x300003    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x00007f      
+                            0x300001    0x300001      
+                            0x300003    0x300003      
+            130 out of 33048 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     INIT   0x000000    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+                     ROT1   0x00001e    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+                       S1   0x00000c    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+                  _1LOOP1   0x00002a    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+                  _1LOOP2   0x000026    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+                  _2LOOP1   0x000040    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+                  _2LOOP2   0x00003c    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+                  _3LOOP1   0x000056    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+                  _3LOOP2   0x000052    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+                  _4LOOP1   0x00006c    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+                  _4LOOP2   0x000068    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     INIT   0x000000    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+                       S1   0x00000c    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+                     ROT1   0x00001e    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+                  _1LOOP2   0x000026    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+                  _1LOOP1   0x00002a    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+                  _2LOOP2   0x00003c    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+                  _2LOOP1   0x000040    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+                  _3LOOP2   0x000052    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+                  _3LOOP1   0x000056    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+                  _4LOOP2   0x000068    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+                  _4LOOP1   0x00006c    program     static C:\Users\Divik\MPLABXProjects\LAB6.X\newAsmTemplate.asm
+
+

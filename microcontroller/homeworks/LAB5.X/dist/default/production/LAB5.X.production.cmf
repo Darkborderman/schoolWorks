@@ -1,0 +1,267 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build/default/production/newAsmTemplate.o
+mytext CODE 0 7FCE 7FCE E 1
+$dist/default/production\LAB5.X.production.o
+cinit CODE 0 7FC8 7FC8 6 1
+text0 CODE 0 7FDC 7FDC 24 1
+cstackCOMRAM COMRAM 1 1 1 4 1
+$C:\Users\Divik\AppData\Local\Temp\s14s.o
+idloc IDLOC 0 200000 200000 8 1
+init CODE 0 0 0 4 1
+config CONFIG 0 300000 300000 E 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 80-5FF 1
+SFR F80-FFF 1
+BANK0 80-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+CONST 4-7FC7 1
+STACK 80-5FF 1
+SMALLCONST 600-7FC7 1
+CODE 4-7FC7 1
+BIGRAM 5-5FF 1
+COMRAM 5-7F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 600-7FC7 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build/default/production/newAsmTemplate.o
+7FCE mytext CODE >5:C:\Users\Divik\MPLABXProjects\LAB5.X\2
+7FCE mytext CODE >6:C:\Users\Divik\MPLABXProjects\LAB5.X\2
+7FD2 mytext CODE >7:C:\Users\Divik\MPLABXProjects\LAB5.X\2
+7FD6 mytext CODE >8:C:\Users\Divik\MPLABXProjects\LAB5.X\2
+7FD8 mytext CODE >9:C:\Users\Divik\MPLABXProjects\LAB5.X\2
+7FDA mytext CODE >10:C:\Users\Divik\MPLABXProjects\LAB5.X\2
+$dist/default/production\LAB5.X.production.o
+7FDC text0 CODE >3:C:\Users\Divik\MPLABXProjects\LAB5.X\newmain.c
+7FDC text0 CODE >4:C:\Users\Divik\MPLABXProjects\LAB5.X\newmain.c
+7FF8 text0 CODE >5:C:\Users\Divik\MPLABXProjects\LAB5.X\newmain.c
+7FFC text0 CODE >7:C:\Users\Divik\MPLABXProjects\LAB5.X\newmain.c
+7FC8 cinit CODE >391:C:\Users\Divik\AppData\Local\Temp\s14s.
+7FC8 cinit CODE >393:C:\Users\Divik\AppData\Local\Temp\s14s.
+7FC8 cinit CODE >396:C:\Users\Divik\AppData\Local\Temp\s14s.
+7FC8 cinit CODE >402:C:\Users\Divik\AppData\Local\Temp\s14s.
+7FC8 cinit CODE >404:C:\Users\Divik\AppData\Local\Temp\s14s.
+7FCA cinit CODE >405:C:\Users\Divik\AppData\Local\Temp\s14s.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst build/default/production/newAsmTemplate.o
+__Hspace_0 30000E 0 ABS 0 - build/default/production/newAsmTemplate.o
+__Hspace_1 5 0 ABS 0 - build/default/production/newAsmTemplate.o
+__Hspace_2 0 0 ABS 0 - build/default/production/newAsmTemplate.o
+__Hibigdata 0 0 CODE 0 ibigdata build/default/production/newAsmTemplate.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\Divik\AppData\Local\Temp\s14s.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data build/default/production/newAsmTemplate.o
+__Lsmallconst 0 0 SMALLCONST 0 smallconst build/default/production/newAsmTemplate.o
+___sp 0 0 STACK 2 stack C:\Users\Divik\AppData\Local\Temp\s14s.o
+_main 7FDC 0 CODE 0 text0 dist/default/production\LAB5.X.production.o
+start 0 0 CODE 0 init C:\Users\Divik\AppData\Local\Temp\s14s.o
+__size_of_main 0 0 ABS 0 - dist/default/production\LAB5.X.production.o
+__Hpowerup 0 0 CODE 0 powerup build/default/production/newAsmTemplate.o
+__accesstop 80 0 ABS 0 - C:\Users\Divik\AppData\Local\Temp\s14s.o
+intlevel0 0 0 CODE 0 text C:\Users\Divik\AppData\Local\Temp\s14s.o
+intlevel1 0 0 CODE 0 text C:\Users\Divik\AppData\Local\Temp\s14s.o
+intlevel2 0 0 CODE 0 text C:\Users\Divik\AppData\Local\Temp\s14s.o
+intlevel3 0 0 CODE 0 text C:\Users\Divik\AppData\Local\Temp\s14s.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM build/default/production/newAsmTemplate.o
+__Hifardata 0 0 CODE 0 ifardata build/default/production/newAsmTemplate.o
+__Hclrtext 0 0 ABS 0 clrtext build/default/production/newAsmTemplate.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\Divik\AppData\Local\Temp\s14s.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\Divik\AppData\Local\Temp\s14s.o
+__Hintcode_body 0 0 ABS 0 intcode_body build/default/production/newAsmTemplate.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs build/default/production/newAsmTemplate.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst build/default/production/newAsmTemplate.o
+__Hintcodelo 0 0 CODE 0 intcodelo build/default/production/newAsmTemplate.o
+__Lintcodelo 0 0 CODE 0 intcodelo build/default/production/newAsmTemplate.o
+start_initialization 7FC8 0 CODE 0 cinit dist/default/production\LAB5.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM build/default/production/newAsmTemplate.o
+___rparam_used 1 0 ABS 0 - dist/default/production\LAB5.X.production.o
+__Hbank0 0 0 ABS 0 bank0 build/default/production/newAsmTemplate.o
+__Hbank1 0 0 ABS 0 bank1 build/default/production/newAsmTemplate.o
+__Hbank2 0 0 ABS 0 bank2 build/default/production/newAsmTemplate.o
+__Hbank3 0 0 ABS 0 bank3 build/default/production/newAsmTemplate.o
+__Hbank4 0 0 ABS 0 bank4 build/default/production/newAsmTemplate.o
+__Hbank5 0 0 ABS 0 bank5 build/default/production/newAsmTemplate.o
+__Hcinit 0 0 ABS 0 cinit build/default/production/newAsmTemplate.o
+__Hconst 0 0 CONST 0 const build/default/production/newAsmTemplate.o
+__Hidata 0 0 CODE 0 idata build/default/production/newAsmTemplate.o
+__Hidloc 200008 0 IDLOC 0 idloc build/default/production/newAsmTemplate.o
+__Hnvbit 0 0 COMRAM 1 nvbit build/default/production/newAsmTemplate.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\LAB5.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata build/default/production/newAsmTemplate.o
+__Hstack 0 0 STACK 2 stack build/default/production/newAsmTemplate.o
+__Htext0 0 0 ABS 0 text0 build/default/production/newAsmTemplate.o
+__Hbigbss 0 0 BIGRAM 1 bigbss build/default/production/newAsmTemplate.o
+__Hbigram 0 0 ABS 0 bigram build/default/production/newAsmTemplate.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\Divik\AppData\Local\Temp\s14s.o
+__Hcomram 0 0 ABS 0 comram build/default/production/newAsmTemplate.o
+__Hconfig 30000E 0 CONFIG 0 config build/default/production/newAsmTemplate.o
+__Lbank0 0 0 ABS 0 bank0 build/default/production/newAsmTemplate.o
+__Lbank1 0 0 ABS 0 bank1 build/default/production/newAsmTemplate.o
+__Lbank2 0 0 ABS 0 bank2 build/default/production/newAsmTemplate.o
+__Lbank3 0 0 ABS 0 bank3 build/default/production/newAsmTemplate.o
+__Lbank4 0 0 ABS 0 bank4 build/default/production/newAsmTemplate.o
+__Lbank5 0 0 ABS 0 bank5 build/default/production/newAsmTemplate.o
+__Lcinit 0 0 ABS 0 cinit build/default/production/newAsmTemplate.o
+__Lconst 0 0 CONST 0 const build/default/production/newAsmTemplate.o
+__Lidata 0 0 CODE 0 idata build/default/production/newAsmTemplate.o
+__Lidloc 200000 0 IDLOC 0 idloc build/default/production/newAsmTemplate.o
+__Lnvbit 0 0 COMRAM 1 nvbit build/default/production/newAsmTemplate.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\LAB5.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata build/default/production/newAsmTemplate.o
+__Lstack 0 0 STACK 2 stack build/default/production/newAsmTemplate.o
+__Ltext0 0 0 ABS 0 text0 build/default/production/newAsmTemplate.o
+__Hfarbss 0 0 FARRAM 0 farbss build/default/production/newAsmTemplate.o
+__Lintcode_body 0 0 ABS 0 intcode_body build/default/production/newAsmTemplate.o
+__Habs1 0 0 ABS 0 abs1 build/default/production/newAsmTemplate.o
+__Hdata 0 0 ABS 0 data build/default/production/newAsmTemplate.o
+__Hinit 4 0 CODE 0 init build/default/production/newAsmTemplate.o
+__Hrbit 0 0 COMRAM 1 rbit build/default/production/newAsmTemplate.o
+__Hrbss 0 0 COMRAM 1 rbss build/default/production/newAsmTemplate.o
+__Htemp 0 0 COMRAM 1 temp build/default/production/newAsmTemplate.o
+__Htext 0 0 ABS 0 text build/default/production/newAsmTemplate.o
+__Labs1 0 0 ABS 0 abs1 build/default/production/newAsmTemplate.o
+__Ldata 0 0 ABS 0 data build/default/production/newAsmTemplate.o
+__Linit 0 0 CODE 0 init build/default/production/newAsmTemplate.o
+__Lrbit 0 0 COMRAM 1 rbit build/default/production/newAsmTemplate.o
+__Lrbss 0 0 COMRAM 1 rbss build/default/production/newAsmTemplate.o
+__Ltemp 0 0 COMRAM 1 temp build/default/production/newAsmTemplate.o
+__Ltext 0 0 ABS 0 text build/default/production/newAsmTemplate.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM build/default/production/newAsmTemplate.o
+__Hintret 0 0 ABS 0 intret build/default/production/newAsmTemplate.o
+__Hirdata 0 0 CODE 0 irdata build/default/production/newAsmTemplate.o
+__S0 30000E 0 ABS 0 - build/default/production/newAsmTemplate.o
+__S1 5 0 ABS 0 - build/default/production/newAsmTemplate.o
+__S2 0 0 ABS 0 - build/default/production/newAsmTemplate.o
+_add 7FCE 0 CODE 0 mytext build/default/production/newAsmTemplate.o
+__Lbigdata 0 0 BIGRAM 1 bigdata build/default/production/newAsmTemplate.o
+__Hnvrram 0 0 COMRAM 1 nvrram build/default/production/newAsmTemplate.o
+__Lintentry 0 0 ABS 0 intentry build/default/production/newAsmTemplate.o
+__Hramtop 600 0 RAM 0 ramtop build/default/production/newAsmTemplate.o
+__Hrparam 0 0 COMRAM 1 rparam build/default/production/newAsmTemplate.o
+__activetblptr 0 0 ABS 0 - dist/default/production\LAB5.X.production.o
+__Hstruct 0 0 COMRAM 1 struct build/default/production/newAsmTemplate.o
+__Lbigbss 0 0 BIGRAM 1 bigbss build/default/production/newAsmTemplate.o
+__Lbigram 0 0 ABS 0 bigram build/default/production/newAsmTemplate.o
+__Lcomram 0 0 ABS 0 comram build/default/production/newAsmTemplate.o
+__Lconfig 300000 0 CONFIG 0 config build/default/production/newAsmTemplate.o
+__Lfarbss 0 0 FARRAM 0 farbss build/default/production/newAsmTemplate.o
+__Lfardata 0 0 FARRAM 0 fardata build/default/production/newAsmTemplate.o
+stackhi 5FF 0 ABS 0 - C:\Users\Divik\AppData\Local\Temp\s14s.o
+stacklo 80 0 ABS 0 - C:\Users\Divik\AppData\Local\Temp\s14s.o
+__Lintcode 0 0 CODE 0 intcode build/default/production/newAsmTemplate.o
+__Lintret 0 0 ABS 0 intret build/default/production/newAsmTemplate.o
+__Lirdata 0 0 CODE 0 irdata build/default/production/newAsmTemplate.o
+__Lspace_0 0 0 ABS 0 - build/default/production/newAsmTemplate.o
+__Lspace_1 0 0 ABS 0 - build/default/production/newAsmTemplate.o
+__Lspace_2 0 0 ABS 0 - build/default/production/newAsmTemplate.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM build/default/production/newAsmTemplate.o
+end_of_initialization 7FC8 0 CODE 0 cinit dist/default/production\LAB5.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram build/default/production/newAsmTemplate.o
+__Hintentry 0 0 ABS 0 intentry build/default/production/newAsmTemplate.o
+__Hreset_vec 0 0 CODE 0 reset_vec build/default/production/newAsmTemplate.o
+__Lramtop 600 0 RAM 0 ramtop build/default/production/newAsmTemplate.o
+__Lrparam 0 0 COMRAM 1 rparam build/default/production/newAsmTemplate.o
+__pcinit 7FC8 0 CODE 0 cinit dist/default/production\LAB5.X.production.o
+__ptext0 7FDC 0 CODE 0 text0 dist/default/production\LAB5.X.production.o
+__Lstruct 0 0 COMRAM 1 struct build/default/production/newAsmTemplate.o
+__ramtop 600 0 RAM 0 ramtop C:\Users\Divik\AppData\Local\Temp\s14s.o
+__Lpowerup 0 0 CODE 0 powerup build/default/production/newAsmTemplate.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data build/default/production/newAsmTemplate.o
+__Lreset_vec 0 0 CODE 0 reset_vec build/default/production/newAsmTemplate.o
+___param_bank 0 0 ABS 0 - dist/default/production\LAB5.X.production.o
+__Hbigdata 0 0 BIGRAM 1 bigdata build/default/production/newAsmTemplate.o
+__end_of__initialization 7FC8 0 CODE 0 cinit dist/default/production\LAB5.X.production.o
+main@result 1 0 COMRAM 1 cstackCOMRAM dist/default/production\LAB5.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata build/default/production/newAsmTemplate.o
+__Lclrtext 0 0 ABS 0 clrtext build/default/production/newAsmTemplate.o
+__pcstackCOMRAM 1 0 COMRAM 1 cstackCOMRAM dist/default/production\LAB5.X.production.o
+__end_of_main 8000 0 CODE 0 text0 dist/default/production\LAB5.X.production.o
+__HRAM 0 0 ABS 0 - build/default/production/newAsmTemplate.o
+__Hbss 0 0 RAM 1 bss build/default/production/newAsmTemplate.o
+__Hram 0 0 ABS 0 ram build/default/production/newAsmTemplate.o
+__Hsfr 0 0 ABS 0 sfr build/default/production/newAsmTemplate.o
+__LRAM 1 0 ABS 0 - build/default/production/newAsmTemplate.o
+__Lbss 0 0 RAM 1 bss build/default/production/newAsmTemplate.o
+__Lram 0 0 ABS 0 ram build/default/production/newAsmTemplate.o
+__Lsfr 0 0 ABS 0 sfr build/default/production/newAsmTemplate.o
+_add$0 1 0 COMRAM 1 cstackCOMRAM dist/default/production\LAB5.X.production.o
+_add$1 3 0 COMRAM 1 cstackCOMRAM dist/default/production\LAB5.X.production.o
+__initialization 7FC8 0 CODE 0 cinit dist/default/production\LAB5.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata build/default/production/newAsmTemplate.o
+__Hsmallconst 0 0 SMALLCONST 0 smallconst build/default/production/newAsmTemplate.o
+__Lifardata 0 0 CODE 0 ifardata build/default/production/newAsmTemplate.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs build/default/production/newAsmTemplate.o
+__Hintcode 0 0 CODE 0 intcode build/default/production/newAsmTemplate.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+mytext 0 7FCE 7FCE E 1
+cinit 0 7FC8 7FC8 6 1
+idloc 0 200000 200000 8 1
+text0 0 7FDC 7FDC 24 1
+cstackCOMRAM 1 1 1 4 1
+reset_vec 0 0 0 4 1
+config 0 300000 300000 E 1

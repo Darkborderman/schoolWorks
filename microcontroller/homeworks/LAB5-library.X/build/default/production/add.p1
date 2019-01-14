@@ -1,0 +1,23 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"1 add.c
+[; ;add.c: 1: int add(int a,int b)
+[v _add `(i ~T0 @X0 1 ef2`i`i ]
+"2
+[; ;add.c: 2: {
+{
+[e :U _add ]
+"1
+[; ;add.c: 1: int add(int a,int b)
+[v _a `i ~T0 @X0 1 r1 ]
+[v _b `i ~T0 @X0 1 r2 ]
+"2
+[; ;add.c: 2: {
+[f ]
+"3
+[; ;add.c: 3:     return a+b;
+[e ) + _a _b ]
+[e $UE 1  ]
+"4
+[; ;add.c: 4: }
+[e :UE 1 ]
+}
