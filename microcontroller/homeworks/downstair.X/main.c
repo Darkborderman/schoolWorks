@@ -12,6 +12,7 @@
 #pragma config WDT = OFF
 #pragma config LVP = OFF
 
+void sorting(void);
 void sendData(void);
 void createPlate(int index);
 void destroyPlate(int index);
@@ -51,6 +52,12 @@ void main(void)
     INTERRUPT_Initialize();
     
     createPlate(0);
+    
+    createPlate(1);
+    
+    createPlate(2);
+    
+    createPlate(3);
     while(1) {
         LATDbits.LATD3=0;
         //display life
@@ -105,10 +112,13 @@ void __interrupt(high_priority) Hi_ISR(void)
         }
         onplate=0;
         //check plate destroy or create
-        for(int i=0;i<=plateNumber-1;i++){
+        //use a temporary integer to store state of current plateNumber
+        //since the number will be changed during the loop
+        int temp=plateNumber;
+        for(int i=0;i<=temp-1;i++){
             if(plate[i].y<=0){
                 destroyPlate(i);
-                createPlate(i);
+                createPlate(plateNumber);
             }
         }
         //player dead
@@ -122,34 +132,46 @@ void __interrupt(high_priority) Hi_ISR(void)
     }
     if(INTCONbits.INT0IF==1){
         INTCONbits.INT0IF=0;
+        sorting();
         sendData();
     }
     return ;
 }
 void sendData(){
     //send data format
-    //B:123 123
-    //231 132
-    //12 3
+    //0xff 0x00 0x01 ...
+    //0xfe 0x32 0xcc
+    //0xfd 
+    //no space between each data
     //end
+    //sending type
     {
-        char data[10];
         ClearBuffer();
-        snprintf(data,10,"0:%d %d\r",player.x,player.y);
-        UART_Write_Text(data);
+        UART_Write((char)0xff);
+        UART_Write((char)0x00);
+        for(int i=0;i<=plateNumber-1;i++) UART_Write((char)0x01);
         ClearBuffer();
     }
-    for(int i=0;i<=plateNumber-1;i++){
-        char data[10];
+    //sending x position
+    {
         ClearBuffer();
-        snprintf(data,10,"%d:%d %d\r",i+1,plate[i].x,plate[i].y);
-        UART_Write_Text(data);
+        UART_Write((char)0xfe);
+        UART_Write((char)player.x);
+        for(int i=0;i<=plateNumber-1;i++) UART_Write((char)plate[i].x);
+        ClearBuffer();
+    }
+    //sending y position
+    {
+        ClearBuffer();
+        UART_Write((char)0xfd);
+        UART_Write((char)player.y);
+        for(int i=0;i<=plateNumber-1;i++) UART_Write((char)plate[i].y);
         ClearBuffer();
     }
 }
 
 void createPlate(int index){
-    int x=rand()%(120-plateWidth);
+    int x=rand()%(100-plateWidth);
     int y=(rand()%40)+61;
     plate[index].x=x;
     plate[index].y=y;
@@ -158,4 +180,15 @@ void createPlate(int index){
 void destroyPlate(int index){
     plate[index]=plate[plateNumber-1];
     plateNumber-=1;
+}
+void sorting(void){
+    for(int i=0;i<=plateNumber-1;i++){
+        for(int j=i;j<=plateNumber-1;j++){
+            if(plate[i].x>plate[j].x){
+                Square temp=plate[i];
+                plate[i]=plate[j];
+                plate[j]=temp;
+            }
+        }
+    }
 }

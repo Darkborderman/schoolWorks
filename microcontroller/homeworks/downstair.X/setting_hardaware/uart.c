@@ -23,8 +23,8 @@ void UART_Initialize() {
     BAUDCONbits.BRG16 = 1 ;          //Read Baud rate table
     TXSTAbits.BRGH = 1;
     long rate=1666;
-    SPBRG = rate%256;
-    SPBRGH= rate/256;
+    SPBRG = 15;
+    SPBRGH= 0;
     
    //   Serial enable
     RCSTAbits.SPEN = 1;              //open serial port
