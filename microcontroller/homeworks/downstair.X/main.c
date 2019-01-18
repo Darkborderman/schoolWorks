@@ -171,7 +171,7 @@ void sendData(){
 }
 
 void createPlate(int index){
-    int x=rand()%(100-plateWidth);
+    int x=rand()%(60-plateWidth);
     int y=(rand()%40)+61;
     plate[index].x=x;
     plate[index].y=y;
