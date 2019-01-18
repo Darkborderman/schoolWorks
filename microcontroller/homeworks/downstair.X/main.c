@@ -4,10 +4,10 @@
 #include "string.h"
 #include <math.h>
 
-#define playerWidth 10
-#define playerHeight 10
-#define plateWidth 30
-#define plateHeight 10
+#define playerWidth 5
+#define playerHeight 5
+#define plateWidth 15
+#define plateHeight 5
 
 #pragma config WDT = OFF
 #pragma config LVP = OFF
@@ -127,12 +127,12 @@ void __interrupt(high_priority) Hi_ISR(void)
             player.y=20;
             life--;
         }
-        //sendData();
+        sorting();
         LATDbits.LATD3=0;        
     }
     if(INTCONbits.INT0IF==1){
         INTCONbits.INT0IF=0;
-        sorting();
+        
         sendData();
     }
     return ;
