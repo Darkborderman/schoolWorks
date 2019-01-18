@@ -1,0 +1,154 @@
+MPLINK 5.09, LINKER
+Linker Map File - Created Fri Jan 18 10:26:13 2019
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000004
+                   .cinit    romdata   0x000004    program   0x000002
+                   .org_1       code   0x000008    program   0x000000
+                   .org_2       code   0x000018    program   0x0002c4
+.config_300001_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300001    program   0x000001
+.config_300002_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300002    program   0x000001
+.config_300003_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300003    program   0x000001
+.config_300005_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300005    program   0x000001
+.config_300006_BUILD/DEFAULT/PRODUCTION/MAIN.O    romdata   0x300006    program   0x000001
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000005      
+                            0x000018    0x0002db      
+                            0x300001    0x300003      
+                            0x300005    0x300006      
+            719 out of 33048 program addresses used, program memory utilization is 2%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                  Initial   0x00004e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                     UART   0x00001e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+            UART_datatype   0x000044    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                UART_read   0x000032    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                UART_wait   0x00002c    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _10lloop1   0x00013e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _11lloop2   0x000156    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _12lloop2   0x00015e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _13lloop2   0x000166    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _14lloop2   0x00016e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _15lloop2   0x000176    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _16lloop1   0x00017e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _18lloop1   0x0001a4    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _19lelse1   0x0001da    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _19lelse2   0x0001ca    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+               _19lendif1   0x0001e4    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+               _19lendif2   0x0001d8    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _19lloop3   0x0001aa    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                 _1lloop1   0x00002e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _20lloop1   0x0001c4    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _21lloop1   0x0001de    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _22lloop2   0x0001f6    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _23lloop2   0x0001fe    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _24lloop2   0x000206    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _25lloop2   0x00020e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _26lloop2   0x000216    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _27lloop1   0x00021e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _29lloop1   0x000244    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                 _2lloop1   0x0000bc    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _30lelse1   0x00027a    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _30lelse2   0x00026a    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+               _30lendif1   0x000284    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+               _30lendif2   0x000278    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _30lloop3   0x00024a    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _31lloop1   0x000264    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _32lloop1   0x00027e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _33lloop2   0x000296    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _34lloop2   0x00029e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _35lloop2   0x0002a6    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _36lloop2   0x0002ae    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _37lloop2   0x0002b6    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _38lloop1   0x0002c4    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _39lloop1   0x0002d2    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                 _3lloop1   0x0000c4    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                 _4lloop1   0x0000d4    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                 _5lloop1   0x0000dc    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                 _7lloop1   0x000104    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                 _8lelse1   0x00013a    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                 _8lelse2   0x00012a    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _8lendif1   0x000144    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _8lendif2   0x000138    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                 _8lloop3   0x00010a    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                 _9lloop1   0x000124    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                      all   0x0000b8    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+               clear_loop   0x0000a6    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                   lo_isr   0x000008    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                    loop1   0x0000e2    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                   lo_isr   0x000008    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                     UART   0x00001e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                UART_wait   0x00002c    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                 _1lloop1   0x00002e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                UART_read   0x000032    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+            UART_datatype   0x000044    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                  Initial   0x00004e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+               clear_loop   0x0000a6    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                      all   0x0000b8    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                 _2lloop1   0x0000bc    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                 _3lloop1   0x0000c4    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                 _4lloop1   0x0000d4    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                 _5lloop1   0x0000dc    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                    loop1   0x0000e2    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                 _7lloop1   0x000104    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                 _8lloop3   0x00010a    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                 _9lloop1   0x000124    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                 _8lelse2   0x00012a    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _8lendif2   0x000138    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                 _8lelse1   0x00013a    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _10lloop1   0x00013e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _8lendif1   0x000144    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _11lloop2   0x000156    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _12lloop2   0x00015e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _13lloop2   0x000166    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _14lloop2   0x00016e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _15lloop2   0x000176    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _16lloop1   0x00017e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _18lloop1   0x0001a4    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _19lloop3   0x0001aa    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _20lloop1   0x0001c4    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _19lelse2   0x0001ca    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+               _19lendif2   0x0001d8    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _19lelse1   0x0001da    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _21lloop1   0x0001de    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+               _19lendif1   0x0001e4    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _22lloop2   0x0001f6    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _23lloop2   0x0001fe    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _24lloop2   0x000206    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _25lloop2   0x00020e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _26lloop2   0x000216    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _27lloop1   0x00021e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _29lloop1   0x000244    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _30lloop3   0x00024a    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _31lloop1   0x000264    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _30lelse2   0x00026a    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+               _30lendif2   0x000278    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _30lelse1   0x00027a    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _32lloop1   0x00027e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+               _30lendif1   0x000284    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _33lloop2   0x000296    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _34lloop2   0x00029e    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _35lloop2   0x0002a6    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _36lloop2   0x0002ae    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _37lloop2   0x0002b6    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _38lloop1   0x0002c4    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+                _39lloop1   0x0002d2    program     static /home/cicero/drive/Documents/code/MPLABXProjects/VGA-sync40MHz50hz.X/main.asm
+
+
