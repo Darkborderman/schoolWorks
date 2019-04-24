@@ -1,0 +1,6 @@
+﻿Please refer to the Library Installation Documentation for the detailed installation instructions.
+https://github.com/qPCR4vir/nana-docs/wiki/Installation
+
+
+请参考库安装文档获取详细的安装步骤。
+https://github.com/qPCR4vir/nana-docs/wiki/Installation

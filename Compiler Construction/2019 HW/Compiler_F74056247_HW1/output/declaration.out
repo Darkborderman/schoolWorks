@@ -1,0 +1,30 @@
+int 	 INT
+x 	 ID
+; 	 SEMICOLON
+int 	 INT
+y 	 ID
+= 	 ASGN
+5 	 I_CONST
+; 	 SEMICOLON
+float 	 FLOAT
+a 	 ID
+= 	 ASGN
+6.2555 	 F_CONST
+; 	 SEMICOLON
+bool 	 BOOL
+u 	 ID
+= 	 ASGN
+false 	 FALSE
+; 	 SEMICOLON
+string 	 STRING
+s 	 ID
+= 	 ASGN
+" 	 QUOTA
+abc 	 STR_CONST
+" 	 QUOTA
+; 	 SEMICOLON
+
+Parse over, the line number is 5.
+
+comment: 0 lines
+

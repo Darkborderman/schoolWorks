@@ -1,0 +1,56 @@
+/*
+ * 2019 Spring Compiler Course Assignment 1
+ */ 	 C Comment
+int 	 INT
+main 	 ID
+( 	 LB
+) 	 RB
+{ 	 LCB
+// Declaration 	 C++ Comment
+int 	 INT
+x 	 ID
+; 	 SEMICOLON
+int 	 INT
+a 	 ID
+= 	 ASGN
+5 	 I_CONST
+; 	 SEMICOLON
+string 	 STRING
+y 	 ID
+= 	 ASGN
+" 	 QUOTA
+Hello World 	 STR_CONST
+" 	 QUOTA
+; 	 SEMICOLON
+print 	 PRINT
+( 	 LB
+y 	 ID
+) 	 RB
+; 	 SEMICOLON
+// if condition 	 C++ Comment
+if 	 IF
+( 	 LB
+a 	 ID
+> 	 MT
+10 	 I_CONST
+) 	 RB
+{ 	 LCB
+x 	 ID
++= 	 ADDASGN
+a 	 ID
+; 	 SEMICOLON
+print 	 PRINT
+( 	 LB
+x 	 ID
+) 	 RB
+; 	 SEMICOLON
+} 	 RCB
+return 	 RET
+0 	 I_CONST
+; 	 SEMICOLON
+} 	 RCB
+
+Parse over, the line number is 19.
+
+comment: 5 lines
+

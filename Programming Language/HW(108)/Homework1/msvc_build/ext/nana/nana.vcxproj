@@ -1,0 +1,360 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9E76B957-410F-32B0-9D08-AE87852D3B84}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>nana</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\user\Desktop\Programming Language\Homework1\msvc_build\ext\nana\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">nana.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">nana_d</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\user\Desktop\Programming Language\Homework1\msvc_build\ext\nana\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">nana.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">nana</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\user\Desktop\Programming Language\Homework1\msvc_build\ext\nana\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">nana.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">nana</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\user\Desktop\Programming Language\Homework1\msvc_build\ext\nana\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">nana.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">nana</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NANA_IGNORE_CONF;VERBOSE_PREPROCESSOR;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NANA_IGNORE_CONF;VERBOSE_PREPROCESSOR;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NANA_IGNORE_CONF;VERBOSE_PREPROCESSOR;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NANA_IGNORE_CONF;VERBOSE_PREPROCESSOR;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NANA_IGNORE_CONF;VERBOSE_PREPROCESSOR;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NANA_IGNORE_CONF;VERBOSE_PREPROCESSOR;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NANA_IGNORE_CONF;VERBOSE_PREPROCESSOR;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;NANA_IGNORE_CONF;VERBOSE_PREPROCESSOR;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Users/user/Desktop/Programming Language/Homework1/ext/nana/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-HC:/Users/user/Desktop/Programming Language/Homework1" "-BC:/Users/user/Desktop/Programming Language/Homework1/msvc_build" --check-stamp-file "C:/Users/user/Desktop/Programming Language/Homework1/msvc_build/ext/nana/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Users/user/Desktop/Programming Language/Homework1/ext/nana/CMakeLists.txt;C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\CMakeLists.txt;C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Users\user\Desktop\Programming Language\Homework1\msvc_build\ext\nana\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Users/user/Desktop/Programming Language/Homework1/ext/nana/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-HC:/Users/user/Desktop/Programming Language/Homework1" "-BC:/Users/user/Desktop/Programming Language/Homework1/msvc_build" --check-stamp-file "C:/Users/user/Desktop/Programming Language/Homework1/msvc_build/ext/nana/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Users/user/Desktop/Programming Language/Homework1/ext/nana/CMakeLists.txt;C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\CMakeLists.txt;C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Users\user\Desktop\Programming Language\Homework1\msvc_build\ext\nana\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Users/user/Desktop/Programming Language/Homework1/ext/nana/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-HC:/Users/user/Desktop/Programming Language/Homework1" "-BC:/Users/user/Desktop/Programming Language/Homework1/msvc_build" --check-stamp-file "C:/Users/user/Desktop/Programming Language/Homework1/msvc_build/ext/nana/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Users/user/Desktop/Programming Language/Homework1/ext/nana/CMakeLists.txt;C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\CMakeLists.txt;C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Users\user\Desktop\Programming Language\Homework1\msvc_build\ext\nana\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Users/user/Desktop/Programming Language/Homework1/ext/nana/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-HC:/Users/user/Desktop/Programming Language/Homework1" "-BC:/Users/user/Desktop/Programming Language/Homework1/msvc_build" --check-stamp-file "C:/Users/user/Desktop/Programming Language/Homework1/msvc_build/ext/nana/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Users/user/Desktop/Programming Language/Homework1/ext/nana/CMakeLists.txt;C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\CMakeLists.txt;C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Users\user\Desktop\Programming Language\Homework1\msvc_build\ext\nana\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\any.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\basic_types.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\charset.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\datetime.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\deploy.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\internationalization.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\stdc++.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\unicode_bidi.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\detail\platform_abstraction.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\detail\platform_spec_posix.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\detail\platform_spec_windows.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\filesystem\filesystem.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\animation.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\basis.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\dragger.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\drawing.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\effects.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\element.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\filebox.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\layout_utility.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\msgbox.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\notifier.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\place.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\programming_interface.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\screen.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\state_cursor.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\timer.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\tooltip.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\wvl.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\detail\basic_window.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\detail\bedrock_pi.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\detail\bedrock_posix.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\detail\bedrock_windows.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\detail\color_schemes.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\detail\drawer.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\detail\element_store.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\detail\events_operation.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\detail\native_window_interface.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\detail\window_layout.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\detail\window_manager.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\button.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\categorize.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\checkbox.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\combox.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\date_chooser.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\float_listbox.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\form.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\frame.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\group.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\label.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\listbox.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\menu.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\menubar.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\panel.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\picture.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\progress.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\scroll.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\slider.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\spinbox.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\tabbar.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\textbox.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\toolbar.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\treebox.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\widget.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\skeletons\content_view.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\gui\widgets\skeletons\text_editor.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\paint\graphics.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\paint\image.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\paint\image_process_selector.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\paint\pixel_buffer.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\paint\text_renderer.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\paint\detail\image_process_provider.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\paint\detail\native_paint_interface.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\system\dataexch.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\system\platform.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\system\shared_wrapper.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\system\timepiece.cpp" />
+    <ClCompile Include="C:\Users\user\Desktop\Programming Language\Homework1\ext\nana\source\threads\pool.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\user\Desktop\Programming Language\Homework1\msvc_build\ZERO_CHECK.vcxproj">
+      <Project>{3A3E116E-CD83-3FD4-9772-B1CEEEC277C6}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
