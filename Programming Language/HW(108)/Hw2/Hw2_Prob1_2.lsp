@@ -1,0 +1,21 @@
+(defun palindrome (string)
+    (if(equal string (reverse string))
+		(format t "Palindrome")
+		(format t "Not palindrome")))
+
+(print '(a b c))
+(palindrome '(a b c))
+(print '(m a d a m))
+(palindrome '(m a d a m))
+(print '(cat dog))
+(palindrome '(cat dog))
+(print '())
+(palindrome '())
+(print '(cat dog bird bird dog cat))
+(palindrome '(cat dog bird bird dog cat))
+
+;(setq string (read-line))
+;(print string)
+;(print (reverse string))
+;(palindrome string)
+	

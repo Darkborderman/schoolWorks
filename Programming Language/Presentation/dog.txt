@@ -1,0 +1,242 @@
+#!/usr/bin/perl
+
+# DOG interpreter 0.3
+# Language and intepreter made by Jeremy Ruten (jeremy.ruten@gmail.com)
+# http://bio-gaming.com/jeremy/dog
+
+# -------------------------------------------------------------
+# History
+# -------------------------------------------------------------
+#
+# Version 0.3
+# -----------
+#
+# - "clear" command added
+# - Changed behaviour of interpreter when trying to execute a
+#   command a negative number of times.
+#
+# Version 0.2
+# -----------
+#
+# - Checks for errors
+# - Can use dish1, dish2, dish3, etc. instead of just dish1 &
+#   dish2. Also, can use plate1, plate2, plate3, etc. instead
+#   of just plate.
+#
+# Version 0.1
+# -----------
+#
+# - First release
+#
+# -------------------------------------------------------------
+
+
+# -------------------------------------------------------------
+# Open the file and read it
+# -------------------------------------------------------------
+
+if ($#ARGV + 1 != 1) {
+	die ("Usage: dog.pl program.dog\n");
+}
+
+open (PROGRAM, "<" . $ARGV[0]);
+my(@lines) = <PROGRAM>;
+
+# -------------------------------------------------------------
+# Get rid of all the useless white-space
+# -------------------------------------------------------------
+
+foreach $line (@lines) {
+	chop $line;
+	$line =~ s/\t//g;
+	$line =~ s/  / /g;
+	$line =~ s/  / /g;
+	if (substr($line, 0, 1) eq " ") { $line = substr($line, 1); }
+	if (substr($line, length($line) + 1, 1) eq " ") { $line = substr($line, 0, length($line)); }
+}
+
+# -------------------------------------------------------------
+# Set up some variables
+# -------------------------------------------------------------
+
+$PC = 0;
+@dish = (0);
+@plate = (0);
+@floor = (0);
+$dogmouth = 0;
+
+# -------------------------------------------------------------
+# Subs
+# -------------------------------------------------------------
+
+sub get_random_floor {
+	$current_value = 0;
+	until ($current_value != 0) {
+		$random = int(rand($#floor + 1));
+		$current_value = $floor[$random];
+	}
+	return $random;
+}
+
+sub valid_value {
+	$s = $_[0];
+	if ($s =~ /dish[0-9]/ || $s =~ /plate[0-9]/ || $s eq "floor") { return 1; }
+	else { return 0; }
+}
+
+sub print_error {
+	$txt = $_[0];
+	$line_num = $_[1] + 1;
+	print("*Error* $txt [Line $line_num]\n");
+	exit();
+}
+
+# -------------------------------------------------------------
+# Start the interpreting!
+# -------------------------------------------------------------
+
+while ($PC != -1) {
+	@instruction_parts = split(/ /, $lines[$PC]);
+
+	# Check for a number or variable before the rest of the instruction
+	$command_start = 1;
+	if ($instruction_parts[0] =~ /dish[0-9]/) {
+		$execute_times = $dish[substr($instruction_parts[0], 4)];
+	} elsif ($instruction_parts[0] =~ /plate[0-9]/) {
+		$execute_times = $plate[substr($instruction_parts[0], 5)];
+		if ($execute_times != 0) { $execute_times = 1; }
+	} elsif ($instruction_parts[0] eq "floor") {
+		$floor_number = &get_random_floor;
+		$execute_times = $floor[$floor_number];
+	} elsif ($instruction_parts[0] =~ /[0-9]/) {
+		$execute_times = $instruction_parts[0];
+	} else {
+		$execute_times = 1;
+		$command_start = 0;
+	}
+
+	if ($execute_times < 0) { $execute_times = 0; }
+
+	# Now the command should only be split into two parts
+	if ($command_start == 0) {
+		@instruction_parts = ($instruction_parts[0], substr($lines[$PC], length($instruction_parts[0]) + 1));
+	} else {
+		@instruction_parts = ($instruction_parts[1], substr($lines[$PC], length($instruction_parts[0]) + 1 + length($instruction_parts[1]) + 1));
+	}
+
+	$cmd = $instruction_parts[0];
+	$rest_cmd = $instruction_parts[1];
+
+	for ($i = 0; $i < $execute_times; $i++) {
+		if ($cmd eq "fetch") {
+			if (&valid_value($rest_cmd) == 1 || $rest_cmd =~ /[0-9]/) {
+				if ($rest_cmd =~ /dish[0-9]/) { $dogmouth += $dish[substr($rest_cmd, 4)]; }
+				elsif ($rest_cmd =~ /plate[0-9]/) { $dogmouth += $plate[substr($rest_cmd, 5)]; }
+				elsif ($rest_cmd eq "floor") { $dogmouth += $floor[&get_random_floor]; }
+				else { $dogmouth += $rest_cmd; }
+			} else {
+				&print_error("Invalid value", $PC);
+			}
+		}
+		elsif ($cmd eq "drop") {
+			if (&valid_value($rest_cmd) == 1) {
+				if ($rest_cmd =~ /dish[0-9]/) { $dish[substr($rest_cmd, 4)] += $dogmouth; }
+				elsif ($rest_cmd =~ /plate[0-9]/) { $plate[substr($rest_cmd, 5)] += $dogmouth; }
+				elsif ($rest_cmd eq "floor") { push(@floor, $dogmouth); }
+				$dogmouth = 0;
+			} else {
+				&print_error("Invalid value", $PC);
+			}
+		}
+		elsif ($cmd eq "pickup") {
+			if (&valid_value($rest_cmd) == 1) {
+				if ($rest_cmd =~ /dish[0-9]/) { $dogmouth += $dish[substr($rest_cmd, 4)]; $dish[substr($rest_cmd, 4)] = 0; }
+				elsif ($rest_cmd =~ /plate[0-9]/) { $dogmouth += $plate[substr($rest_cmd, 5)]; $plate[substr($rest_cmd, 5)] = 0; }
+				elsif ($rest_cmd eq "floor") { $floor_pile = &get_random_floor; $dogmouth += $floor[$floor_pile]; $floor[$floor_pile] = 0; }
+			} else {
+				&print_error("Invalid value", $PC);
+			}
+		}
+		elsif ($cmd eq "eat") {
+			if (&valid_value($rest_cmd) == 1 || $rest_cmd =~ /[0-9]/ || $rest_cmd eq "") {
+				if ($rest_cmd =~ /dish[0-9]/) { $dogmouth -= $dish[substr($rest_cmd, 4)]; }
+				elsif ($rest_cmd =~ /plate[0-9]/) { $dogmouth -= $plate[substr($rest_cmd, 5)]; }
+				elsif ($rest_cmd eq "floor") { $dogmouth -= $floor[&get_random_floor]; }
+				elsif ($rest_cmd eq "") { $dogmouth = 0; }
+				else { $dogmouth -= $rest_cmd; }
+			} else {
+				&print_error("Invalid value", $PC);
+			}
+		}
+		elsif ($cmd eq "clear") {
+			if (&valid_value($rest_cmd) == 1) {
+				if ($rest_cmd =~ /dish[0-9]/) { $dish[substr($rest_cmd, 4)] = 0; }
+				elsif ($rest_cmd =~ /plate[0-9]/) { $plate[substr($rest_cmd, 5)] = 0; }
+				elsif ($rest_cmd eq "floor") { @floor = (0); }
+			} else {
+				&print_error("Invalid value", $PC);
+			}
+		}
+		elsif ($cmd eq "die") {
+			print ("\n");
+			exit();
+		}
+		elsif ($cmd eq "take") {
+			$input = "";
+			until ($input =~ /[0-9]\n/) {
+				$input = <STDIN>;
+			}
+			chop $input;
+			$dogmouth += $input;
+		}
+		elsif ($cmd eq "show") {
+			print ($dogmouth);
+		}
+		elsif ($cmd eq "give") {
+			print ($dogmouth);
+			$dogmouth = 0;
+		}
+		elsif ($cmd eq "bark") {
+			if (substr($rest_cmd, 0, 1) == '"' && substr($rest_cmd, length($rest_cmd) + 1, 1) == '"') {
+				$string_to_print = substr($rest_cmd, 1, length($rest_cmd) - 2);
+				$string_to_print =~ s/\\n/\n/g;
+				print($string_to_print);
+			} else {
+				&print_error("Invalid string", $PC);
+			}
+		}
+		elsif ($cmd eq "jump") {
+			if ($rest_cmd ne "") {
+				$t_PC = 0;
+				$label_found = 0;
+				foreach $line (@lines) {
+					if ($line eq "label " . $rest_cmd) {
+						$PC = $t_PC;
+						$label_found = 1;
+					}
+					$t_PC++;	
+				}
+				if ($label_found == 0) {
+					&print_error("Label '$rest_cmd' not found", $PC);
+				}
+			} else {
+				&print_error("No label given", $PC);
+			}
+		}
+		elsif ($cmd eq "label") {
+			# Do nothing
+		}
+		elsif ($cmd eq "") {
+			# Do nothing
+		}
+		else {
+			&print_error("Invalid command", $PC);
+		}
+	}
+
+	$PC++;
+
+	if ($PC > $#lines) { $PC = -1; }
+}
+
+print ("\n");

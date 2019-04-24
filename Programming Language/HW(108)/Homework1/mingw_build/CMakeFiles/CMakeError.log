@@ -1,0 +1,148 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+系統找不到指定的檔案。
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: gcc.exe 
+Build flags: 
+Id flags: -c 
+
+The output was:
+系統找不到指定的檔案。
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: gcc.exe 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+系統找不到指定的檔案。
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: gcc.exe 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+系統找不到指定的檔案。
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: gcc.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+系統找不到指定的檔案。
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: gcc.exe 
+Build flags: 
+Id flags: -c 
+
+The output was:
+系統找不到指定的檔案。
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: gcc.exe 
+Build flags: 
+Id flags: -Aa 
+
+The output was:
+系統找不到指定的檔案。
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: gcc.exe 
+Build flags: 
+Id flags: -D__CLASSIC_C__ 
+
+The output was:
+系統找不到指定的檔案。
+
+
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Checking whether the C compiler is IAR using "" did not match "IAR .+ Compiler":
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: g++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+系統找不到指定的檔案。
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: g++.exe 
+Build flags: 
+Id flags: -c 
+
+The output was:
+系統找不到指定的檔案。
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: g++.exe 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+系統找不到指定的檔案。
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: g++.exe 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+系統找不到指定的檔案。
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: g++.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+系統找不到指定的檔案。
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: g++.exe 
+Build flags: 
+Id flags: -c 
+
+The output was:
+系統找不到指定的檔案。
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: g++.exe 
+Build flags: 
+Id flags: --c++ 
+
+The output was:
+系統找不到指定的檔案。
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: g++.exe 
+Build flags: 
+Id flags: --ec++ 
+
+The output was:
+系統找不到指定的檔案。
+
+
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":
+Checking whether the CXX compiler is IAR using "" did not match "IAR .+ Compiler":

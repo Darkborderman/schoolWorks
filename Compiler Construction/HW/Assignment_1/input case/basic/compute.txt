@@ -1,0 +1,6 @@
+int a = 5;
+int b = 3;
+if(a > b)
+	b = a + b;
+else
+	a = a * b;
