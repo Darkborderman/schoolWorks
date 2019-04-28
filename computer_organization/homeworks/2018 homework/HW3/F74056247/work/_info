@@ -1,0 +1,273 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples
+vAdd
+Z0 !s110 1527442822
+!i10b 1
+!s100 bO1Yg>H9cXl@j[fEmoT@m3
+IVmjf9WV_@R<J6=STIWJiz0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Divik/Desktop/F74056247
+w1351579952
+8C:/Users/Divik/Desktop/F74056247/SRC/Add.v
+FC:/Users/Divik/Desktop/F74056247/SRC/Add.v
+L0 3
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1527442822.000000
+!s107 C:/Users/Divik/Desktop/F74056247/SRC/Add.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Divik/Desktop/F74056247/SRC/Add.v|
+!s101 -O0
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@add
+vALU
+R0
+!i10b 1
+!s100 hf>nVSh]I[Z8M>Na6B<i:0
+IbgFMziLg5VWOKVX06<bc81
+R1
+R2
+w1527440817
+8C:\Users\Divik\Desktop\F74056247\SRC\ALU.v
+FC:\Users\Divik\Desktop\F74056247\SRC\ALU.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:\Users\Divik\Desktop\F74056247\SRC\ALU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Divik\Desktop\F74056247\SRC\ALU.v|
+!s101 -O0
+!i113 1
+R5
+n@a@l@u
+vALU_ctrl
+R0
+!i10b 1
+!s100 0f>SkFz_YaG1<75HC1h9U2
+I6c1CgPneEgnY4`FjI96DW1
+R1
+R2
+w1527441706
+8C:\Users\Divik\Desktop\F74056247\SRC\ALU_ctrl.v
+FC:\Users\Divik\Desktop\F74056247\SRC\ALU_ctrl.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:\Users\Divik\Desktop\F74056247\SRC\ALU_ctrl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Divik\Desktop\F74056247\SRC\ALU_ctrl.v|
+!s101 -O0
+!i113 1
+R5
+n@a@l@u_ctrl
+vCPU
+R0
+!i10b 1
+!s100 Ah9S;58mg3[T?G20^M5O81
+If]z;hde]1j8jC;?7]Uz]@0
+R1
+R2
+w1527442815
+8C:\Users\Divik\Desktop\F74056247\SRC\CPU.v
+FC:\Users\Divik\Desktop\F74056247\SRC\CPU.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:\Users\Divik\Desktop\F74056247\SRC\CPU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Divik\Desktop\F74056247\SRC\CPU.v|
+!s101 -O0
+!i113 1
+R5
+n@c@p@u
+vDecoder
+R0
+!i10b 1
+!s100 h>5bYLK[]ez4?^W@2T0PG2
+IWlBzk4Y>IDb;_6HWW4]DA2
+R1
+R2
+w1527440840
+8C:\Users\Divik\Desktop\F74056247\SRC\Decoder.v
+FC:\Users\Divik\Desktop\F74056247\SRC\Decoder.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:\Users\Divik\Desktop\F74056247\SRC\Decoder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\Divik\Desktop\F74056247\SRC\Decoder.v|
+!s101 -O0
+!i113 1
+R5
+n@decoder
+vDM
+R0
+!i10b 1
+!s100 zh8Jaj;TU_9o0<]=oWnWS0
+I9DZ`II_oecjO9JFiBAeiX0
+R1
+R2
+w1351746924
+8C:/Users/Divik/Desktop/F74056247/SRC/DM.v
+FC:/Users/Divik/Desktop/F74056247/SRC/DM.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Divik/Desktop/F74056247/SRC/DM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Divik/Desktop/F74056247/SRC/DM.v|
+!s101 -O0
+!i113 1
+R5
+n@d@m
+vIM
+R0
+!i10b 1
+!s100 faaDhVc1C;X1QC8iBi1Q60
+IibTc]3=z2Kj`X3JP>nbE?2
+R1
+R2
+w1349158902
+8C:/Users/Divik/Desktop/F74056247/SRC/IM.v
+FC:/Users/Divik/Desktop/F74056247/SRC/IM.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Divik/Desktop/F74056247/SRC/IM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Divik/Desktop/F74056247/SRC/IM.v|
+!s101 -O0
+!i113 1
+R5
+n@i@m
+vMUX_2_to_1
+R0
+!i10b 1
+!s100 HkIT9a0b=EY[cBd8IEVX90
+I[<k2W9CBI;Rlc70a;D0TK1
+R1
+R2
+w1351747002
+8C:/Users/Divik/Desktop/F74056247/SRC/MUX_2_to_1.v
+FC:/Users/Divik/Desktop/F74056247/SRC/MUX_2_to_1.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Divik/Desktop/F74056247/SRC/MUX_2_to_1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Divik/Desktop/F74056247/SRC/MUX_2_to_1.v|
+!s101 -O0
+!i113 1
+R5
+n@m@u@x_2_to_1
+vPC
+R0
+!i10b 1
+!s100 NE8^YoZ0G^4nhDO6XS2z?3
+ISi_B=9ARMCl3=2e[iDXW41
+R1
+R2
+w1351762786
+8C:/Users/Divik/Desktop/F74056247/SRC/PC.v
+FC:/Users/Divik/Desktop/F74056247/SRC/PC.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Divik/Desktop/F74056247/SRC/PC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Divik/Desktop/F74056247/SRC/PC.v|
+!s101 -O0
+!i113 1
+R5
+n@p@c
+vReg
+Z6 !s110 1527442823
+!i10b 1
+!s100 R`z8OK6UBRXoaF2:HUFkQ3
+I=V^zYiX_NcTfdNJhgUZ501
+R1
+R2
+w1351758510
+8C:/Users/Divik/Desktop/F74056247/SRC/Reg.v
+FC:/Users/Divik/Desktop/F74056247/SRC/Reg.v
+L0 3
+R3
+r1
+!s85 0
+31
+Z7 !s108 1527442823.000000
+!s107 C:/Users/Divik/Desktop/F74056247/SRC/Reg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Divik/Desktop/F74056247/SRC/Reg.v|
+!s101 -O0
+!i113 1
+R5
+n@reg
+vsign_extend
+R6
+!i10b 1
+!s100 C6Z7o8WAnAnA`0oEf<em70
+IoRoZ02iFZ8KTVPmZ3<E^z0
+R1
+R2
+w1351740764
+8C:/Users/Divik/Desktop/F74056247/SRC/sign_extend.v
+FC:/Users/Divik/Desktop/F74056247/SRC/sign_extend.v
+L0 3
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:/Users/Divik/Desktop/F74056247/SRC/sign_extend.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Divik/Desktop/F74056247/SRC/sign_extend.v|
+!s101 -O0
+!i113 1
+R5
+vTestBench
+R0
+!i10b 1
+!s100 MX2d1j@iTK5@KaQN[IQA50
+ID1Z;7ZQM<`e=DWjbeRFdN3
+R1
+R2
+w1526463267
+8C:/Users/Divik/Desktop/F74056247/SRC/TestBench.v
+FC:/Users/Divik/Desktop/F74056247/SRC/TestBench.v
+L0 9
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Divik/Desktop/F74056247/SRC/TestBench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Divik/Desktop/F74056247/SRC/TestBench.v|
+!s101 -O0
+!i113 1
+R5
+n@test@bench

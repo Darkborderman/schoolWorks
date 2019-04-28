@@ -1,0 +1,22 @@
+`timescale 1ns / 1ps
+
+module ALU( source1,source2,ALU_CTRL,result);
+    input [15:0] source1;
+    input [15:0] source2;
+    input [3:0] ALU_CTRL;
+    output [15:0] result;
+
+    reg result;
+	 
+	/*FIN*/   
+	always @(ALU_CTRL)
+    begin
+        result=16'd0;
+        //add
+        if(ALU_CTRL==4'b0001) result=source1+source2;
+        //sub
+        if(ALU_CTRL==4'b0010) result=source1-source2;
+        //slt
+        if(ALU_CTRL==4'b0011) result=(source1<source2)?16'b1:16'b0;
+    end
+endmodule

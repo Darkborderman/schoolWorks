@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Modeltech_pe_edu_10.4a/examples
+vtraffic_light
+Z0 !s110 1520662437
+!i10b 1
+!s100 ODgm0T<5d:=_4h^E];B]92
+I7GIBViKJ89E8OJm:ZmQVG0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Divik/Desktop/F74056247
+w1520662271
+8C:/Users/Divik/Desktop/F74056247/SRC/traffic_light.v
+FC:/Users/Divik/Desktop/F74056247/SRC/traffic_light.v
+L0 1
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1520662437.000000
+!s107 C:/Users/Divik/Desktop/F74056247/SRC/traffic_light.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Divik/Desktop/F74056247/SRC/traffic_light.v|
+!s101 -O0
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+vtraffic_light_tb
+R0
+!i10b 1
+!s100 kW4lBgneHWj6kdYD>K<2^2
+IV?4GP5Q1OCDM8Ym^=7V^R3
+R1
+R2
+w1520235255
+8C:/Users/Divik/Desktop/F74056247/SRC/traffic_light_tb.v
+FC:/Users/Divik/Desktop/F74056247/SRC/traffic_light_tb.v
+L0 7
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Divik/Desktop/F74056247/SRC/traffic_light_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Divik/Desktop/F74056247/SRC/traffic_light_tb.v|
+!s101 -O0
+!i113 1
+R5
