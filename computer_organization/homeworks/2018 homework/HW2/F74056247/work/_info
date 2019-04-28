@@ -1,0 +1,251 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/Divik/Desktop/New folder/F74056247
+vALU
+Z0 !s110 1526237681
+!i10b 1
+!s100 3bLe62i>>Td<^QIz9nIm32
+I6f^Y3l6:0]:GQP:h_00`Y3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/Users/Divik/Desktop/HW2_v20180430/F74056247
+w1526236308
+8C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/ALU.v
+FC:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/ALU.v
+L0 3
+Z3 OP;L;10.4a;61
+r1
+!s85 0
+31
+Z4 !s108 1526237681.000000
+!s107 C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/ALU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/ALU.v|
+!s101 -O0
+!i113 1
+Z5 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+n@a@l@u
+vALU_ctrl
+R0
+!i10b 1
+!s100 kWlSf]h^d1ZG^DZ27Dn=A0
+IkW?AJ:AIi<ZO@>K;cZ@QR0
+R1
+R2
+w1526236309
+8C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/ALU_ctrl.v
+FC:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/ALU_ctrl.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/ALU_ctrl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/ALU_ctrl.v|
+!s101 -O0
+!i113 1
+R5
+n@a@l@u_ctrl
+vCPU
+R0
+!i10b 1
+!s100 Ma`M2X7W<2Si]ibz<l7Ko1
+IcCgkBD6<BbnC>CmN=13M:0
+R1
+R2
+w1526236591
+8C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/CPU.v
+FC:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/CPU.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/CPU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/CPU.v|
+!s101 -O0
+!i113 1
+R5
+n@c@p@u
+vDecoder
+R0
+!i10b 1
+!s100 :IMa=^^`K<m:L^W=MEF@70
+IHPUFlcg_Ufd>_T3F1BCn22
+R1
+R2
+Z6 w1526236328
+8C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/Decoder.v
+FC:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/Decoder.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/Decoder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/Decoder.v|
+!s101 -O0
+!i113 1
+R5
+n@decoder
+vDM
+R0
+!i10b 1
+!s100 252Y^`Hb7WR<ffBLJ^Fzb3
+Ik6h2YR0Ce14^DD3Xg=[MP1
+R1
+R2
+w1526235240
+8C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/DM.v
+FC:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/DM.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/DM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/DM.v|
+!s101 -O0
+!i113 1
+R5
+n@d@m
+vIM
+R0
+!i10b 1
+!s100 faaDhVc1C;X1QC8iBi1Q60
+I7Wo6X@KgA98J0dZ9baRgB1
+R1
+R2
+w1526235247
+8C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/IM.v
+FC:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/IM.v
+L0 3
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/IM.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/IM.v|
+!s101 -O0
+!i113 1
+R5
+n@i@m
+vMUX_2_to_1
+Z7 !s110 1526237682
+!i10b 1
+!s100 2WbeB_OdD95[RBn[3=VDG3
+I7V4T=<kmMLm6F3e^ROgn_3
+R1
+R2
+w1526236344
+8C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/MUX_2_to_1.v
+FC:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/MUX_2_to_1.v
+L0 2
+R3
+r1
+!s85 0
+31
+Z8 !s108 1526237682.000000
+!s107 C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/MUX_2_to_1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/MUX_2_to_1.v|
+!s101 -O0
+!i113 1
+R5
+n@m@u@x_2_to_1
+vPC
+R7
+!i10b 1
+!s100 iOAdg[=1<;SBJ=1aQTT>d1
+IT8^mX=o4?m3KoIQndbVO50
+R1
+R2
+w1526235269
+8C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/PC.v
+FC:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/PC.v
+L0 3
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/PC.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/PC.v|
+!s101 -O0
+!i113 1
+R5
+n@p@c
+vReg
+R7
+!i10b 1
+!s100 4alRSh?B=_h;cPa30UMD32
+I=^ZHEd:MOc2_@c`c9451H0
+R1
+R2
+R6
+8C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/Reg.v
+FC:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/Reg.v
+L0 3
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/Reg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/Reg.v|
+!s101 -O0
+!i113 1
+R5
+n@reg
+vsign_extend
+R7
+!i10b 1
+!s100 cgb7T^bdYn32]HZ`NK0S^0
+I_PHSoNSnBY_aBdf1K2NiM1
+R1
+R2
+w1526236343
+8C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/sign_extend.v
+FC:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/sign_extend.v
+L0 3
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/sign_extend.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/sign_extend.v|
+!s101 -O0
+!i113 1
+R5
+vTestBench
+R0
+!i10b 1
+!s100 VHR5IDTl9zVK516ZhW>eN0
+I37aDNGMBAY8H_SL_Q]DW10
+R1
+R2
+w1526235435
+8C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/TestBench.v
+FC:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/TestBench.v
+L0 9
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/TestBench.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Divik/Desktop/HW2_v20180430/F74056247/SRC/TestBench.v|
+!s101 -O0
+!i113 1
+R5
+n@test@bench

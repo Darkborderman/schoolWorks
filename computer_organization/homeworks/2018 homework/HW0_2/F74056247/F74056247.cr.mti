@@ -1,0 +1,15 @@
+C:/Users/Divik/Desktop/F74056247/SRC/traffic_light.v {1 {vlog -work work -stats=none C:/Users/Divik/Desktop/F74056247/SRC/traffic_light.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module traffic_light
+
+Top level modules:
+	traffic_light
+
+} {} {}} C:/Users/Divik/Desktop/F74056247/SRC/traffic_light_tb.v {1 {vlog -work work -stats=none C:/Users/Divik/Desktop/F74056247/SRC/traffic_light_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module traffic_light_tb
+
+Top level modules:
+	traffic_light_tb
+
+} {} {}}

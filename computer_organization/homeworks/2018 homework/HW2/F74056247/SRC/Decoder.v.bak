@@ -1,0 +1,51 @@
+`timescale 1ns / 1ps
+
+module Decoder( OP, Reg_WE, DM_WE, ALU_OP, ALU_src,MEM_to_REG,REG_Dst,funct);
+	input [5:0] OP;
+	input [5:0] funct;
+	output Reg_WE, DM_WE, ALU_src,MEM_to_REG,REG_Dst;
+	output [1:0] ALU_OP;
+	reg Reg_WE;
+	reg DM_WE;
+	reg ALU_src;
+	reg MEM_to_REG;
+	reg REG_Dst;
+	reg ALU_OP;
+
+   /* FIN */
+	
+	always @(OP or funct)
+	//op is always the same in this homework
+	//R-type
+	begin
+		Reg_WE<=1'b0;
+		DM_WE<=1'b0;
+		if(funct==6'b100000)
+		begin
+			Reg_WE<=1'b1;
+			DM_WE<=1'b0;
+			ALU_src<=1'b0;
+			MEM_to_REG<=1'b0;
+			REG_Dst<=1'b1;
+			ALU_OP<=2'b01;
+		end
+		if(funct==6'b100010)
+		begin
+			Reg_WE<=1'b1;
+			DM_WE<=1'b0;
+			ALU_src<=1'b0;
+			MEM_to_REG<=1'b0;
+			REG_Dst<=1'b1;
+			ALU_OP<=2'b01;
+		end
+		if(funct==6'b101010)
+		begin
+			Reg_WE<=1'b1;
+			DM_WE<=1'b0;
+			ALU_src<=1'b0;
+			MEM_to_REG<=1'b0;
+			REG_Dst<=1'b1;
+			ALU_OP<=2'b01;
+		end
+	end	
+endmodule
