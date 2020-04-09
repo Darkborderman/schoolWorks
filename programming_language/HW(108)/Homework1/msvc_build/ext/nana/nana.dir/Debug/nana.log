@@ -1,0 +1,169 @@
+﻿  Building Custom Rule C:/Users/user/Desktop/Programming Language/Homework1/ext/nana/CMakeLists.txt
+  CMake does not need to re-run because C:/Users/user/Desktop/Programming Language/Homework1/msvc_build/ext/nana/CMakeFiles/generate.stamp is up-to-date.
+  any.cpp
+  basic_types.cpp
+  charset.cpp
+  datetime.cpp
+  deploy.cpp
+  internationalization.cpp
+  stdc++.cpp
+  unicode_bidi.cpp
+  platform_abstraction.cpp
+  platform_spec_posix.cpp
+  platform_spec_windows.cpp
+  
+   -----> Verbose preprocessor
+   VERBOSE_PREPROCESSOR  =  1
+   STOP_VERBOSE_PREPROCESSOR  =  STOP_VERBOSE_PREPROCESSOR
+  
+   -----> OS: 
+     --Windows: 
+   _WIN32  =  1
+   __WIN32__  =  __WIN32__
+   WIN32  =  1
+   NANA_WINDOWS  =  
+  
+     ---NIX: 
+   NANA_LINUX  =  NANA_LINUX
+   NANA_POSIX  =  NANA_POSIX
+   NANA_X11  =  NANA_X11
+   APPLE  =  APPLE
+   NANA_IGNORE_CONF  =  1
+  
+   -----> Compilers: 
+    MinGW: 
+   __MINGW32__  =  __MINGW32__
+   __MINGW64__  =  __MINGW64__
+   MINGW  =  MINGW
+  
+    ---MSC: 
+   _MSC_VER  =  1912
+   _MSC_FULL_VER  =  191225834
+  
+    ---GNU: 
+   __GNUC__  =  __GNUC__
+   __GNUC_MINOR__  =  __GNUC_MINOR__
+   __GNUC_PATCHLEVEL__  =  __GNUC_PATCHLEVEL__
+  
+    ---Clang compiler: 
+   __clang__  =  __clang__
+   __GLIBCPP__  =  __GLIBCPP__
+   __GLIBCXX__  =  __GLIBCXX__
+  
+   -----> STD:  
+   STD_CODECVT_NOT_SUPPORTED  =  
+   STD_THREAD_NOT_SUPPORTED  =  STD_THREAD_NOT_SUPPORTED
+   STD_NUMERIC_CONVERSIONS_NOT_SUPPORTED  =  STD_NUMERIC_CONVERSIONS_NOT_SUPPORTED
+   STD_TO_STRING_NOT_SUPPORTED  =  STD_TO_STRING_NOT_SUPPORTED
+   STD_TO_WSTRING_NOT_SUPPORTED  =  STD_TO_WSTRING_NOT_SUPPORTED
+   USE_github_com_meganz_mingw_std_threads  =  USE_github_com_meganz_mingw_std_threads
+   NANA_ENABLE_MINGW_STD_THREADS_WITH_MEGANZ  =  NANA_ENABLE_MINGW_STD_THREADS_WITH_MEGANZ
+   STD_THREAD_NOT_SUPPORTED  =  STD_THREAD_NOT_SUPPORTED
+   _enable_std_put_time  =  _enable_std_put_time
+   STD_MAKE_UNIQUE_NOT_SUPPORTED  =  STD_MAKE_UNIQUE_NOT_SUPPORTED
+   STD_FILESYSTEM_NOT_SUPPORTED  =  STD_FILESYSTEM_NOT_SUPPORTED
+   BOOST_FILESYSTEM_AVAILABLE  =  BOOST_FILESYSTEM_AVAILABLE
+   BOOST_FILESYSTEM_FORCE  =  BOOST_FILESYSTEM_FORCE
+   STD_FILESYSTEM_FORCE  =  STD_FILESYSTEM_FORCE
+   NANA_FILESYSTEM_FORCE  =  NANA_FILESYSTEM_FORCE
+   CXX_NO_INLINE_NAMESPACE  =  CXX_NO_INLINE_NAMESPACE
+   __cpp_lib_experimental_filesystem  =  __cpp_lib_experimental_filesystem
+   NANA_USING_NANA_FILESYSTEM  =  NANA_USING_NANA_FILESYSTEM
+   NANA_USING_STD_FILESYSTEM  =  NANA_USING_STD_FILESYSTEM
+   NANA_USING_BOOST_FILESYSTEM  =  NANA_USING_BOOST_FILESYSTEM
+  
+  #include <nana/filesystem/filesystem.hpp> 
+  filesystem.cpp
+  animation.cpp
+   STD_MAKE_UNIQUE_NOT_SUPPORTED  =  STD_MAKE_UNIQUE_NOT_SUPPORTED
+   STD_FILESYSTEM_NOT_SUPPORTED  =  STD_FILESYSTEM_NOT_SUPPORTED
+   BOOST_FILESYSTEM_AVAILABLE  =  BOOST_FILESYSTEM_AVAILABLE
+   BOOST_FILESYSTEM_FORCE  =  BOOST_FILESYSTEM_FORCE
+   STD_FILESYSTEM_FORCE  =  STD_FILESYSTEM_FORCE
+   NANA_FILESYSTEM_FORCE  =  NANA_FILESYSTEM_FORCE
+   CXX_NO_INLINE_NAMESPACE  =  CXX_NO_INLINE_NAMESPACE
+   __cpp_lib_experimental_filesystem  =  201406
+   NANA_USING_NANA_FILESYSTEM  =  0
+   NANA_USING_STD_FILESYSTEM  =  1
+   NANA_USING_BOOST_FILESYSTEM  =  0
+   NANA_UNICODE  =  NANA_UNICODE
+   _UNICODE  =  
+   UNICODE  =  
+  
+   -----> Libraries: 
+   NANA_ENABLE_AUDIO  =  NANA_ENABLE_AUDIO
+   NANA_ENABLE_PNG  =  NANA_ENABLE_PNG
+   USE_LIBPNG_FROM_OS  =  USE_LIBPNG_FROM_OS
+   NANA_LIBPNG  =  NANA_LIBPNG
+   NANA_ENABLE_JPEG  =  NANA_ENABLE_JPEG
+   USE_LIBJPEG_FROM_OS  =  USE_LIBJPEG_FROM_OS
+   NANA_LIBJPEG  =  NANA_LIBJPEG
+  basis.cpp
+  dragger.cpp
+  drawing.cpp
+  effects.cpp
+  element.cpp
+  filebox.cpp
+  layout_utility.cpp
+  msgbox.cpp
+  notifier.cpp
+  place.cpp
+  programming_interface.cpp
+  screen.cpp
+  state_cursor.cpp
+  timer.cpp
+  tooltip.cpp
+  wvl.cpp
+  basic_window.cpp
+  bedrock_pi.cpp
+  bedrock_posix.cpp
+  bedrock_windows.cpp
+  color_schemes.cpp
+  drawer.cpp
+  element_store.cpp
+  events_operation.cpp
+  native_window_interface.cpp
+  window_layout.cpp
+  window_manager.cpp
+  button.cpp
+  categorize.cpp
+  checkbox.cpp
+  combox.cpp
+  date_chooser.cpp
+  float_listbox.cpp
+  form.cpp
+  frame.cpp
+  group.cpp
+  label.cpp
+  listbox.cpp
+  menu.cpp
+  menubar.cpp
+  panel.cpp
+  picture.cpp
+  progress.cpp
+  scroll.cpp
+  slider.cpp
+  spinbox.cpp
+  tabbar.cpp
+  textbox.cpp
+  toolbar.cpp
+  treebox.cpp
+  widget.cpp
+  content_view.cpp
+  text_editor.cpp
+  graphics.cpp
+  image.cpp
+  image_process_selector.cpp
+  pixel_buffer.cpp
+  text_renderer.cpp
+  image_process_provider.cpp
+  native_paint_interface.cpp
+  dataexch.cpp
+  platform.cpp
+  shared_wrapper.cpp
+  timepiece.cpp
+  pool.cpp
+frame.obj : warning LNK4221: 這個物件檔案沒有定義任何以前未定義的公用符號，因此任何使用這個程式庫的連結作業都將不會使用它。
+bedrock_posix.obj : warning LNK4221: 這個物件檔案沒有定義任何以前未定義的公用符號，因此任何使用這個程式庫的連結作業都將不會使用它。
+platform_spec_posix.obj : warning LNK4221: 這個物件檔案沒有定義任何以前未定義的公用符號，因此任何使用這個程式庫的連結作業都將不會使用它。
+  nana.vcxproj -> C:\Users\user\Desktop\Programming Language\Homework1\msvc_build\ext\nana\Debug\nana_d.lib

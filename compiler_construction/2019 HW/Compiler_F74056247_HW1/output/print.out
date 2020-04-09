@@ -1,0 +1,12 @@
+print 	 PRINT
+( 	 LB
+" 	 QUOTA
+Hello World 	 STR_CONST
+" 	 QUOTA
+) 	 RB
+; 	 SEMICOLON
+
+Parse over, the line number is 1.
+
+comment: 0 lines
+

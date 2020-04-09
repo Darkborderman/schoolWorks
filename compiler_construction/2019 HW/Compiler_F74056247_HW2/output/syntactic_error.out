@@ -1,0 +1,39 @@
+1: /*
+2:  * 2019 Spring Compiler Course Assignment 2 
+3:  */
+4:
+5: float c = 1.5;
+6:
+7: bool loop(int n, int m) {
+8:     while (n > m) {
+9:         n--;
+10:     }
+11:     return true;
+12: }
+
+Index     Name      Kind        Type      Scope     Attribute 
+
+0         n         parameter   int       1         
+1         m         parameter   int       1         
+
+13:
+14: int main() {
+15:     // Declaration
+16:     int x;
+17:     int i;
+18:     int a = 5;
+19:
+20:     // syntactical error
+21:     iff (a > 10) {
+
+|-----------------------------------------------|
+| Error found in line 21:     iff (a > 10) {
+| Undeclared function iff
+|-----------------------------------------------|
+
+
+|-----------------------------------------------|
+| Error found in line 21:     iff (a > 10) {
+| syntax error
+|-----------------------------------------------|
+

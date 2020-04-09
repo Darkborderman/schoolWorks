@@ -1,0 +1,3 @@
+int a = 50;
+print(a);
+print("Hello World");

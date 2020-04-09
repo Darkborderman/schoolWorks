@@ -1,0 +1,3 @@
+iNt a = 5;
+INT b = 2;
+prINt(b);

@@ -1,0 +1,58 @@
+1: /*
+2:  * 2019 Spring Compiler Course Assignment 2 
+3:  */
+4:
+5: float c = 1.5;
+6:
+7: bool loop(int n, int m) {
+8:     while (n > m) {
+9:         n--;
+10:     }
+11:     return true;
+12: }
+
+Index     Name      Kind        Type      Scope     Attribute 
+
+0         n         parameter   int       1         
+1         m         parameter   int       1         
+
+13:
+14: int main() {
+15:     // Declaration
+16:     int x;
+17:     int i;
+18:     int a = 5;
+19:     string y = "She is a girl";
+20:
+21:     print(y); // print
+22:
+23:     // if condition
+24:     if (a > 10) {
+25:         x += a;
+26:         print(x);
+27:     } else {
+28:         x = a % 10 + 10 * 7; /* Arithmetic */
+29:         print(x);
+30:     }
+31:     loop(x, i);
+32:     print("Hello World");
+33:
+34:     return 0; 
+35: }
+
+Index     Name      Kind        Type      Scope     Attribute 
+
+0         x         variable    int       1         
+1         i         variable    int       1         
+2         a         variable    int       1         
+3         y         variable    string    1         
+
+
+Index     Name      Kind        Type      Scope     Attribute 
+
+0         c         variable    float     0         
+1         loop      function    bool      0         int, int
+2         main      function    int       0         
+
+
+Total lines: 35 

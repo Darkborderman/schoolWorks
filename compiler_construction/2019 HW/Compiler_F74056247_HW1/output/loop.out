@@ -1,0 +1,39 @@
+for 	 FOR
+( 	 LB
+int 	 INT
+x 	 ID
+= 	 ASGN
+0 	 I_CONST
+; 	 SEMICOLON
+x 	 ID
+< 	 LT
+10 	 I_CONST
+; 	 SEMICOLON
+x 	 ID
+++ 	 INC
+) 	 RB
+{ 	 LCB
+print 	 PRINT
+( 	 LB
+x 	 ID
+) 	 RB
+; 	 SEMICOLON
+} 	 RCB
+while 	 WHILE
+( 	 LB
+x 	 ID
+> 	 MT
+10 	 I_CONST
+) 	 RB
+{ 	 LCB
+print 	 PRINT
+( 	 LB
+x 	 ID
+) 	 RB
+; 	 SEMICOLON
+} 	 RCB
+
+Parse over, the line number is 7.
+
+comment: 0 lines
+

@@ -1,0 +1,14 @@
+int 	 INT
+main 	 ID
+( 	 LB
+) 	 RB
+{ 	 LCB
+return 	 RET
+0 	 I_CONST
+; 	 SEMICOLON
+} 	 RCB
+
+Parse over, the line number is 3.
+
+comment: 0 lines
+

@@ -1,0 +1,34 @@
+if 	 IF
+( 	 LB
+x 	 ID
+> 	 MT
+a 	 ID
+) 	 RB
+{ 	 LCB
+x 	 ID
+= 	 ASGN
+a 	 ID
+; 	 SEMICOLON
+print 	 PRINT
+( 	 LB
+x 	 ID
+) 	 RB
+; 	 SEMICOLON
+} 	 RCB
+else 	 ELSE
+{ 	 LCB
+a 	 ID
+= 	 ASGN
+x 	 ID
+; 	 SEMICOLON
+print 	 PRINT
+( 	 LB
+a 	 ID
+) 	 RB
+; 	 SEMICOLON
+} 	 RCB
+
+Parse over, the line number is 7.
+
+comment: 0 lines
+

@@ -1,0 +1,7 @@
+C:/Users/user/Desktop/Programming Language/Homework1/msvc_build/CMakeFiles/NANATest.dir
+C:/Users/user/Desktop/Programming Language/Homework1/msvc_build/CMakeFiles/INSTALL.dir
+C:/Users/user/Desktop/Programming Language/Homework1/msvc_build/CMakeFiles/ALL_BUILD.dir
+C:/Users/user/Desktop/Programming Language/Homework1/msvc_build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/user/Desktop/Programming Language/Homework1/msvc_build/ext/nana/CMakeFiles/nana.dir
+C:/Users/user/Desktop/Programming Language/Homework1/msvc_build/ext/nana/CMakeFiles/INSTALL.dir
+C:/Users/user/Desktop/Programming Language/Homework1/msvc_build/ext/nana/CMakeFiles/ALL_BUILD.dir
