@@ -1,5 +1,0 @@
-int a = 5;
-int b = 20;
-int b = 100;
-a = b*50;
-print(a+b);

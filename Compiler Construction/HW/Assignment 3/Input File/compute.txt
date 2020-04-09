@@ -1,3 +1,0 @@
-print(18+25);
-print(90);
-print("Hello");

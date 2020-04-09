@@ -1,4 +1,0 @@
-int a = 30;
-double b = 60.0;
-double sum;
-sum = a + b;

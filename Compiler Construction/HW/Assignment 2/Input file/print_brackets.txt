@@ -1,6 +1,0 @@
-int a;
-int b = 2;
-a = 3*(4+b);
-print(a);
-print(30/5);
-print("Hello");

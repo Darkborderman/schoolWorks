@@ -1,6 +1,0 @@
-int a = 5;	//This is /*a comment///  */
-int b = 6;	
-
-/* comment start
-int sum = 8;  /* This is //not end
-end */ 

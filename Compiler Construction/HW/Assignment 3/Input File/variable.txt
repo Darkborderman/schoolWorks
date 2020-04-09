@@ -1,6 +1,0 @@
-int a = 4;
-int b;
-b = a*10;
-print(b);
-a = b/(3+2);
-print(a);
